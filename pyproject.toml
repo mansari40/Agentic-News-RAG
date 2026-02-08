@@ -1,0 +1,75 @@
+[project]
+name = "agentic-news-rag"
+version = "0.1.0"
+description = "Baseline RAG vs Agentic RAG for real-time news synthesis using MediaStack + OpenAI + Qdrant."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "requests>=2.32.0",
+  "python-dotenv>=1.0.1",
+  "pydantic>=2.7.0",
+  "pydantic-settings>=2.3.0",
+  "tenacity>=8.3.0",
+  "qdrant-client>=1.10.0",
+  "openai>=1.40.0",
+
+  # PostgreSQL
+  "sqlalchemy>=2.0.30",
+  "psycopg[binary]>=3.2.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+  "pytest-cov>=5.0.0",
+  "ruff>=0.5.0",
+  "mypy>=1.10.0",
+  "types-requests>=2.32.0.20240712",
+]
+
+
+# Ruff
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E203"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+
+# MyPy
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_any_generics = true
+no_implicit_optional = true
+ignore_missing_imports = true
+
+
+# Pytest
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+
+# Build system 
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

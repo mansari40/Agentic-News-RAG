@@ -1,0 +1,20 @@
+# env 
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.venv*/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# editor
+.vscode/
+
+# data / cache
+data/
+*.log
+.notebook/
+uv.lock
