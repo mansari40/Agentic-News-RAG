@@ -2,11 +2,10 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class ApplicationSettings(BaseSettings):
-    mediastack_api_key: str
-    openai_api_key: str
-    postgres_url: str
-    qdrant_url: str
-
+    mediastack_api_key: str | None = None
+    openai_api_key: str | None = None
+    postgres_url: str | None = None
+    qdrant_url: str | None = None
     qdrant_collection_name: str = "news_chunks"
     embedding_model_name: str = "text-embedding-3-small"
     chunk_size: int = 500
@@ -15,8 +14,9 @@ class ApplicationSettings(BaseSettings):
 
     model_config = SettingsConfigDict(
         env_file=".env",
-        env_file_encoding="utf-8",
+        case_sensitive=False,
+        extra="ignore",
     )
 
 
-settings = ApplicationSettings()  # type: ignore[call-arg]
+settings: ApplicationSettings = ApplicationSettings()
