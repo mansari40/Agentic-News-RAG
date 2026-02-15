@@ -1,8 +1,8 @@
 from typing import Any, cast
 
 from rag_baseline.embedding.text_embedder import EmbeddingService
-from rag_baseline.storage.postgres_repository import PostgresRepository
-from rag_baseline.vector_store.qdrant import QdrantRepository
+from storage.postgres_repository import PostgresRepository
+from vector_store.qdrant import QdrantRepository
 
 
 class VectorIndexingPipeline:
