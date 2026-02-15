@@ -8,6 +8,7 @@ class ApplicationSettings(BaseSettings):
     qdrant_url: str | None = None
     qdrant_collection_name: str = "news_chunks"
     embedding_model_name: str = "text-embedding-3-small"
+    chat_model_name: str = "gpt-4o-mini"
     chunk_size: int = 500
     chunk_overlap: int = 50
     top_k_results: int = 5
