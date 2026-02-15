@@ -12,14 +12,18 @@ logger = logging.getLogger(__name__)
 class MediaStackClient:
     BASE_URL = "http://api.mediastack.com/v1/news"
 
-    def fetch_latest_articles(self, limit: int = 20) -> list[NewsArticle]:
+    def fetch_latest_articles(self, limit: int = 100) -> list[NewsArticle]:
+        # Paid tier supports max 3 keywords
+        keywords = "timber,lumber,wood"
+
         params = {
             "access_key": settings.mediastack_api_key,
+            "keywords": keywords,
             "languages": "en",
             "limit": limit,
         }
 
-        logger.info(f"Fetching articles from MediaStack (limit={limit})...")
+        logger.info(f"Fetching timber market articles (keywords: {keywords}, limit={limit})...")
         response = requests.get(self.BASE_URL, params=params)
 
         if response.status_code != 200:
@@ -28,7 +32,7 @@ class MediaStackClient:
         data = response.json().get("data", [])
         logger.info(f"MediaStack returned {len(data)} articles")
 
-        articles: list[NewsArticle] = []
+        articles = []
         skipped = 0
 
         for item in data:
@@ -36,10 +40,6 @@ class MediaStackClient:
 
             if not text_content:
                 skipped += 1
-                logger.debug(
-                    f"Skipping article '{item.get('title', 'N/A')[:50]}...' "
-                    "- no content or description"
-                )
                 continue
 
             try:
@@ -60,5 +60,5 @@ class MediaStackClient:
                 )
             )
 
-        logger.info(f"Successfully parsed {len(articles)} articles (skipped {skipped})")
+        logger.info(f"Successfully parsed {len(articles)} timber articles (skipped {skipped})")
         return articles
