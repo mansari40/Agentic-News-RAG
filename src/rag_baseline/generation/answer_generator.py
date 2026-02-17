@@ -21,6 +21,8 @@ class AnswerGenerator:
 in the German wood industry.
 Answer questions about timber markets, wood prices, forestry, lumber trade, \
 and construction materials.
+ALWAYS respond in English, even if the source documents are in German.
+If source documents are in German, translate the relevant information to English in your answer.
 Use ONLY the provided news context. If the answer is not in the context, \
 say you don't have that information.
 
