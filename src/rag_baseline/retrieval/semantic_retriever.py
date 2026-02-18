@@ -32,6 +32,11 @@ class SemanticRetriever:
                     article_id=str(point.payload["article_id"]),
                     content=str(point.payload["content"]),
                     similarity_score=float(point.score),
+                    published_at=point.payload.get("published_at"),
+                    source=point.payload.get("source"),
+                    title=point.payload.get("title"),
+                    url=point.payload.get("url"),
+                    keywords=point.payload.get("keywords", []),
                 )
             )
 
