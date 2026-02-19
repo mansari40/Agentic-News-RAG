@@ -3,6 +3,7 @@ import logging
 from openai import OpenAI, OpenAIError
 from rag_baseline.configuration import settings
 from rag_baseline.custom_exceptions import EmbeddingError
+from rag_baseline.embedding.embedding_cache import EmbeddingCache
 from rag_baseline.utils.retry_utils import retry_with_backoff
 
 logger = logging.getLogger(__name__)
@@ -11,6 +12,7 @@ logger = logging.getLogger(__name__)
 class EmbeddingService:
     def __init__(self) -> None:
         self.client = OpenAI(api_key=settings.openai_api_key)
+        self.cache = EmbeddingCache(max_size=1000, ttl_seconds=86400)
 
     @retry_with_backoff(  # type: ignore[misc]
         max_retries=3,
@@ -20,7 +22,7 @@ class EmbeddingService:
     )
     def embed(self, text: str) -> list[float]:
         """
-        Generate embedding for text with retry logic.
+        Generate embedding for text with caching and retry logic.
 
         Raises:
             EmbeddingError: If embedding generation fails after retries
@@ -29,12 +31,20 @@ class EmbeddingService:
             logger.warning("Empty text provided for embedding, using default")
             return [0.0] * 1536
 
+        cached = self.cache.get(text)
+        if cached is not None:
+            logger.debug("Embedding cache hit")
+            cached_embedding: list[float] = cached
+            return cached_embedding
+
         try:
             response = self.client.embeddings.create(
                 model=settings.embedding_model_name,
                 input=text[:8000],
             )
-            return response.data[0].embedding
+            embedding: list[float] = response.data[0].embedding
+            self.cache.set(text, embedding)
+            return embedding
 
         except OpenAIError as e:
             logger.error(f"OpenAI API error during embedding: {e}")
