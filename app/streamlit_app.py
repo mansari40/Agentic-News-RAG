@@ -1,11 +1,9 @@
-import time
 from typing import Any
 
+import requests
 import streamlit as st
-from rag_baseline.domain_models import RetrievalResult
 from rag_baseline.indexing.vector_indexer import VectorIndexingPipeline
 from rag_baseline.ingestion.article_ingestor import IngestionService
-from rag_baseline.orchestration.rag_pipeline import RAGPipeline
 
 # Page config
 st.set_page_config(
@@ -19,11 +17,17 @@ if "messages" not in st.session_state:
 if "ingestion_complete" not in st.session_state:
     st.session_state.ingestion_complete = False
 
+# API Configuration
+API_URL = "http://localhost:8000"
 
-@st.cache_resource  # type: ignore[misc]
-def get_rag_pipeline() -> RAGPipeline:
-    """Initialize RAG pipeline (cached)"""
-    return RAGPipeline(use_hybrid=True)
+
+def check_api_health() -> bool:
+    """Check if FastAPI backend is running"""
+    try:
+        response = requests.get(f"{API_URL}/health", timeout=2)
+        return response.status_code == 200
+    except Exception:
+        return False
 
 
 def run_ingestion_and_indexing() -> bool:
@@ -50,24 +54,19 @@ def run_ingestion_and_indexing() -> bool:
         return False
 
 
-def format_source(result: RetrievalResult, index: int) -> None:
+def format_source(source: dict[str, Any], index: int) -> None:
     """Format a source as an expandable card"""
-    with st.expander(
-        f"Source {index + 1} - {result.source} (Relevance: {result.similarity_score:.2f})"
-    ):
-        if result.title:
-            st.write(f"**Title:** {result.title}")
-        if result.published_at:
-            st.write(f"**Published:** {result.published_at}")
-        if result.url:
-            st.write(f"**Link:** [{result.url}]({result.url})")
-        if result.keywords:
-            keywords = ", ".join(result.keywords[:5])
+    with st.expander(f"Source {index + 1} - {source['source']} (Relevance: {source['score']:.2f})"):
+        if source.get("title"):
+            st.write(f"**Title:** {source['title']}")
+        if source.get("url"):
+            st.write(f"**Link:** [{source['url']}]({source['url']})")
+        if source.get("keywords"):
+            keywords = ", ".join(source["keywords"][:5])
             st.write(f"**Keywords:** {keywords}")
 
         st.write("**Content Preview:**")
-        preview = result.content[:400] + "..." if len(result.content) > 400 else result.content
-        st.text(preview)
+        st.text(source["content"])
 
 
 def main() -> None:
@@ -75,9 +74,23 @@ def main() -> None:
     st.title("Timber Market Intelligence System")
     st.markdown("Advanced RAG system for timber market analysis and insights")
 
+    # Check API health
+    if not check_api_health():
+        st.error(
+            "Backend API is not running. Please start FastAPI server:\n"
+            "```bash\n"
+            "uvicorn backend.main:app --reload\n"
+            "```"
+        )
+        st.stop()
+
     # Sidebar - System Controls
     with st.sidebar:
         st.header("System Controls")
+
+        st.success("API Connected")
+
+        st.divider()
 
         # Ingestion & Indexing
         st.subheader("Data Management")
@@ -147,50 +160,56 @@ def main() -> None:
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        # Generate response
+        # Generate response via API
         with st.chat_message("assistant"), st.spinner("Searching knowledge base..."):
-            start_time = time.time()
-
             try:
-                # Get RAG pipeline
-                rag = get_rag_pipeline()
-                rag.use_hybrid = use_hybrid
+                # Call FastAPI backend
+                response = requests.post(
+                    f"{API_URL}/query",
+                    json={"question": prompt, "use_hybrid": use_hybrid, "top_k": top_k},
+                    timeout=30,
+                )
 
-                # Retrieve sources
-                sources = rag.retriever.retrieve(prompt, use_hybrid=use_hybrid)
+                if response.status_code == 200:
+                    data = response.json()
+                    answer = data["answer"]
+                    sources = data["sources"]
+                    response_time = data["response_time"]
 
-                # Generate answer
-                answer = rag.generator.generate(prompt, sources[:top_k])
+                    # Display answer
+                    st.markdown(answer)
 
-                response_time = time.time() - start_time
+                    # Display sources
+                    if sources:
+                        st.divider()
+                        st.subheader("Sources")
+                        for idx, source in enumerate(sources):
+                            format_source(source, idx)
 
-                # Display answer
-                st.markdown(answer)
+                        # Metadata
+                        hybrid_text = "Hybrid" if use_hybrid else "Vector Only"
+                        st.caption(
+                            f"Response time: {response_time:.2f}s | "
+                            f"Sources: {len(sources)} | "
+                            f"Search: {hybrid_text}"
+                        )
 
-                # Display sources
-                if sources:
-                    st.divider()
-                    st.subheader("Sources")
-                    for idx, source in enumerate(sources[:top_k]):
-                        format_source(source, idx)
+                    # Save to history
+                    message_data: dict[str, Any] = {
+                        "role": "assistant",
+                        "content": answer,
+                        "sources": sources,
+                        "response_time": response_time,
+                        "hybrid": use_hybrid,
+                    }
+                    st.session_state.messages.append(message_data)
+                else:
+                    st.error(f"API Error: {response.status_code} - {response.text}")
 
-                    # Metadata
-                    hybrid_text = "Hybrid" if use_hybrid else "Vector Only"
-                    st.caption(
-                        f"Response time: {response_time:.2f}s | "
-                        f"Sources: {len(sources[:top_k])} | "
-                        f"Search: {hybrid_text}"
-                    )
-
-                # Save to history
-                message_data: dict[str, Any] = {
-                    "role": "assistant",
-                    "content": answer,
-                    "sources": sources[:top_k],
-                    "response_time": response_time,
-                    "hybrid": use_hybrid,
-                }
-                st.session_state.messages.append(message_data)
+            except requests.exceptions.Timeout:
+                error_msg = "Request timed out. Please try again."
+                st.error(error_msg)
+                st.session_state.messages.append({"role": "assistant", "content": error_msg})
 
             except Exception as e:
                 error_msg = f"An error occurred: {str(e)}"
