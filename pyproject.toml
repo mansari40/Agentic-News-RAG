@@ -16,6 +16,13 @@ dependencies = [
   "tiktoken>=0.7.0",
   "pre-commit>=4.0.0",
 
+ # Agentic RAG
+  "langgraph>=0.0.20",
+  "langsmith>=0.1.0",
+  "langchain>=0.1.0",
+  "langchain-openai>=0.0.5",
+  "tavily-python>=0.3.0",
+
   # PostgreSQL
   "sqlalchemy>=2.0.30",
   "psycopg[binary]>=3.2.1",
