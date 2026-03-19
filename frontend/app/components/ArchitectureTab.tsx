@@ -1,0 +1,593 @@
+"use client"
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   ArchitectureTab — animated SVG pipeline diagrams
+   Baseline RAG  : horizontal 6-node chain with flowing-dash arrows
+   Agentic RAG   : vertical researcher + fan-out retrieval bus + refine loop
+────────────────────────────────────────────────────────────────────────────── */
+
+const BASELINE_STEPS = [
+  { label: "User Query", color: "#1e3a5f", border: "#3b82f6" },
+  { label: "Embedder", sub: "text-embedding-3-small", color: "#1e40af", border: "#3b82f6" },
+  { label: "Vector DB", sub: "~900 articles · hybrid BM25+vector", color: "#052e16", border: "#4ade80" },
+  { label: "Top-K Select", sub: "k = 1–10", color: "#1e40af", border: "#3b82f6" },
+  { label: "LLM Generate", sub: "gpt-4o-mini", color: "#2d1657", border: "#a855f7" },
+  { label: "Answer", color: "#450a0a", border: "#ef4444" },
+]
+
+/* ── SVG geometry ── */
+const B_W = 980      // baseline svg width
+const B_H = 148
+const B_NODE_W = 108
+const B_NODE_H = 52
+const B_GAP = 16     // gap between nodes
+const B_ARROW = 16
+const B_TOTAL = BASELINE_STEPS.length * B_NODE_W + (BASELINE_STEPS.length - 1) * (B_GAP + B_ARROW)
+const B_LEFT = (B_W - B_TOTAL) / 2
+const B_CY = B_H / 2 + 12   // shift down to leave room for title
+
+function bNodeX(i: number) {
+  return B_LEFT + i * (B_NODE_W + B_GAP + B_ARROW)
+}
+
+/* ── Agentic SVG uses internal constants defined in AgenticSVG ── */
+
+export function ArchitectureTab() {
+  return (
+    <div className="h-full overflow-y-auto p-4 space-y-6">
+      <style>{`
+        /* flowing dash animation */
+        @keyframes arch-dash {
+          to { stroke-dashoffset: -20; }
+        }
+        @keyframes arch-dash-rev {
+          to { stroke-dashoffset: 20; }
+        }
+        /* node pulse */
+        @keyframes arch-pulse {
+          0%, 100% { opacity: 1; }
+          50%       { opacity: 0.65; }
+        }
+        /* fade-in for detail panels */
+        @keyframes arch-fadein {
+          from { opacity: 0; transform: translateY(-4px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .arch-fl {
+          stroke-dasharray: 6 4;
+          animation: arch-dash 0.7s linear infinite;
+        }
+        .arch-fl-slow {
+          stroke-dasharray: 6 4;
+          animation: arch-dash 1.1s linear infinite;
+        }
+        .arch-fl-rev {
+          stroke-dasharray: 5 4;
+          animation: arch-dash-rev 0.9s linear infinite;
+        }
+        .arch-pulse {
+          animation: arch-pulse 2s ease-in-out infinite;
+        }
+        .arch-detail-open {
+          animation: arch-fadein 0.2s ease-out forwards;
+        }
+
+        /* staggered delays for baseline arrows */
+        .arch-d0  { animation-delay: 0s; }
+        .arch-d1  { animation-delay: 0.12s; }
+        .arch-d2  { animation-delay: 0.24s; }
+        .arch-d3  { animation-delay: 0.36s; }
+        .arch-d4  { animation-delay: 0.48s; }
+
+        /* staggered for agentic fan-out lines */
+        .arch-fan0 { animation-delay: 0s; }
+        .arch-fan1 { animation-delay: 0.18s; }
+        .arch-fan2 { animation-delay: 0.36s; }
+      `}</style>
+
+      {/* ═══════════════ BASELINE RAG ═══════════════ */}
+      <div className="card p-4">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold text-white">Baseline RAG Pipeline</h2>
+          <div className="flex gap-4 text-xs font-mono" style={{ color: "#64748b" }}>
+            <span>~3 s</span>
+            <span>1 LLM call</span>
+            <span>~$0.0001</span>
+          </div>
+        </div>
+
+        {/* SVG diagram */}
+        <div className="overflow-x-auto">
+          <svg
+            width="100%"
+            viewBox={`0 0 ${B_W} ${B_H}`}
+            preserveAspectRatio="xMidYMid meet"
+            style={{ minWidth: 520 }}
+          >
+            <defs>
+              {/* glow filters */}
+              <filter id="gb" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                <feFlood floodColor="#3b82f6" floodOpacity="0.45" result="c" />
+                <feComposite in="c" in2="blur" operator="in" result="glow" />
+                <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+              </filter>
+              <filter id="gg" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                <feFlood floodColor="#10b981" floodOpacity="0.45" result="c" />
+                <feComposite in="c" in2="blur" operator="in" result="glow" />
+                <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+              </filter>
+              <filter id="gp" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                <feFlood floodColor="#8b5cf6" floodOpacity="0.45" result="c" />
+                <feComposite in="c" in2="blur" operator="in" result="glow" />
+                <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+              </filter>
+              <filter id="gr" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                <feFlood floodColor="#ef4444" floodOpacity="0.45" result="c" />
+                <feComposite in="c" in2="blur" operator="in" result="glow" />
+                <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+              </filter>
+              {/* gradient fills */}
+              <linearGradient id="lgS" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#1e3a5f" />
+                <stop offset="100%" stopColor="#0f1f3d" />
+              </linearGradient>
+              <linearGradient id="lgB" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#1e40af" />
+                <stop offset="100%" stopColor="#0f2270" />
+              </linearGradient>
+              <linearGradient id="lgG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#065f46" />
+                <stop offset="100%" stopColor="#022c20" />
+              </linearGradient>
+              <linearGradient id="lgP" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#3b0764" />
+                <stop offset="100%" stopColor="#1e0032" />
+              </linearGradient>
+              <linearGradient id="lgR" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#7f1d1d" />
+                <stop offset="100%" stopColor="#3f0d0d" />
+              </linearGradient>
+              {/* arrow markers */}
+              <marker id="ahB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M0,1 L9,5 L0,9 Z" fill="#3b82f6" />
+              </marker>
+              <marker id="ahG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M0,1 L9,5 L0,9 Z" fill="#4ade80" />
+              </marker>
+              <marker id="ahP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M0,1 L9,5 L0,9 Z" fill="#a855f7" />
+              </marker>
+              <marker id="ahR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M0,1 L9,5 L0,9 Z" fill="#ef4444" />
+              </marker>
+            </defs>
+
+            {/* background */}
+            <rect width={B_W} height={B_H} rx="12" fill="#0a1220" />
+
+            {/* diagram title */}
+            <text x={B_W / 2} y={16} textAnchor="middle" fontSize="12" fontWeight="700"
+              fill="#e2e8f0" fontFamily="Inter, sans-serif" letterSpacing="0.5">
+              Baseline RAG Pipeline
+            </text>
+            <text x={B_W / 2} y={30} textAnchor="middle" fontSize="9"
+              fill="#64748b" fontFamily="Inter, sans-serif">
+              ~3 s · 1 LLM call · ~$0.0001 / query
+            </text>
+
+            {BASELINE_STEPS.map((step, i) => {
+              const x = bNodeX(i)
+              const glowFilter =
+                step.border === "#3b82f6" ? "url(#gb)"
+                : step.border === "#4ade80" ? "url(#gg)"
+                : step.border === "#a855f7" ? "url(#gp)"
+                : "url(#gr)"
+              const gradient =
+                step.border === "#3b82f6" ? (i === 0 ? "url(#lgS)" : "url(#lgB)")
+                : step.border === "#4ade80" ? "url(#lgG)"
+                : step.border === "#a855f7" ? "url(#lgP)"
+                : "url(#lgR)"
+              const arrowColor =
+                step.border === "#3b82f6" ? "#3b82f6"
+                : step.border === "#4ade80" ? "#4ade80"
+                : step.border === "#a855f7" ? "#a855f7"
+                : "#ef4444"
+              const arrowMarker =
+                step.border === "#3b82f6" ? "url(#ahB)"
+                : step.border === "#4ade80" ? "url(#ahG)"
+                : step.border === "#a855f7" ? "url(#ahP)"
+                : "url(#ahR)"
+
+              return (
+                <g key={i}>
+                  {/* node box */}
+                  <rect
+                    x={x} y={B_CY - B_NODE_H / 2}
+                    width={B_NODE_W} height={B_NODE_H}
+                    rx="8"
+                    fill={gradient}
+                    stroke={step.border}
+                    strokeWidth="1.5"
+                    filter={glowFilter}
+                  />
+                  <text
+                    x={x + B_NODE_W / 2} y={B_CY - (step.sub ? 8 : 0)}
+                    textAnchor="middle"
+                    fontSize="11"
+                    fontWeight="700"
+                    fill="#e2e8f0"
+                    fontFamily="Inter, sans-serif"
+                  >
+                    {step.label}
+                  </text>
+                  {step.sub && (
+                    <text
+                      x={x + B_NODE_W / 2} y={B_CY + 10}
+                      textAnchor="middle"
+                      fontSize="8.5"
+                      fill="#94a3b8"
+                      fontFamily="Inter, sans-serif"
+                    >
+                      {step.sub}
+                    </text>
+                  )}
+
+                  {/* animated arrow to next node */}
+                  {i < BASELINE_STEPS.length - 1 && (
+                    <line
+                      x1={x + B_NODE_W} y1={B_CY}
+                      x2={x + B_NODE_W + B_GAP + B_ARROW} y2={B_CY}
+                      stroke={arrowColor}
+                      strokeWidth="2"
+                      markerEnd={arrowMarker}
+                      className={`arch-fl arch-d${i}`}
+                    />
+                  )}
+                </g>
+              )
+            })}
+          </svg>
+        </div>
+
+        {/* metrics */}
+        <div className="grid grid-cols-4 gap-2 mt-3">
+          {[["Avg Speed","2–5 s"],["Source Types","1"],["LLM Calls","1"],["Cost / Query","~$0.0001"]].map(([l,v]) => (
+            <div key={l} className="metric-card">
+              <span className="metric-value text-base">{v}</span>
+              <span className="metric-label">{l}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ═══════════════ AGENTIC RAG ═══════════════ */}
+      <div className="card p-4">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold text-white">Agentic RAG — ReAct Researcher</h2>
+          <div className="flex gap-4 text-xs font-mono" style={{ color: "#64748b" }}>
+            <span>20–50 s</span>
+            <span>6–8 LLM calls</span>
+            <span>~$0.03–0.04</span>
+          </div>
+        </div>
+
+        {/* SVG diagram */}
+        <div className="overflow-x-auto">
+          <AgenticSVG />
+        </div>
+
+        {/* metrics */}
+        <div className="grid grid-cols-4 gap-2 mt-3">
+          {[["Avg Speed","20–50 s"],["Source Types","Up to 3"],["LLM Calls","6–8"],["Cost / Query","~$0.03"]].map(([l,v]) => (
+            <div key={l} className="metric-card">
+              <span className="metric-value text-base">{v}</span>
+              <span className="metric-label">{l}</span>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </div>
+  )
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   AgenticSVG — vertical pipeline with fan-out retrieval bus + refine loop
+────────────────────────────────────────────────────────────────────────────── */
+function AgenticSVG() {
+  // Layout constants
+  const W = 700
+  const H = 520
+
+  // centre x
+  const CX = W / 2
+
+  // Row y-centres
+  const Y_PLANNER   = 55
+  const Y_ORCH      = 145
+  const Y_BUS_TOP   = 215   // top of fan-out bus
+  const Y_BUS_BOT   = 315   // bottom of fan-in bus
+  const Y_SOURCE    = 265   // source nodes centre
+  const Y_RANKER    = 385
+  const Y_VERIFIER  = 455
+  // source node positions (3 nodes)
+  const SRC_XS = [140, 350, 560]
+  const NODE_W = 150
+  const NODE_H = 44
+
+  return (
+    <svg
+      width="100%"
+      viewBox={`0 0 ${W} ${H}`}
+      preserveAspectRatio="xMidYMid meet"
+      style={{ minWidth: 480 }}
+    >
+      <defs>
+        {/* reuse glow filters from baseline — but define fresh IDs to avoid collision */}
+        <filter id="ag-gB" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+          <feFlood floodColor="#3b82f6" floodOpacity="0.5" result="c" />
+          <feComposite in="c" in2="blur" operator="in" result="glow" />
+          <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+        <filter id="ag-gG" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+          <feFlood floodColor="#4ade80" floodOpacity="0.5" result="c" />
+          <feComposite in="c" in2="blur" operator="in" result="glow" />
+          <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+        <filter id="ag-gA" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+          <feFlood floodColor="#f59e0b" floodOpacity="0.5" result="c" />
+          <feComposite in="c" in2="blur" operator="in" result="glow" />
+          <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+        <filter id="ag-gP" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+          <feFlood floodColor="#a855f7" floodOpacity="0.5" result="c" />
+          <feComposite in="c" in2="blur" operator="in" result="glow" />
+          <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+        <filter id="ag-gI" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+          <feFlood floodColor="#818cf8" floodOpacity="0.5" result="c" />
+          <feComposite in="c" in2="blur" operator="in" result="glow" />
+          <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+
+        {/* gradients */}
+        <linearGradient id="ag-lgB" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#1e3a5f" /><stop offset="100%" stopColor="#0b1f38" />
+        </linearGradient>
+        <linearGradient id="ag-lgG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#14532d" /><stop offset="100%" stopColor="#082817" />
+        </linearGradient>
+        <linearGradient id="ag-lgA" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#451a03" /><stop offset="100%" stopColor="#220d00" />
+        </linearGradient>
+        <linearGradient id="ag-lgP" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#2d1657" /><stop offset="100%" stopColor="#160929" />
+        </linearGradient>
+        <linearGradient id="ag-lgI" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#1e1b4b" /><stop offset="100%" stopColor="#0d0b25" />
+        </linearGradient>
+        <linearGradient id="ag-lgGreen" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#052e16" /><stop offset="100%" stopColor="#021509" />
+        </linearGradient>
+
+        {/* arrows */}
+        <marker id="ag-ahB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0,1 L9,5 L0,9 Z" fill="#3b82f6" />
+        </marker>
+        <marker id="ag-ahG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0,1 L9,5 L0,9 Z" fill="#4ade80" />
+        </marker>
+        <marker id="ag-ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0,1 L9,5 L0,9 Z" fill="#f59e0b" />
+        </marker>
+        <marker id="ag-ahP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0,1 L9,5 L0,9 Z" fill="#a855f7" />
+        </marker>
+        <marker id="ag-ahI" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0,1 L9,5 L0,9 Z" fill="#818cf8" />
+        </marker>
+        <marker id="ag-ahR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0,1 L9,5 L0,9 Z" fill="#f59e0b" />
+        </marker>
+      </defs>
+
+      {/* background */}
+      <rect width={W} height={H} rx="12" fill="#0a1220" />
+
+      {/* diagram title */}
+      <text x={W / 2} y={16} textAnchor="middle" fontSize="12" fontWeight="700"
+        fill="#e2e8f0" fontFamily="Inter, sans-serif" letterSpacing="0.5">
+        Agentic RAG — ReAct Researcher
+      </text>
+      <text x={W / 2} y={30} textAnchor="middle" fontSize="9"
+        fill="#64748b" fontFamily="Inter, sans-serif">
+        20–50 s · 6–8 LLM calls · ~$0.03–0.04 / query
+      </text>
+
+      {/* ── 1. QueryPlanner ── */}
+      <NodeRect cx={CX} cy={Y_PLANNER} w={NODE_W + 30} h={NODE_H}
+        fill="url(#ag-lgB)" stroke="#3b82f6" filter="url(#ag-gB)"
+        label="① QueryPlanner" sub="gpt-4o-mini" />
+
+      {/* arrow planner → researcher */}
+      <line x1={CX} y1={Y_PLANNER + NODE_H / 2} x2={CX} y2={Y_ORCH - NODE_H / 2}
+        stroke="#3b82f6" strokeWidth="2" markerEnd="url(#ag-ahB)"
+        className="arch-fl arch-d0" />
+
+      {/* ── 2. ResearchAgent ── */}
+      <NodeRect cx={CX} cy={Y_ORCH} w={NODE_W + 40} h={NODE_H}
+        fill="url(#ag-lgG)" stroke="#4ade80" filter="url(#ag-gG)"
+        label="② Researcher" sub="gpt-4o · ReAct · max 6 steps" />
+
+      {/* fan-out: researcher → 3 sources */}
+      {/* vertical stem from researcher down to bus-top */}
+      <line x1={CX} y1={Y_ORCH + NODE_H / 2} x2={CX} y2={Y_BUS_TOP}
+        stroke="#4ade80" strokeWidth="2"
+        className="arch-fl arch-d0" />
+
+      {/* horizontal bus line */}
+      <line x1={SRC_XS[0]} y1={Y_BUS_TOP} x2={SRC_XS[SRC_XS.length-1]} y2={Y_BUS_TOP}
+        stroke="#4ade80" strokeWidth="1.5"
+        strokeDasharray="4 3"
+        className="arch-fl-slow" />
+
+      {/* bus → each source */}
+      {SRC_XS.map((sx, i) => (
+        <line key={i}
+          x1={sx} y1={Y_BUS_TOP} x2={sx} y2={Y_SOURCE - NODE_H / 2}
+          stroke="#4ade80" strokeWidth="2" markerEnd="url(#ag-ahG)"
+          className={`arch-fl arch-fan${i}`}
+        />
+      ))}
+
+      {/* ── 3. Tool nodes ── */}
+      <ToolNode cx={SRC_XS[0]} cy={Y_SOURCE} label="Tavily Specialist"
+        sub="timber-online · holzkurier…" fill="url(#ag-lgB)" stroke="#3b82f6" filter="url(#ag-gB)" />
+      <ToolNode cx={SRC_XS[1]} cy={Y_SOURCE} label="MediaStack"
+        sub="12 German keywords" fill="url(#ag-lgA)" stroke="#f59e0b" filter="url(#ag-gA)" />
+      <ToolNode cx={SRC_XS[2]} cy={Y_SOURCE} label="Tavily Web"
+        sub="Open web search" fill="url(#ag-lgB)" stroke="#60a5fa" filter="url(#ag-gB)" />
+
+      {/* fan-in: 3 sources → ranker bus */}
+      {SRC_XS.map((sx, i) => (
+        <line key={i}
+          x1={sx} y1={Y_SOURCE + NODE_H / 2} x2={sx} y2={Y_BUS_BOT}
+          stroke="#64748b" strokeWidth="1.5" markerEnd="url(#ag-ahG)"
+          className={`arch-fl arch-fan${i}`}
+        />
+      ))}
+
+      {/* horizontal fan-in bus */}
+      <line x1={SRC_XS[0]} y1={Y_BUS_BOT} x2={SRC_XS[SRC_XS.length-1]} y2={Y_BUS_BOT}
+        stroke="#64748b" strokeWidth="1.5"
+        strokeDasharray="4 3"
+        className="arch-fl-slow" />
+
+      {/* bus → ranker */}
+      <line x1={CX} y1={Y_BUS_BOT} x2={CX} y2={Y_RANKER - NODE_H / 2}
+        stroke="#a855f7" strokeWidth="2" markerEnd="url(#ag-ahP)"
+        className="arch-fl arch-d1" />
+
+      {/* source count label */}
+      <text x={CX} y={Y_BUS_BOT - 6} textAnchor="middle" fontSize="9"
+        fill="#64748b" fontFamily="Inter, sans-serif">
+        ~40 raw sources
+      </text>
+
+      {/* ── 4. SourceRanker ── */}
+      <NodeRect cx={CX} cy={Y_RANKER} w={NODE_W + 30} h={NODE_H}
+        fill="url(#ag-lgP)" stroke="#a855f7" filter="url(#ag-gP)"
+        label="④ SourceRanker" sub="gpt-4o-mini · 40 → 20" />
+
+      {/* ranker → verifier */}
+      <line x1={CX} y1={Y_RANKER + NODE_H / 2} x2={CX} y2={Y_VERIFIER - NODE_H / 2}
+        stroke="#a855f7" strokeWidth="2" markerEnd="url(#ag-ahP)"
+        className="arch-fl arch-d1" />
+
+      {/* ── 5. FactVerifier ── */}
+      <NodeRect cx={CX} cy={Y_VERIFIER} w={NODE_W + 30} h={NODE_H}
+        fill="url(#ag-lgGreen)" stroke="#4ade80" filter="url(#ag-gG)"
+        label="⑤ FactVerifier" sub="gpt-4.1 · reads 20 sources" />
+
+      {/* verifier → synthesizer */}
+      <line x1={CX} y1={Y_VERIFIER + NODE_H / 2} x2={CX} y2={H - NODE_H / 2 - 4}
+        stroke="#818cf8" strokeWidth="2" markerEnd="url(#ag-ahI)"
+        className="arch-fl arch-d2" />
+
+      {/* ── 6. AnswerSynthesizer ── */}
+      <NodeRect cx={CX} cy={H - NODE_H / 2 - 2} w={NODE_W + 30} h={NODE_H}
+        fill="url(#ag-lgI)" stroke="#818cf8" filter="url(#ag-gI)"
+        label="⑥ AnswerSynthesizer" sub="gpt-4o-mini · final answer" />
+
+      {/* ── Amber refine loop (right side) ── */}
+      {/* Curved path from Synthesizer right → up → back into Researcher */}
+      <path
+        d={`M ${CX + (NODE_W + 30) / 2} ${H - NODE_H / 2 - 2}
+            C ${W - 30} ${H - NODE_H / 2 - 2}, ${W - 30} ${Y_ORCH},
+              ${CX + (NODE_W + 40) / 2} ${Y_ORCH}`}
+        fill="none"
+        stroke="#f59e0b"
+        strokeWidth="1.8"
+        markerEnd="url(#ag-ahR)"
+        className="arch-fl-rev"
+        strokeDasharray="5 4"
+      />
+      {/* refine label */}
+      <text x={W - 22} y={(H + Y_ORCH) / 2} textAnchor="middle"
+        fontSize="8.5" fill="#f59e0b" fontFamily="Inter, sans-serif"
+        transform={`rotate(-90, ${W - 22}, ${(H + Y_ORCH) / 2})`}>
+        refine loop (max 2×)
+      </text>
+    </svg>
+  )
+}
+
+/* ── Small helper components ── */
+function NodeRect({
+  cx, cy, w, h, fill, stroke, filter, label, sub,
+}: {
+  cx: number; cy: number; w: number; h: number
+  fill: string; stroke: string; filter: string
+  label: string; sub?: string
+}) {
+  return (
+    <g>
+      <rect
+        x={cx - w / 2} y={cy - h / 2}
+        width={w} height={h} rx="8"
+        fill={fill} stroke={stroke} strokeWidth="1.5"
+        filter={filter}
+      />
+      <text
+        x={cx} y={cy - (sub ? 7 : 1)}
+        textAnchor="middle" fontSize="11" fontWeight="700"
+        fill="#e2e8f0" fontFamily="Inter, sans-serif"
+      >
+        {label}
+      </text>
+      {sub && (
+        <text
+          x={cx} y={cy + 9}
+          textAnchor="middle" fontSize="8.5"
+          fill="#94a3b8" fontFamily="Inter, sans-serif"
+        >
+          {sub}
+        </text>
+      )}
+    </g>
+  )
+}
+
+function ToolNode({
+  cx, cy, label, sub, fill, stroke, filter,
+}: {
+  cx: number; cy: number; label: string; sub: string
+  fill: string; stroke: string; filter: string
+}) {
+  const w = 152, h = 44
+  return (
+    <g>
+      <rect
+        x={cx - w / 2} y={cy - h / 2}
+        width={w} height={h} rx="7"
+        fill={fill} stroke={stroke} strokeWidth="1.5"
+        filter={filter}
+        className="arch-pulse"
+      />
+      <text x={cx} y={cy - 6} textAnchor="middle" fontSize="10" fontWeight="700"
+        fill="#e2e8f0" fontFamily="Inter, sans-serif">{label}</text>
+      <text x={cx} y={cy + 8} textAnchor="middle" fontSize="8"
+        fill="#94a3b8" fontFamily="Inter, sans-serif">{sub}</text>
+    </g>
+  )
+}
