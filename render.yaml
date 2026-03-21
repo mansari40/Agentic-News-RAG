@@ -29,10 +29,12 @@ services:
   # Next.js Frontend
   - type: web
     name: timber-rag-frontend
-    runtime: docker
-    dockerfilePath: ./frontend/Dockerfile
-    dockerContext: .
+    runtime: node
     plan: free
+    buildCommand: cd frontend && npm ci && npm run build
+    startCommand: cd frontend && npm start
     envVars:
       - key: NEXT_PUBLIC_API_URL
         sync: false
+      - key: PORT
+        value: "3000"
