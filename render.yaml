@@ -28,7 +28,7 @@ services:
 
   # Next.js Frontend
   - type: web
-    name: timber-rag-frontend
+    name: timber-intel
     runtime: node
     plan: free
     buildCommand: cd frontend && npm ci && npm run build
