@@ -165,6 +165,9 @@ class BaselineQueryResponse(BaseModel):
     search_type: str
     timestamp: str
     mode: str = "baseline"
+    cost_usd: float = 0.0
+    total_tokens: int = 0
+    llm_calls: int = 1
 
 
 class AgenticQueryResponse(BaseModel):
@@ -244,7 +247,23 @@ async def query_baseline_rag(request: QueryRequest) -> BaselineQueryResponse:
         rag: RAGPipeline = app.state.baseline_pipeline
         rag.use_hybrid = request.use_hybrid
         sources = rag.retriever.retrieve(request.question, use_hybrid=request.use_hybrid)
-        answer = rag.generator.generate(request.question, sources[: request.top_k])
+        # Only pass relevant sources to the generator and return to the client.
+        # Scores near zero mean the query has no match in the knowledge base.
+        MIN_SCORE = 0.10
+        relevant_sources = [s for s in sources[: request.top_k] if s.similarity_score >= MIN_SCORE]
+        answer, total_tokens, cost_usd = rag.generator.generate(request.question, relevant_sources)
+        # If the LLM signals it has no relevant information, suppress all sources.
+        _no_info_phrases = (
+            "don't have that information",
+            "don't have information",
+            "no relevant information",
+            "cannot answer",
+            "not able to answer",
+        )
+        answer_lower = answer.lower()
+        sources_to_return = (
+            [] if any(p in answer_lower for p in _no_info_phrases) else relevant_sources
+        )
         formatted_sources = [
             SourceResponse(
                 source=source.source,
@@ -258,7 +277,7 @@ async def query_baseline_rag(request: QueryRequest) -> BaselineQueryResponse:
                 keywords=source.keywords[:5] if source.keywords else [],
                 published_at=str(source.published_at) if source.published_at else None,
             )
-            for source in sources[: request.top_k]
+            for source in sources_to_return
         ]
         return BaselineQueryResponse(
             answer=answer,
@@ -266,6 +285,9 @@ async def query_baseline_rag(request: QueryRequest) -> BaselineQueryResponse:
             response_time=round(time.time() - start_time, 2),
             search_type="hybrid" if request.use_hybrid else "vector",
             timestamp=datetime.now().isoformat(),
+            cost_usd=cost_usd,
+            total_tokens=total_tokens,
+            llm_calls=1,
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) from e
