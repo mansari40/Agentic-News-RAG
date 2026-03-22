@@ -6,7 +6,7 @@ const FEATURES = [
     icon: Search,
     title: "Multi-Source Retrieval",
     color: "#3b82f6",
-    desc: "Searches three independent sources — a curated Vector DB of ~900 timber articles, MediaStack news API with 12 German keywords, and Tavily specialist web search — then deduplicates and merges all results.",
+    desc: "Searches three independent sources - a curated Vector DB of ~900 timber articles, MediaStack news API with 12 German keywords, and Tavily specialist web search - then deduplicates and merges all results.",
   },
   {
     icon: GitBranch,
@@ -18,7 +18,7 @@ const FEATURES = [
     icon: ShieldCheck,
     title: "LLM-Based Verification",
     color: "#a855f7",
-    desc: "A dedicated FactVerifier (gpt-4.1) reads every retrieved article in full and selects only those genuinely relevant to the question — with a written reason for each selection.",
+    desc: "A dedicated FactVerifier (gpt-4o) reads every retrieved article in full and selects only those genuinely relevant to the question - with a written reason for each selection.",
   },
   {
     icon: Zap,
@@ -30,13 +30,13 @@ const FEATURES = [
     icon: DollarSign,
     title: "Cost & Token Tracking",
     color: "#e11d48",
-    desc: "Every query logs token counts, per-agent costs, and cumulative session spend visible in the sidebar and Analytics tab — so you always know what a question costs before scaling up.",
+    desc: "Every query logs token counts, per-agent costs, and cumulative session spend visible in the sidebar and Analytics tab - so you always know what a question costs before scaling up.",
   },
   {
     icon: BookOpen,
     title: "Live Reasoning Trace",
     color: "#60a5fa",
-    desc: "The Streaming Panel shows each pipeline step in real time — Planner strategy, Researcher tool calls, Ranker decisions, Verifier judgements — giving full transparency into how an answer was built.",
+    desc: "The Streaming Panel shows each pipeline step in real time - Planner strategy, Researcher tool calls, Ranker decisions, Verifier judgements - giving full transparency into how an answer was built.",
   },
 ]
 
@@ -51,13 +51,13 @@ export function HelpTab() {
           A market intelligence platform purpose-built for the <strong>German timber market</strong>, offering
           two query modes: a fast <strong>Baseline RAG</strong> for quick local lookups, and a full
           <strong> Agentic RAG</strong> pipeline for comprehensive, multi-source, verified answers.
-          Ask plain-language questions and get answers grounded in real news and industry sources —
+          Ask plain-language questions and get answers grounded in real news and industry sources -
           with full transparency into how every answer was produced.
         </p>
         <p className="text-sm leading-relaxed mb-4" style={{ color: "#1f2937" }}>
           The <strong>Baseline RAG</strong> mode queries a local <strong>Vector DB</strong> of ~900 curated timber articles
           using hybrid BM25 + vector search for fast offline retrieval (~3 s). The <strong>Agentic</strong> mode
-          goes further — its primary live source is <strong>MediaStack</strong>, a news API queried with 12 targeted
+          goes further - its primary live source is <strong>MediaStack</strong>, a news API queried with 12 targeted
           German timber keywords (Holzpreis, Baukosten, Zölle, etc.), complemented by <strong>Tavily</strong>
           specialist and open-web search for broader coverage. The backend is built with <strong>FastAPI</strong>,
           the frontend with <strong>Next.js</strong>, and the entire stack is containerised with <strong>Docker</strong>.
@@ -106,7 +106,7 @@ export function HelpTab() {
             ["Agentic mode",        "Use when you need comprehensive, current, multi-source evidence across MediaStack, Tavily, and the Vector DB (~30 s, ~$0.03)."],
             ["A/B Test tab",        "Run both modes on the same query to see the difference in depth, sources, and cost."],
             ["Export button",       "Download the full answer, sources, cost breakdown, and key facts after any query."],
-            ["Follow-up questions", "The pipeline remembers the last conversation turn — ask follow-ups naturally without repeating context."],
+            ["Follow-up questions", "The pipeline remembers the last conversation turn - ask follow-ups naturally without repeating context."],
           ].map(([label, tip]) => (
             <li key={label as string} className="flex gap-2 text-sm leading-relaxed">
               <span className="font-bold shrink-0" style={{ color: "#111827" }}>{label}:</span>
