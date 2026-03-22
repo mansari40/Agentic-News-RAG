@@ -496,10 +496,10 @@ export function AnalyticsTab() {
         </div>
       </div>
 
-      {/* Section 5 · Cost vs Confidence scatter */}
+      {/* Section 5 · Cost vs Confidence scatter (Agentic only) */}
       <div className="card p-4">
-        <h3 className="text-sm font-semibold text-text mb-1">Cost vs Confidence (per query)</h3>
-        <p className="text-xs text-text-3 mb-3">Each dot is one query — blue = Baseline, teal = Agentic</p>
+        <h3 className="text-sm font-semibold text-text mb-1">Cost vs Confidence — Agentic RAG</h3>
+        <p className="text-xs text-text-3 mb-3">Each dot is one agentic query · Baseline excluded (no confidence score)</p>
         <ResponsiveContainer width="100%" height={200}>
           <ScatterChart margin={{ top: 8, right: 24, left: 36, bottom: 36 }}>
             <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
@@ -512,12 +512,10 @@ export function AnalyticsTab() {
                 name === "Cost ($)" ? `$${Number(v).toFixed(5)}` : `${v}%`,
                 name
               ]} />
-            <Scatter data={timeline.filter(d => d.mode === "Baseline")} fill={B} name="Baseline" />
-            <Scatter data={timeline.filter(d => d.mode === "Agentic")}  fill={A} name="Agentic" />
+            <Scatter data={timeline.filter(d => d.mode === "Agentic")} fill={A} name="Agentic" />
           </ScatterChart>
         </ResponsiveContainer>
         <div className="flex items-center gap-5 mt-2 justify-center">
-          <Chip color={B} label="Baseline" />
           <Chip color={A} label="Agentic" />
         </div>
       </div>
