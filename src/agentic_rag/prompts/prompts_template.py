@@ -337,44 +337,47 @@ CONFIDENCE GUIDE:
 
 # --- Adaptive format instructions (injected based on query_type + confidence) ---
 
-SYNTHESIS_FORMAT_SIMPLE = """OUTPUT FORMAT — Factual / Direct query:
-**Direct Answer** — 1–3 sentences answering the question precisely using only what the sources state. Include the specific company, date, figure, or policy referenced in the question.
-**Source Basis** — One sentence naming which source(s) the answer comes from and when they were published.
-**Caveat** — Only include this line if the evidence is partial or the source does not fully cover the question. Otherwise omit it.
+SYNTHESIS_FORMAT_SIMPLE = """OUTPUT FORMAT:
+**Headline Finding** — One sentence directly answering the question using only what the sources state. Include the specific figure, date, company, or policy the question asks about.
 
-Rules for this format:
-- Do NOT add Market Context, Outlook, Key Developments, or any other sections.
-- If the answer fits in 2 sentences, keep it at 2 sentences. Do not pad.
+Then write 1–2 short prose paragraphs providing supporting detail and source basis. No section headers. No padding. If the answer is fully covered in 2 sentences after the headline, stop there.
+
+Rules:
+- No headers after Headline Finding.
+- Do not add context, outlook, or background the sources do not explicitly provide.
 - Length must match the evidence — not a template."""
 
-SYNTHESIS_FORMAT_TEMPORAL = """OUTPUT FORMAT — News / Latest developments query:
-**Latest Developments** — 2–4 paragraphs covering what happened, when, and who is involved. Include specific figures, dates, and company names directly from the sources.
-**Context** — Only include this section if the sources explicitly provide background that is necessary to understand the news. Skip entirely if not directly relevant.
-**Outlook** — ONLY include this section if the sources explicitly contain forward-looking statements, forecasts, or predictions. If no such content exists in the retrieved sources, omit this section completely — do not infer or generate an outlook.
+SYNTHESIS_FORMAT_TEMPORAL = """OUTPUT FORMAT:
+**Headline Finding** — One sentence capturing the single most important recent development.
 
-Rules for this format:
-- Do NOT add a Headline Finding section.
-- Do not write an Outlook if the sources only describe current or past events.
-- Each paragraph must cover a distinct development — no repetition."""
+Then write 2–4 connected prose paragraphs. No section headers. Each paragraph flows naturally from the previous, covering what happened, when, who is involved, and what it means — but only if the sources explicitly state it. Include specific figures, dates, and company names from the sources.
 
-SYNTHESIS_FORMAT_ANALYTICAL = """OUTPUT FORMAT — Analytical / Comparison / Multi-hop query:
-**Headline Finding** — 1–2 sentences summarising the single most important takeaway.
-**Key Developments** — 2–4 paragraphs covering main facts: price movements, supply/demand shifts, company or policy actions, regional differences. Quote specific figures and dates.
-**Market Context** — 1–2 paragraphs on broader drivers (e.g. bark beetle, construction slowdown, EUDR) — only if the sources explicitly contain this context. Skip if sources do not provide it.
-**Outlook** — ONLY include this section if sources explicitly contain forward-looking statements or forecasts. If no such content exists in the sources, omit this section completely — do not infer or generate an outlook.
+Rules:
+- No headers after Headline Finding (no "Latest Developments", "Context", "Outlook", etc.).
+- Do not write a forward-looking paragraph unless the sources explicitly contain forecasts or predictions.
+- Each paragraph covers a distinct development — no repetition.
+- If evidence is thin, write fewer paragraphs — do not pad."""
 
-Rules for this format:
-- Every section must be grounded in the retrieved sources. Do not generate content for a section the sources do not support.
-- Each paragraph must cover a distinct sub-topic — no repetition in different words."""
+SYNTHESIS_FORMAT_ANALYTICAL = """OUTPUT FORMAT:
+**Headline Finding** — One sentence summarising the single most important takeaway.
 
-SYNTHESIS_FORMAT_LOW_CONFIDENCE = """OUTPUT FORMAT — Limited evidence mode:
-**What Was Found** — State clearly and briefly exactly what the sources do say about the question. Be specific: name the source, the date, and the concrete fact it contains.
-**Evidence Gap** — One sentence explaining what specific information would be needed to fully answer the question.
+Then write 2–4 connected prose paragraphs. No section headers. The paragraphs should flow naturally, covering key facts and figures, supporting context, and implications — but only what the retrieved sources explicitly state. Include specific prices, percentages, dates, company names, and policy references wherever the sources provide them.
 
-Rules for this format:
-- Do NOT include Market Context, Outlook, Key Developments, or any section the thin evidence does not support.
-- Keep the total response short — length must match actual evidence, not a target word count.
-- Do not pad with generic background about the timber market."""
+Rules:
+- No headers after Headline Finding (no "Key Developments", "Market Context", "Outlook", etc.).
+- Do not write a forward-looking paragraph unless the sources explicitly contain forecasts or predictions.
+- Each paragraph covers a distinct sub-topic — no repetition.
+- If a section would have no source support, skip it entirely rather than writing a filler sentence."""
+
+SYNTHESIS_FORMAT_LOW_CONFIDENCE = """OUTPUT FORMAT:
+**Headline Finding** — One sentence stating the most relevant thing the available sources do say, however limited.
+
+Then write 1–2 short prose paragraphs covering exactly what the sources contain and what information is missing to fully answer the question. No section headers. Keep it brief and honest.
+
+Rules:
+- No headers after Headline Finding.
+- Do not pad with generic timber market background.
+- Length must match actual evidence — do not invent content to fill space."""
 
 # Base system prompt — format instructions are injected at runtime based on query_type and confidence
 SYNTHESIS_SYSTEM_PROMPT_BASE = """You are a senior German timber market analyst writing intelligence briefings for a timber company.
