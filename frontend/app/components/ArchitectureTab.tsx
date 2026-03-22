@@ -461,7 +461,7 @@ function AgenticSVG() {
       />
       <text x={185} y={Y_SCOPE - 9}
         textAnchor="middle" fontSize="8.5" fill="#ef4444" fontFamily="Inter, sans-serif">
-        Out of Scope
+        No
       </text>
 
       {/* Out of Scope box */}
@@ -475,7 +475,7 @@ function AgenticSVG() {
         className="arch-fl arch-d0" />
       <text x={CX + 10} y={(Y_SCOPE + Y_ORCH) / 2}
         textAnchor="start" fontSize="8.5" fill="#4ade80" fontFamily="Inter, sans-serif">
-        In Scope
+        Yes
       </text>
 
       {/* ── 2. Researcher ── */}
