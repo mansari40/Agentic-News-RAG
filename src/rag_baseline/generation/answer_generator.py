@@ -23,8 +23,8 @@ class AnswerGenerator:
         backoff_factor=2.0,
         exceptions=(OpenAIError, ConnectionError, TimeoutError),
     )
-    def _call_openai(self, prompt: str) -> str:
-        """Call OpenAI API with retry logic"""
+    def _call_openai(self, prompt: str) -> tuple[str, int, int]:
+        """Call OpenAI API with retry logic. Returns (answer, prompt_tokens, completion_tokens)."""
         response = self.client.chat.completions.create(
             model=self.model,
             temperature=0.2,
@@ -32,9 +32,16 @@ class AnswerGenerator:
         )
         content = response.choices[0].message.content
         result: str = content.strip() if content else ""
-        return result
+        usage = response.usage
+        prompt_tokens = usage.prompt_tokens if usage else 0
+        completion_tokens = usage.completion_tokens if usage else 0
+        return result, prompt_tokens, completion_tokens
 
-    def generate(self, question: str, chunks: list[RetrievalResult]) -> str:
+    # gpt-4o-mini pricing (per 1M tokens)
+    _COST_INPUT_PER_TOKEN = 0.15 / 1_000_000
+    _COST_OUTPUT_PER_TOKEN = 0.60 / 1_000_000
+
+    def generate(self, question: str, chunks: list[RetrievalResult]) -> tuple[str, int, float]:
         """
         Generate answer with error handling and fallback.
 
@@ -43,10 +50,10 @@ class AnswerGenerator:
             chunks: Retrieved context chunks
 
         Returns:
-            Generated answer or fallback message
+            (answer, total_tokens, cost_usd)
         """
         if not chunks:
-            return "No relevant information found in the timber market news database."
+            return "No relevant information found in the timber market news database.", 0, 0.0
 
         context = self._build_context(chunks)
 
@@ -68,14 +75,21 @@ Question:
 Answer:"""
 
         try:
-            answer: str = self._call_openai(prompt)
-            return answer
+            answer, prompt_tokens, completion_tokens = self._call_openai(prompt)
+            total_tokens = prompt_tokens + completion_tokens
+            cost_usd = (
+                prompt_tokens * self._COST_INPUT_PER_TOKEN
+                + completion_tokens * self._COST_OUTPUT_PER_TOKEN
+            )
+            return answer, total_tokens, round(cost_usd, 8)
         except GenerationError as e:
             logger.error(f"Answer generation failed: {e}")
             return (
                 "I'm experiencing technical difficulties generating an answer. "
-                "Please try again in a moment."
+                "Please try again in a moment.",
+                0,
+                0.0,
             )
         except Exception as e:
             logger.error(f"Unexpected error in answer generation: {e}")
-            return "An unexpected error occurred."
+            return "An unexpected error occurred.", 0, 0.0
