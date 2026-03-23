@@ -64,7 +64,7 @@ class AgenticRAGSettings(BaseSettings):
 
     # Token Limits
     max_synthesis_tokens: int = 1200
-    max_content_chars_per_source: int = 600
+    max_content_chars_per_source: int = 1000
 
     # Token prices used for cost tracking
     openai_input_cost_per_token: float = 0.00000015  # gpt-4o-mini input
