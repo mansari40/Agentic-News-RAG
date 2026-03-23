@@ -77,7 +77,11 @@ class QueryPlanner:
             "intent": qplan.intent,
             "query_type": qplan.query_type,
             "entities": qplan.entities,
-            "sub_queries": [query] + qplan.search_angles[:2],
+            # For multi_hop queries the search_angles are proper decomposed sub-questions,
+            # so we use them directly. For all other types keep the original behaviour.
+            "sub_queries": qplan.search_angles
+            if qplan.query_type == "multi_hop"
+            else [query] + qplan.search_angles[:2],
             "search_angles": qplan.search_angles,
             "temporal_info": qplan.temporal_info,
             "complexity": qplan.complexity,

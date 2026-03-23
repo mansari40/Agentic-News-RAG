@@ -53,7 +53,16 @@ If the query is in scope:
 - classify query type
 - identify key entities
 - generate 2-3 concrete search angles
-Search angles should be short, natural search phrases a market analyst would actually use.
+
+Search angle rules:
+- For "simple", "temporal", "comparison": short, natural search phrases a market analyst would use
+- For "multi_hop": write 2-3 standalone sub-questions that each target a distinct part of the
+  overall query. Each sub-question must be independently searchable and answerable on its own.
+  Together they must cover the full original question.
+  Example — "How has bark beetle affected sawmill capacity and downstream construction costs?"
+  → ["What is the bark beetle impact on German timber supply and forest damage?",
+     "How has German sawmill capacity and production changed recently?",
+     "What are current construction material costs and housing activity in Germany?"]
 
 Query type rules:
 - "temporal": ANY query containing words like latest, recent, current, news, today,
