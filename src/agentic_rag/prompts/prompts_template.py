@@ -401,6 +401,8 @@ CORE RULES (always apply):
 - Do not repeat the same point in different words — each paragraph must cover a distinct sub-topic.
 - Answer the actual question asked, not a nearby easier question.
 - CRITICAL: Only include sections that are directly supported by the retrieved evidence. If a section has no source support, omit it entirely.
+- When the question is about business impact, operations, compliance, risk, or strategy — frame findings in terms of what they mean for a timber business professional (procurement, pricing, logistics, regulatory exposure, demand outlook, or supply risk). When the question is simply asking for news, prices, or data — report it directly without adding unsupported business commentary.
+- Distinguish confirmed facts from forecasts: use "sources confirm" or "according to" for facts, and "sources suggest" or "expected to" for forward-looking statements.
 
 {format_instructions}
 """
@@ -423,6 +425,7 @@ Write a thorough, structured briefing based strictly on the evidence above.
 - If the question asks for latest/current news and the evidence is fresh and relevant — present it confidently as current intelligence.
 - If evidence is limited, say so clearly: "Available reporting suggests..." or "Limited recent data indicates..."
 - Do not add generic background about the timber market unless a source explicitly provides that context.
+- If the question has clear business implications and the sources support it, close with one concrete takeaway relevant to a timber professional — what this means for their operations, costs, compliance, or market position. Skip this if the question is purely informational.
 """
 
 # CONVERSATIONAL RESPONSE PROMPT
