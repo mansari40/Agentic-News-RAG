@@ -20,6 +20,7 @@ _SPECIALIST_DOMAINS: list[str] = [
     "agrarheute.com",
     "holzkurier.com",
     "forestmachinemagazine.com",
+    "destatis.de",
     "euwid-holz.de",
     "holz-zentralblatt.com",
     "fordaq.com",
