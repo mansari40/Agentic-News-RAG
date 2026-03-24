@@ -410,6 +410,8 @@ async def query_agentic_stream(request: QueryRequest) -> StreamingResponse:
                         initial_state["allowed_tools"] = request.allowed_tools
                     if request.date_from:
                         initial_state["cutoff_date_override"] = request.date_from
+                    if request.date_to:
+                        initial_state["date_to_override"] = request.date_to
 
                     prev_step_count = 0
                     last_state: dict[str, Any] = {}
