@@ -135,6 +135,7 @@ class AgenticState(TypedDict):
     # Optional per-request overrides from the frontend
     allowed_tools: list[str] | None
     cutoff_date_override: str | None
+    date_to_override: str | None
 
     # Refinement loop state (synthesizer flags weak answers, researcher retries)
     needs_refinement: bool
