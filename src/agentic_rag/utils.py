@@ -5,6 +5,7 @@ Small helper functions shared across the pipeline.
 from __future__ import annotations
 
 from datetime import UTC, datetime
+from email.utils import parsedate_to_datetime as _parse_rfc2822
 from typing import Any
 
 import structlog
@@ -13,7 +14,7 @@ logger = structlog.get_logger(__name__)
 
 
 def strip_non_ascii(text: str) -> str:
-    """Strip non-ASCII characters — Tavily occasionally returns garbled bytes."""
+    """Strip non-ASCII characters for Tavily"""
     return text.encode("ascii", errors="ignore").decode("ascii").strip()
 
 
@@ -29,6 +30,11 @@ def parse_date(raw: str | None) -> datetime | None:
     if not raw:
         return None
     s = raw.strip()
+
+    try:
+        return _parse_rfc2822(s)
+    except Exception:
+        pass
     if s.endswith("Z"):
         s = s[:-1] + "+00:00"
     try:
@@ -106,7 +112,7 @@ _SOCIAL_PREFIXES = ("hi ", "hello ", "hey ", "thanks ", "bye ")
 
 
 def is_temporal_query(query: str) -> bool:
-    """Returns True if the query is asking for current or recent information (skip cache)."""
+    """Returns True if the query is asking for current or recent information"""
     q = query.lower()
     return any(kw in q for kw in _TEMPORAL_BYPASS_KEYWORDS)
 
