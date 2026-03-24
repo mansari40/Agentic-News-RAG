@@ -18,11 +18,11 @@ _SPECIALIST_DOMAINS: list[str] = [
     "globalwood.org",
     "timber-online.net",
     "agrarheute.com",
+    "gdholz.de",
     "holzkurier.com",
     "forestmachinemagazine.com",
-    "destatis.de",
+    "holz-zentralblatt.de",
     "euwid-holz.de",
-    "holz-zentralblatt.com",
     "fordaq.com",
 ]
 
