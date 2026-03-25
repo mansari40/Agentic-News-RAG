@@ -166,6 +166,9 @@ RESEARCHER_TOOL_INSTRUCTIONS_FULL = """You have access to four retrieval tools:
 
 - search_tavily_specialist: specialist timber domains (timber-online.net, holzkurier.com,
   euwid-holz.de, etc). Best for: current prices, market data, industry reports.
+  Query language must match the site: use English for globalwood.org, timber-online.net,
+  forestmachinemagazine.com, fordaq.com — use German for euwid-holz.de, holzkurier.com,
+  agrarheute.com, gdholz.de, holz-zentralblatt.de.
 - search_mediastack: German news API. Best for: recent German-language news,
   domestic construction sector, regulatory and housing news.
 - search_tavily_web: open web search. Best for: broader coverage, additional angles,
@@ -187,7 +190,9 @@ RESEARCHER_TOOL_INSTRUCTIONS_RESTRICTED = """You have access to the following re
 
 RULES FOR RESTRICTED MODE:
 - Call each available tool AT MOST ONCE per unique query.
-- If a tool returns weak results (< 3 new articles), call it again with a DIFFERENT German-language query.
+- If a tool returns weak results (< 3 new articles), call it again with a DIFFERENT query.
+  Use German for German-language sources (euwid-holz.de, agrarheute.com, gdholz.de, holzkurier.com, holz-zentralblatt.de).
+  Use English for English-language sources (globalwood.org, timber-online.net, forestmachinemagazine.com, fordaq.com).
 - Do NOT call the same tool with the same query a second time — it returns identical results.
 - Stop only once you have exhausted useful query variations."""
 
@@ -397,11 +402,11 @@ CORE RULES (always apply):
 - Use only facts from the provided sources. Never invent data, prices, or events.
 - Write in clear English, translating German source content naturally.
 - Always extract: specific prices, percentage changes, dates, company names, policy names, volume figures — if present in sources.
-- Extract a unique insight from every source that adds something new — do not leave a source unused if it contains relevant information not yet covered.
+- Extract a unique insight from every source that directly answers or supports the question — skip any source whose content does not directly relate to what was asked, even if it contains interesting data.
 - Do not repeat the same point in different words — each paragraph must cover a distinct sub-topic.
 - Answer the actual question asked, not a nearby easier question.
 - CRITICAL: Only include sections that are directly supported by the retrieved evidence. If a section has no source support, omit it entirely.
-- When the question is about business impact, operations, compliance, risk, or strategy — frame findings in terms of what they mean for a timber business professional (procurement, pricing, logistics, regulatory exposure, demand outlook, or supply risk). When the question is simply asking for news, prices, or data — report it directly without adding unsupported business commentary.
+- When the question is about business impact, operations, compliance, risk, or strategy — frame findings in terms of the most relevant professional consequence that directly follows from the specific evidence retrieved. When the question is simply asking for news, prices, or data — report it directly without adding unsupported business commentary.
 - Distinguish confirmed facts from forecasts: use "sources confirm" or "according to" for facts, and "sources suggest" or "expected to" for forward-looking statements.
 
 {format_instructions}
@@ -425,7 +430,8 @@ Write a thorough, structured briefing based strictly on the evidence above.
 - If the question asks for latest/current news and the evidence is fresh and relevant — present it confidently as current intelligence.
 - If evidence is limited, say so clearly: "Available reporting suggests..." or "Limited recent data indicates..."
 - Do not add generic background about the timber market unless a source explicitly provides that context.
-- If the question has clear business implications and the sources support it, close with one concrete takeaway relevant to a timber professional — what this means for their operations, costs, compliance, or market position. Skip this if the question is purely informational.
+- If the sources support it, close with what specific consequence this evidence has for a timber professional acting on it today. Let the evidence lead — do not force a category. Skip this if the question is purely informational or the sources do not support a specific consequence.
+- When stating a professional consequence, lead directly with the specific fact, price, date, or event — never open with meta-commentary that frames the evidence (e.g. "this situation underscores", "these developments highlight", "professionals must", "companies should be aware", "it is critical that"). State the consequence as a direct action or implication, not as a reflection on what the evidence means.
 """
 
 # CONVERSATIONAL RESPONSE PROMPT
