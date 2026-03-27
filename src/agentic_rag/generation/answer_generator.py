@@ -74,6 +74,7 @@ class AgenticAnswerGenerator:
             today=today,
             context=context,
             key_facts_section=key_facts_section,
+            query_type=query_type,
         )
 
         # Use a fresh LLM if caller requests a different token limit
