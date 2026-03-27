@@ -26,6 +26,11 @@ _SPECIALIST_DOMAINS: list[str] = [
     "fordaq.com",
 ]
 
+# Domains that index in English — use en_query when provided
+_ENGLISH_SPECIALIST_DOMAINS: frozenset[str] = frozenset(
+    ["globalwood.org", "timber-online.net", "forestmachinemagazine.com", "fordaq.com"]
+)
+
 # Sites that require a subscription — Tavily can only retrieve the headline and
 # teaser visible before the login wall. Accepted as headline-only signals.
 _PAYWALL_DOMAINS: frozenset[str] = frozenset(
@@ -36,6 +41,22 @@ _PAYWALL_DOMAINS: frozenset[str] = frozenset(
         "holz-zentralblatt.de",
     ]
 )
+
+
+def _year_in_url_is_too_old(url: str, min_date: datetime) -> bool:
+    """
+    Returns True if the URL path contains a 4-digit year that is older than min_date.
+    Catches static files like '2023-02-EUWID-Holzspecial.pdf' or '/news/2022/article.html'
+    where Tavily returns no published_date but the URL encodes the age.
+    Only fires when a year is unambiguously present (e.g. /2023/, -2023-, _2023_).
+    """
+    import re
+
+    for match in re.finditer(r"(?<!\d)(\d{4})(?!\d)", url):
+        year = int(match.group(1))
+        if 2000 <= year < min_date.year:
+            return True
+    return False
 
 
 def _is_too_old(result: dict[str, Any], min_date: datetime, specialist_only: bool = False) -> bool:
@@ -50,8 +71,11 @@ def _is_too_old(result: dict[str, Any], min_date: datetime, specialist_only: boo
     pub = parse_date(result.get("published_date"))
     if pub is None:
         if specialist_only:
-            # Specialist search: only keep undated from trusted specialist domains
+            # Specialist search: only keep undated from trusted specialist domains,
+            # but also reject if the URL itself encodes an older year (e.g. static PDFs).
             url: str = result.get("url") or ""
+            if _year_in_url_is_too_old(url, min_date):
+                return True
             return not any(d in url for d in _SPECIALIST_DOMAINS)
         else:
             # Open-web search: allow undated (verifier LLM judges recency from content)
@@ -109,6 +133,7 @@ class TavilySearchTool:
         max_results: int | None = None,
         search_angles: list[str] | None = None,
         specialist_only: bool = False,
+        en_query: str | None = None,
     ) -> list[RetrievedSource]:
         if not self.client:
             return []
@@ -116,7 +141,10 @@ class TavilySearchTool:
         max_results = max_results or agentic_settings.tavily_max_results
         per_run = 2 if specialist_only else max(max_results // 2, 5)
         enriched = with_year(query)
-        runs = self._build_runs(enriched, search_angles or [], specialist_only=specialist_only)
+        enriched_en = with_year(en_query) if en_query else None
+        runs = self._build_runs(
+            enriched, search_angles or [], specialist_only=specialist_only, en_query=enriched_en
+        )
 
         seen_urls: set[str] = set()
         all_results: list[RetrievedSource] = []
@@ -195,10 +223,15 @@ class TavilySearchTool:
         query: str,
         search_angles: list[str],
         specialist_only: bool = False,
+        en_query: str | None = None,
     ) -> list[tuple[str, str, list[str] | None]]:
         if specialist_only:
-            return [(f"specialist-{domain}", query, [domain]) for domain in _SPECIALIST_DOMAINS]
-        runs: list[tuple[str, str, list[str] | None]] = [
+            runs: list[tuple[str, str, list[str] | None]] = []
+            for domain in _SPECIALIST_DOMAINS:
+                q = en_query if (en_query and domain in _ENGLISH_SPECIALIST_DOMAINS) else query
+                runs.append((f"specialist-{domain}", q, [domain]))
+            return runs
+        runs = [
             ("open-web", query, None),
         ]
         for i, angle in enumerate(search_angles[:2], start=1):

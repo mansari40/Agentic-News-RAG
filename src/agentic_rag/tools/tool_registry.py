@@ -80,15 +80,18 @@ class ToolRegistry:
             summary=f"Baseline: {len(dicts)} chunks retrieved for '{query[:60]}'",
         )
 
-    def _search_tavily_specialist(self, query: str) -> ToolResult:
-        results = self.tavily.search(query, search_angles=[], specialist_only=True)
+    def _search_tavily_specialist(self, query: str, en_query: str | None = None) -> ToolResult:
+        results = self.tavily.search(
+            query, search_angles=[], specialist_only=True, en_query=en_query
+        )
         dicts = [r.model_dump() for r in results]
+        label = f"'{query[:40]}' / '{en_query[:40]}'" if en_query else f"'{query[:60]}'"
         return ToolResult(
             tool="search_tavily_specialist",
             success=True,
             data=dicts,
             count=len(dicts),
-            summary=f"Tavily specialist: {len(dicts)} articles for '{query[:60]}'",
+            summary=f"Tavily specialist: {len(dicts)} articles for {label}",
         )
 
     def _search_tavily_web(self, query: str, search_angles: list[str] | None = None) -> ToolResult:
@@ -146,15 +149,29 @@ class ToolRegistry:
                     "name": "search_tavily_specialist",
                     "description": (
                         "Search dedicated timber industry sites (timber-online.net,"
-                        " holzkurier.com, euwid-holz.de, etc.)."
+                        " holzkurier.com, euwid-holz.de, agrarheute.com, globalwood.org, etc.)."
                         " Best starting point for current German timber market news."
+                        " Pass both a German query and an English en_query to cover all domains."
                     ),
                     "parameters": {
                         "type": "object",
                         "properties": {
                             "query": {
                                 "type": "string",
-                                "description": "The search query — include year for currency",
+                                "description": (
+                                    "German-language query — used for German specialist domains"
+                                    " (agrarheute.com, gdholz.de, holzkurier.com,"
+                                    " euwid-holz.de, holz-zentralblatt.de)"
+                                ),
+                            },
+                            "en_query": {
+                                "type": "string",
+                                "description": (
+                                    "English translation of the query — used for English"
+                                    " specialist domains (globalwood.org, timber-online.net,"
+                                    " forestmachinemagazine.com, fordaq.com)."
+                                    " Always provide this alongside query."
+                                ),
                             },
                         },
                         "required": ["query"],
