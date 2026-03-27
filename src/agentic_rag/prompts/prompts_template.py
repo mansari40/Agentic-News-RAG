@@ -304,6 +304,13 @@ REJECT an article if it:
   German forestry") with no current market data, prices, or recent developments
 - Was published before {cutoff_date}
 
+COMPARISON QUERIES:
+If the query asks to compare two things — methods, time periods, regions, products, approaches,
+or technologies — you MUST select sources that cover BOTH sides of the comparison.
+Do not finalise a selection that covers only one side; an unbalanced selection makes comparison
+impossible for the synthesizer. If only one side has strong sources, explicitly note the gap
+in your reasoning and accept borderline sources from the weaker side rather than leaving it empty.
+
 MINIMUM SOURCES RULE:
 Aim to select at least 5 sources if the available articles allow it.
 Before finalising your selection, check: if you have selected fewer than 5, re-examine every

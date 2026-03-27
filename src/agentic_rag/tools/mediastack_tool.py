@@ -45,6 +45,8 @@ _KEYWORD_GROUPS: dict[str, list[str]] = {
     ],
     # Wider economic context
     "context": ["Immobilienmarkt", "Heizungsgesetz"],
+    # Price outlook and forecasts — triggered for forward-looking queries
+    "outlook": ["Preisentwicklung", "Holzpreisprognose", "Marktausblick", "Konjunktur"],
     # English fallback — only "Mass timber" works well here.
     "fallback_en": ["Mass timber"],
 }
@@ -268,6 +270,27 @@ class MediaStackAPITool:
             specific.extend(_KEYWORD_GROUPS["trade"])
         if any(t in q for t in ["pellet", "energy", "biomass", "biomasse", "heating", "heizung"]):
             specific.extend(_KEYWORD_GROUPS["energy"])
+        if any(
+            t in q
+            for t in [
+                "outlook",
+                "forecast",
+                "expect",
+                "decline",
+                "consequence",
+                "impact",
+                "affect",
+                "effect",
+                "result",
+                "prognose",
+                "ausblick",
+                "entwicklung",
+                "rückgang",
+                "erwarten",
+                "einfluss",
+            ]
+        ):
+            specific.extend(_KEYWORD_GROUPS["outlook"])
 
         # Always include price, species, and market terms — they're relevant to any timber query
         specific.extend(_KEYWORD_GROUPS["price"])

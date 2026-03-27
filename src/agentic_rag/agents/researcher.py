@@ -139,6 +139,22 @@ class ResearchAgent:
             refinement_section=refinement_section,
         )
 
+        # Inject conversation context via str.replace — safe, no template placeholder needed
+        _conv_ctx_field = state.get("conversation_context") or {}
+        raw_conv_ctx = (
+            _conv_ctx_field.get("context_text", "")
+            if isinstance(_conv_ctx_field, dict)
+            else str(_conv_ctx_field)
+        ).strip()
+        if raw_conv_ctx:
+            truncated = raw_conv_ctx[:600] + ("…" if len(raw_conv_ctx) > 600 else "")
+            conv_block = (
+                "\nPRIOR CONVERSATION (use to focus searches on gaps, "
+                "avoid re-fetching known facts):\n"
+                f"{truncated}\n"
+            )
+            user_prompt = user_prompt.replace("\nToday's date:", f"{conv_block}\nToday's date:", 1)
+
         system_prompt = RESEARCHER_SYSTEM_PROMPT.format(
             tool_instructions=tool_instructions,
         )
