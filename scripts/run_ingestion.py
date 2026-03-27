@@ -14,7 +14,7 @@ if __name__ == "__main__":
         logger.info("=" * 60)
 
         pipeline = IngestionService()
-        pipeline.ingest()
+        pipeline.ingest(days_back=85)
 
         logger.info("=" * 60)
         logger.info("INGESTION COMPLETED SUCCESSFULLY")

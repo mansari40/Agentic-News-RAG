@@ -13,11 +13,11 @@ class IngestionService:
         self.chunker = TextChunker()
         self.repository = PostgresRepository()
 
-    def ingest(self) -> None:
+    def ingest(self, days_back: int = 30) -> None:
         logger.info("Starting article ingestion")
 
         try:
-            articles = self.client.fetch_latest_articles()
+            articles = self.client.fetch_latest_articles(days_back=days_back)
             logger.info(f"Fetched {len(articles)} articles from MediaStack")
 
             if not articles:
