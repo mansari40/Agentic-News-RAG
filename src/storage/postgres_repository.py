@@ -9,7 +9,16 @@ class PostgresRepository:
         self.connection = psycopg2.connect(settings.postgres_url)
         self.connection.autocommit = True
 
+    def _ensure_connection(self) -> None:
+        """Reconnect if the Neon serverless connection was dropped."""
+        try:
+            self.connection.cursor().execute("SELECT 1")
+        except Exception:
+            self.connection = psycopg2.connect(settings.postgres_url)
+            self.connection.autocommit = True
+
     def insert_article(self, article: NewsArticle) -> None:
+        self._ensure_connection()
         try:
             with self.connection.cursor() as cursor:
                 cursor.execute(
@@ -44,6 +53,7 @@ class PostgresRepository:
             raise StorageLayerError(f"Failed to insert article {article.article_id}") from error
 
     def insert_chunks(self, chunks: list[TextChunk]) -> None:
+        self._ensure_connection()
         try:
             with self.connection.cursor() as cursor:
                 for chunk in chunks:
@@ -80,6 +90,7 @@ class PostgresRepository:
         if not chunk_ids:
             return []
 
+        self._ensure_connection()
         try:
             with self.connection.cursor() as cursor:
                 cursor.execute(
@@ -122,6 +133,7 @@ class PostgresRepository:
             raise StorageLayerError("Failed to fetch chunks with metadata") from error
 
     def get_all_chunks(self) -> list[TextChunk]:
+        self._ensure_connection()
         try:
             with self.connection.cursor() as cursor:
                 cursor.execute(
