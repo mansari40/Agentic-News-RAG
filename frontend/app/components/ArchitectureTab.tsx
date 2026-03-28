@@ -11,7 +11,7 @@ const BASELINE_STEPS = [
   { label: "Embedder", sub: "text-embedding-3-small", color: "#1e40af", border: "#3b82f6" },
   { label: "Vector DB", sub: "hybrid BM25 + vector", color: "#052e16", border: "#4ade80" },
   { label: "Top-K Select", sub: "k = 1–10", color: "#1e40af", border: "#3b82f6" },
-  { label: "LLM Generate", sub: "gpt-4o-mini", color: "#2d1657", border: "#a855f7" },
+  { label: "LLM Generate", sub: "gpt-4.1", color: "#2d1657", border: "#a855f7" },
   { label: "Answer", color: "#450a0a", border: "#ef4444" },
 ]
 
@@ -588,7 +588,7 @@ function AgenticSVG() {
       {/* ── 2. Researcher ── */}
       <NodeRect cx={CX} cy={Y_ORCH} w={NODE_W + 40} h={NODE_H}
         fill="url(#ag-lgG)" stroke="#4ade80" filter="url(#ag-gG)"
-        label="② Researcher" sub="gpt-4o · ReAct · max 6 steps" />
+        label="② Researcher" sub="gpt-4.1-mini · ReAct · max 6 steps" />
 
       {/* fan-out: researcher → bus */}
       <line x1={CX} y1={Y_ORCH + NODE_H / 2} x2={CX} y2={Y_BUS_TOP}
@@ -659,7 +659,7 @@ function AgenticSVG() {
       {/* ── 5. FactVerifier ── */}
       <NodeRect cx={CX} cy={Y_VERIFIER} w={NODE_W + 30} h={NODE_H}
         fill="url(#ag-lgGreen)" stroke="#4ade80" filter="url(#ag-gG)"
-        label="⑤ Verifier" sub="gpt-4o · reads 20 sources" />
+        label="⑤ Verifier" sub="gpt-4.1-mini · reads 20 sources" />
 
       {/* verifier → synthesizer */}
       <line x1={CX} y1={Y_VERIFIER + NODE_H / 2} x2={CX} y2={Y_SYNTH - NODE_H / 2}
@@ -669,7 +669,7 @@ function AgenticSVG() {
       {/* ── 6. AnswerSynthesizer ── */}
       <NodeRect cx={CX} cy={Y_SYNTH} w={NODE_W + 30} h={NODE_H}
         fill="url(#ag-lgI)" stroke="#818cf8" filter="url(#ag-gI)"
-        label="⑥ Synthesizer" sub="gpt-4o-mini · final answer" />
+        label="⑥ Synthesizer" sub="gpt-4.1 · final answer" />
 
       {/* synthesizer → answer */}
       <line x1={CX} y1={Y_SYNTH + NODE_H / 2} x2={CX} y2={Y_ANSWER - NODE_H / 2}
