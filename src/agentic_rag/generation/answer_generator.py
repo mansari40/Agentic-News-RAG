@@ -95,8 +95,8 @@ class AgenticAnswerGenerator:
             )
             t_in, t_out, cost = extract_token_cost(
                 response,
-                agentic_settings.openai_input_cost_per_token,
-                agentic_settings.openai_output_cost_per_token,
+                agentic_settings.synthesizer_input_cost_per_token,
+                agentic_settings.synthesizer_output_cost_per_token,
             )
             self.last_call_tokens = t_in + t_out
             self.last_call_cost = cost

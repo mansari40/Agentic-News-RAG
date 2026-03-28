@@ -16,10 +16,10 @@ class AgenticRAGSettings(BaseSettings):
     langchain_api_key: str | None = None
 
     # Model Config
-    chat_model_name: str = "gpt-4o-mini"
-    verifier_model_name: str = "gpt-4o"
-    researcher_model_name: str = "gpt-4o"
-    ranker_model_name: str = "gpt-4o-mini"
+    chat_model_name: str = "gpt-4.1"  # Synthesizer
+    verifier_model_name: str = "gpt-4.1-mini"  # Verifier
+    researcher_model_name: str = "gpt-4.1-mini"  # Researcher (ReAct loop)
+    ranker_model_name: str = "gpt-4o-mini"  # Ranker
     embedding_model_name: str = "text-embedding-3-small"
     conversational_temperature: float = 0.7
     synthesis_temperature: float = 0.2
@@ -66,13 +66,18 @@ class AgenticRAGSettings(BaseSettings):
     max_synthesis_tokens: int = 1200
     max_content_chars_per_source: int = 1000
 
-    # Token prices used for cost tracking
-    openai_input_cost_per_token: float = 0.00000015  # gpt-4o-mini input
-    openai_output_cost_per_token: float = 0.0000006  # gpt-4o-mini output
-    researcher_input_cost_per_token: float = 0.0000025  # gpt-4o input
-    researcher_output_cost_per_token: float = 0.000010  # gpt-4o output
-    verifier_input_cost_per_token: float = 0.0000025  # gpt-4o input
-    verifier_output_cost_per_token: float = 0.000010  # gpt-4o output
+    # Token prices used for cost tracking (per token, not per 1M)
+    # gpt-4o-mini  — $0.15/1M input,  $0.60/1M output
+    openai_input_cost_per_token: float = 0.00000015  # Ranker (gpt-4o-mini)
+    openai_output_cost_per_token: float = 0.0000006  # Ranker (gpt-4o-mini)
+    # gpt-4.1      — $2.00/1M input,  $8.00/1M output
+    synthesizer_input_cost_per_token: float = 0.000002  # Synthesizer (gpt-4.1)
+    synthesizer_output_cost_per_token: float = 0.000008  # Synthesizer (gpt-4.1)
+    # gpt-4.1-mini — $0.40/1M input,  $1.60/1M output
+    verifier_input_cost_per_token: float = 0.00000040  # Verifier (gpt-4.1-mini)
+    verifier_output_cost_per_token: float = 0.0000016  # Verifier (gpt-4.1-mini)
+    researcher_input_cost_per_token: float = 0.00000040  # Researcher (gpt-4.1-mini)
+    researcher_output_cost_per_token: float = 0.0000016  # Researcher (gpt-4.1-mini)
 
     log_level: str = "INFO"
 

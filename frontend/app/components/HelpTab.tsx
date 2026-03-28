@@ -18,13 +18,13 @@ const FEATURES = [
     icon: ShieldCheck,
     title: "LLM-Based Verification",
     color: "#a855f7",
-    desc: "A dedicated FactVerifier (gpt-4o) reads every retrieved article in full and selects only those genuinely relevant to the question - with a written reason for each selection.",
+    desc: "A dedicated FactVerifier (gpt-4.1-mini) reads every retrieved article in full and selects only those genuinely relevant to the question - with a written reason for each selection.",
   },
   {
     icon: Zap,
     title: "Baseline vs. Agentic",
     color: "#f59e0b",
-    desc: "Baseline RAG is a fast single-source mode (~3 s, ~$0.0001) using only the local Vector DB. Agentic mode runs the full multi-source pipeline (~30 s, ~$0.03). Compare them side-by-side in the A/B Test tab.",
+    desc: "Baseline RAG is a fast single-source mode (~3 s, ~$0.0001) using only the local Vector DB. Agentic mode runs the full multi-source pipeline (~30–70 s, ~$0.01–$0.03). Compare them side-by-side in the A/B Test tab.",
   },
   {
     icon: DollarSign,
@@ -96,6 +96,34 @@ export function HelpTab() {
         </div>
       </div>
 
+      {/* ── Model Configuration ── */}
+      <div className="card p-4">
+        <h2 className="text-sm font-bold uppercase tracking-wider mb-3"
+          style={{ color: "#111827" }}>Model Configuration</h2>
+        <div className="space-y-1.5">
+          {[
+            { agent: "Planner",     model: "gpt-4o-mini",  role: "Query classification",           input: "$0.15", output: "$0.60" },
+            { agent: "Researcher",  model: "gpt-4.1-mini", role: "ReAct tool-call loop",           input: "$0.40", output: "$1.60" },
+            { agent: "Ranker",      model: "gpt-4o-mini",  role: "Source scoring & selection",     input: "$0.15", output: "$0.60" },
+            { agent: "Verifier",    model: "gpt-4.1-mini", role: "Article accept / reject",        input: "$0.40", output: "$1.60" },
+            { agent: "Synthesizer", model: "gpt-4.1",      role: "Final answer generation",        input: "$2.00", output: "$8.00" },
+          ].map(({ agent, model, role, input, output }) => (
+            <div key={agent} className="flex items-center justify-between text-xs py-1.5 px-2 rounded"
+              style={{ background: "#f8fafc" }}>
+              <span className="font-semibold w-24" style={{ color: "#111827" }}>{agent}</span>
+              <span className="font-mono w-28" style={{ color: "#3b82f6" }}>{model}</span>
+              <span className="w-40 hidden sm:block" style={{ color: "#6b7280" }}>{role}</span>
+              <span className="text-right" style={{ color: "#6b7280" }}>
+                {input} / {output} per 1M
+              </span>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs mt-2" style={{ color: "#9ca3af" }}>
+          Prices per 1M tokens (input / output) from OpenAI official pricing.
+        </p>
+      </div>
+
       {/* ── Quick Tips ── */}
       <div className="card p-4">
         <h2 className="text-sm font-bold uppercase tracking-wider mb-3"
@@ -103,7 +131,7 @@ export function HelpTab() {
         <ul className="space-y-2.5">
           {[
             ["Baseline mode",       "Use for fast, simple lookups from the local Vector DB knowledge base (~3 s, ~$0.0001)."],
-            ["Agentic mode",        "Use when you need comprehensive, current, multi-source evidence across MediaStack, Tavily, and the Vector DB (~30 s, ~$0.03)."],
+            ["Agentic mode",        "Use when you need comprehensive, current, multi-source evidence across MediaStack, Tavily, and the Vector DB (~30–70 s, ~$0.01–$0.03 depending on query complexity)."],
             ["Research mode",       "Turn on to activate the Query Research Log in the Analytics tab to access logs of full queries, responses, and metrics for export and analysis."],
             ["A/B Test tab",        "Run both modes on the same query to see the difference in depth, sources, and cost."],
             ["Export button",       "Download the full answer, sources, cost breakdown, and key facts after any query."],
