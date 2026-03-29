@@ -94,7 +94,7 @@ export function StreamingPanel({
                     {TOOL_LABELS[ev.tool || ""] || ev.tool}
                   </span>
                   {ev.text && (
-                    <span className="text-xs text-text-3 truncate italic"> — {ev.text.slice(0, 60)}</span>
+                    <span className="text-xs text-text-3 truncate italic"> — {ev.text.slice(0, 120)}</span>
                   )}
                 </div>
               )}

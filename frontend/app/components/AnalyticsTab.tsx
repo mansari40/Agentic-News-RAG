@@ -218,7 +218,7 @@ export function AnalyticsTab({ researchMode }: { researchMode: boolean }) {
     const rows = costs.map(c =>
       `${c.timestamp},"${c.query}",${modeOf(c)},${c.cost_usd},${c.total_tokens},${c.llm_calls},${c.confidence},${c.response_time}`
     )
-    const blob = new Blob([[header, ...rows].join("\n")], { type: "text/csv" })
+    const blob = new Blob(["\uFEFF" + [header, ...rows].join("\n")], { type: "text/csv;charset=utf-8;" })
     const a = document.createElement("a")
     a.href = URL.createObjectURL(blob)
     a.download = `timber_analytics_${Date.now()}.csv`
@@ -537,22 +537,30 @@ export function AnalyticsTab({ researchMode }: { researchMode: boolean }) {
             <div className="flex gap-2">
               <button
                 onClick={() => {
-                  const header = "Date,Time,Query,Response,Mode,Cost ($),Tokens,LLM Calls,Confidence / Avg Similarity,Resp. Time (s)"
-                  const rows = researchLog.map(r =>
-                    [
+                  const MAX_CONTEXTS = 8
+                  const contextHeaders = Array.from({ length: MAX_CONTEXTS }, (_, i) => `context_${i + 1}`)
+                  const header = ["Date", "Time", "Query", "Response", "query_type", "Mode", "Cost ($)", "Tokens", "LLM Calls", "Confidence / Avg Similarity", "Resp. Time (s)", ...contextHeaders].join(",")
+                  const rows = researchLog.map(r => {
+                    const ctxCols = Array.from({ length: MAX_CONTEXTS }, (_, i) => {
+                      const text = (r.contexts ?? [])[i] ?? ""
+                      return `"${text.replace(/"/g, '""')}"`
+                    })
+                    return [
                       r.date,
                       r.time,
                       `"${r.query.replace(/"/g, '""')}"`,
                       `"${r.response.replace(/"/g, '""')}"`,
+                      r.query_type ?? "unknown",
                       r.mode,
                       r.cost_usd.toFixed(6),
                       r.total_tokens,
                       r.llm_calls,
                       r.confidence !== null ? (r.confidence * 100).toFixed(1) + "%" : r.avg_similarity?.toFixed(3) ?? "N/A",
                       r.response_time.toFixed(2),
+                      ...ctxCols,
                     ].join(",")
-                  )
-                  const blob = new Blob([[header, ...rows].join("\n")], { type: "text/csv" })
+                  })
+                  const blob = new Blob(["\uFEFF" + [header, ...rows].join("\n")], { type: "text/csv;charset=utf-8;" })
                   const a = document.createElement("a")
                   a.href = URL.createObjectURL(blob)
                   a.download = `timber_research_log_${Date.now()}.csv`
@@ -580,7 +588,7 @@ export function AnalyticsTab({ researchMode }: { researchMode: boolean }) {
               <table className="w-full text-xs">
                 <thead>
                   <tr className="bg-surface-2 border-b border-border">
-                    {["Date", "Time", "Query", "Response", "Mode", "Cost ($)", "Tokens", "LLM Calls", "Confidence / Avg Sim.", "Resp. Time"].map(h => (
+                    {["Date", "Time", "Query", "Response", "Query Type", "Mode", "Cost ($)", "Tokens", "LLM Calls", "Confidence / Avg Sim.", "Resp. Time"].map(h => (
                       <th key={h} className="px-3 py-2.5 text-left text-text-3 font-semibold whitespace-nowrap">{h}</th>
                     ))}
                   </tr>
@@ -598,6 +606,7 @@ export function AnalyticsTab({ researchMode }: { researchMode: boolean }) {
                           {r.response.split(" ").slice(0, 5).join(" ")}…
                         </span>
                       </td>
+                      <td className="px-3 py-2 font-mono text-text-3 whitespace-nowrap">{r.query_type ?? "—"}</td>
                       <td className="px-3 py-2">
                         <span className={`badge ${r.mode === "Agentic" ? "badge-green" : "badge-blue"}`}>{r.mode}</span>
                       </td>

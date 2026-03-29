@@ -134,6 +134,8 @@ export function ChatTab({
             time: now.toLocaleTimeString(),
             query: q,
             response: result.answer || "",
+            contexts: (result.sources || []).map((s: { content?: string }) => s.content || ""),
+            query_type: result.query_type || "simple",
             mode: "Baseline",
             cost_usd: result.cost_usd || 0,
             total_tokens: result.total_tokens || 0,
@@ -171,7 +173,7 @@ export function ChatTab({
         if (ev.type === "action") {
           setLiveReact(prev => [...prev, {
             id: `${Date.now()}-${Math.random()}`, type: "action",
-            tool: ev.tool, text: (ev.args as Record<string, string>)?.query
+            tool: ev.tool, text: (() => { const a = ev.args as Record<string, string>; return a?.en_query ? `${a.en_query} / ${a.query}` : (a?.query ?? "") })()
           }])
         }
         if (ev.type === "observation") {
@@ -245,6 +247,8 @@ export function ChatTab({
           time: now.toLocaleTimeString(),
           query: q,
           response: finalResult.answer || "",
+          contexts: (finalResult.sources || []).map((s: { content?: string }) => s.content || ""),
+          query_type: finalResult.query_type || "simple",
           mode: "Agentic",
           cost_usd: finalResult.cost_usd || 0,
           total_tokens: finalResult.total_tokens || 0,
