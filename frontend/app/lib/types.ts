@@ -66,6 +66,8 @@ export interface ResearchLogEntry {
   time: string
   query: string
   response: string
+  contexts: string[]               // verified source content texts (for RAGAS)
+  query_type: string               // simple | temporal | multi_hop | comparison
   mode: string
   cost_usd: number
   total_tokens: number
