@@ -154,24 +154,24 @@ Score each article from 0.00 to 1.00 using these weighted criteria:
     Does this article answer the specific question asked?
     A general timber article is not relevant unless it directly addresses the query.
 
-  Weight 25% — Germany specificity
+  Weight 35% — Germany specificity
     Is the evidence about the German market, German companies, or German regulation?
     EU-wide content scores partial credit only if it explicitly discusses Germany.
     Austrian, Swiss, Scandinavian, or North American content scores 0 on this axis
     unless it explicitly and specifically describes a direct impact on Germany.
 
-  Weight 20% — Concrete evidence quality
+  Weight 15% — Concrete evidence quality
     Does the article contain: prices, percentages, company names, policy names,
     volume figures, permit counts, or specific dates?
     Vague commentary ("experts expect conditions to tighten") scores near 0.
     Specific data ("Holzpreis fell 6.4% to €238/m³ in January 2026") scores 1.0.
 
-  Weight 20% — Recency
+  Weight 15% — Recency
     More recent = higher score. Within the cutoff window, articles from the past
     30 days score 1.0; articles 31–90 days old score 0.6; older score 0.3.
 
 SCORING FORMULA (for your internal calculation):
-  score = 0.35 × relevance + 0.25 × germany + 0.20 × evidence_quality + 0.20 × recency
+  score = 0.35 × relevance + 0.35 × germany + 0.15 × evidence_quality + 0.15 × recency
 
 STEP 4 — SELECT AND ENFORCE MINIMUM COUNT
 Select the top {top_n} scoring articles.
@@ -375,13 +375,13 @@ Sources used: {sources_count}
 
 A REFINEMENT PASS IS NEEDED if:
 - The answer explicitly says evidence is limited, thin, or unavailable
-- The confidence score is below 0.45
+- The confidence score is below 0.35
 - The answer fails to address the core question with specific facts (prices, dates, percentages, company names)
 - The answer says "couldn't find", "no relevant information", or "limited recent data"
 
 A REFINEMENT PASS IS NOT NEEDED if:
 - The answer contains specific facts, prices, dates, or concrete market data
-- The confidence score is 0.5 or above
+- The confidence score is 0.40 or above
 - The answer genuinely addresses what was asked
 - The evidence summary is substantive and relevant
 
@@ -404,71 +404,87 @@ A researcher has asked: "{query}"
 
 They retrieved the following {source_count} articles. Your job is to read each one and decide:
 1. Which articles actually help answer this question?
-2. What are the key facts? Extract 3-5 distinct facts — one per major sub-topic found across the selected articles. If available, each fact must contain a specific figure, date, name, percentage or policy reference. Do not list vague generalisations.
-3. How confident should we be in the answer overall?
+2. How confident should we be in the answer overall?
+
+APPLY THESE FILTERS IN ORDER — reject at the first failed check:
+
+FILTER 1 — DOMAIN GATE (check first, before anything else):
+The source must be primarily about timber, wood products, forestry, sawmills, wood-based
+construction, or a company/policy/event whose primary activity is in one of those sectors.
+Reject immediately if the primary subject is a different industry:
+- A machinery manufacturer reporting tariff impacts on its equipment orders → reject
+- A furniture retailer reporting cost pressures (unless explicitly about wood input costs) → reject
+- A general macroeconomic or stock-market report that mentions lumber only in passing → reject
+- A shipping or logistics company reporting supply chain disruptions unrelated to wood → reject
+
+FILTER 2 — GEOGRAPHY CHECK:
+If the query names a specific country, sources must discuss that country's market, companies,
+or policy. A source about another country's company, plant, or policy is not relevant unless
+it explicitly states the direct impact on the named country.
+- A Canadian plant expansion is not relevant to a question about German production capacity
+- A UK housing policy is not relevant to a question about German construction activity
+- Austrian or Swiss data scores 0 unless it explicitly discusses cross-border German impact
+Exception: EU-wide regulations (EUDR, etc.) apply to Germany and are accepted even if framed broadly.
+
+FILTER 3 — SUBJECT MATCH:
+After passing filters 1 and 2, ask: does this source provide useful evidence for the query?
+
+HARD reject (always reject regardless of source count):
+- Query names a specific regulation, company, or programme → source must name it explicitly
+- Query asks for specific price figures → source must contain actual price data
+
+SOFT reject (reject only if you already have 5+ accepted sources):
+- Source discusses the right German timber market but addresses a different causal driver than
+  the query asks about — useful as background context, acceptable when sources are scarce
+- Example: a query about storm event impacts → a bark-beetle supply shortage article is
+  soft-reject; keep it if fewer than 5 sources have been accepted, drop it if 5+ already accepted
+
+ACCEPT an article if it passes filters 1 and 2 AND:
+- Contains concrete, current facts: prices, percentages, company names, policy decisions, volume figures
+- Was published on or after {cutoff_date}
+
+REJECT an article if:
+- It fails filter 1 or filter 2
+- It fails a HARD subject match (named entity / price query with no figures)
+- It was published before {cutoff_date}
+- It tracks a global ETF, stock, or investor sentiment tool (iShares ETF, timber REIT, etc.)
+- It covers wood furniture retail, garden products, musical instruments, or tangential wood uses
+- It is a purely evergreen explainer with no current market data (e.g. "What is sawnwood?")
+- Its only price data is in non-European units (USD/MBF, CAD/m³) with no explicit German market impact stated
+
+COMPARISON QUERIES:
+If the query compares two things, you MUST select sources covering BOTH sides.
+Accept borderline sources from the weaker side rather than leaving one side empty.
+
+MINIMUM SOURCES RULE:
+You MUST select at least 5 sources if 5 or more pass filters 1 and 2.
+If you have fewer than 5 after applying the HARD subject filter, go back and accept the
+best soft-reject sources (filter 3 borderline) until you reach 5 or exhaust all candidates.
+Never accept a domain-wrong or country-wrong source just to reach 5 — filters 1 and 2 are
+always hard gates. Filter 3 soft-rejects are acceptable when needed to reach the minimum.
+
+CONFIDENCE GUIDE — read this before writing overall_confidence:
+Adjust thresholds by query type. Multi_hop and comparison queries inherently need more sources
+to cover all angles, so the same source count justifies lower confidence than for simple queries.
+
+  For simple/temporal queries:
+  - 0.85–1.0: 3+ fresh German sources with specific figures directly answering the query
+  - 0.70–0.85: 2 solid German sources with concrete data but one angle missing
+  - 0.50–0.70: 1 strong source, or relevant sources lacking specific figures
+  - 0.30–0.50: Sources only partially address the query — mostly background, no current data
+  - 0.10–0.30: Only 1 weak or tangentially relevant source
+  - 0.00–0.10: No useful German timber market sources found
+
+  For multi_hop/comparison queries (same scale but harder to reach top bands):
+  - 0.85–1.0: 4+ fresh German sources covering ALL required angles with specific figures
+  - 0.70–0.85: 3 solid sources covering most angles with concrete data
+  - 0.50–0.70: 2 relevant sources but missing one major angle of the query
+  - 0.30–0.50: Sources cover only one side of a multi-part question
+  - 0.10–0.30: Only tangentially relevant sources; core question unanswered
+  - 0.00–0.10: No useful sources found
 
 ARTICLES:
 {sources}
-
-READ EACH ARTICLE AND REASON:
-
-For each article, ask yourself:
-- Does this article contain information that directly helps answer the question?
-- Is it recent enough? (We only use evidence from {cutoff_date} onward)
-- Is it specifically about the German timber market, or something else?
-- Does it contain concrete facts (prices, percentages, company actions, policy decisions)
-  or is it vague background filler?
-
-ACCEPT an article if it:
-- Reports on the German timber market, German forestry, or German wood products industry
-- Covers factors that directly drive German timber demand or supply:
-  German housing permits, German construction activity, German sawmill output,
-  German forest policy, EU regulations (EUDR etc.) that apply to German companies
-- Contains concrete, current facts: prices, percentages, company names, policy decisions
-
-REJECT an article if it:
-- Is primarily about a country other than Germany — Swiss parliament (Nationalrat)
-  decisions, Austrian housing policy, Canadian forestry, US lumber markets are NOT
-  relevant unless they explicitly and specifically discuss direct impact on Germany
-- Tracks a global/international ETF, fund, or stock (e.g. "iShares Global Timber &
-  Forestry ETF", "Weyerhaeuser", "timber REIT") — investor sentiment tools are not
-  German timber market news
-- Covers wood furniture retail, garden products, musical instruments, cruise ships,
-  or any tangential use of wood unrelated to the German timber trade
-- Is a purely evergreen background explainer (e.g. "What is sawnwood?", "History of
-  German forestry") with no current market data, prices, or recent developments
-- Was published before {cutoff_date}
-- Reports price or market data exclusively in non-German units (USD/MBF, USD per thousand
-  board feet, CAD/m³, GBP) with no explicit statement of direct impact on the German market.
-  German timber prices are quoted in €/Fm (Euro per Festmeter) or €/m³. An article whose
-  only price data is in USD/MBF is reporting on the North American market, not Germany.
-  Accept only if the article explicitly states how that foreign price movement affects
-  German import costs, German sawmill margins, or German buyer decisions.
-- Matches query keywords on the surface but whose PRIMARY SUBJECT is unrelated to
-  timber, wood, sawmills, forestry, construction, or timber/wood regulation.
-  Before accepting, ask: "Is the core topic of this article timber, wood products,
-  sawmills, forestry, construction activity, or regulation that directly governs
-  these sectors?" If the honest answer is no — reject it, regardless of keyword overlap.
-  Examples to reject: a general IT/digital procurement trends article that mentions
-  "supply chain" and "ESG"; a financial news article that mentions "Holzpreis" in passing
-  but is primarily a stock market report; a general business magazine piece on sourcing
-  trends across all industries that is not specific to timber or construction.
-
-COMPARISON QUERIES:
-If the query asks to compare two things — methods, time periods, regions, products, approaches,
-or technologies — you MUST select sources that cover BOTH sides of the comparison.
-Do not finalise a selection that covers only one side; an unbalanced selection makes comparison
-impossible for the synthesizer. If only one side has strong sources, explicitly note the gap
-in your reasoning and accept borderline sources from the weaker side rather than leaving it empty.
-
-MINIMUM SOURCES RULE:
-Aim to select at least 5 sources if the available articles allow it.
-Before finalising your selection, check: if you have selected fewer than 5, re-examine every
-rejected article and ask whether it is borderline — i.e. partially relevant rather than
-genuinely off-topic. Accept borderline articles rather than return fewer than 5.
-Only fall below 5 if the remaining candidates are genuinely irrelevant, from the wrong country,
-or published before the cutoff date — not merely because they overlap in topic with already
-selected sources.
 
 After reading all articles, return valid JSON:
 {{
@@ -477,32 +493,17 @@ After reading all articles, return valid JSON:
     "selected_sources": [
         {{
             "index": 1,
-            "relevance_reason": "Contains current German sawnwood price data from February 2026",
-            "key_facts": ["Sawnwood prices dropped 8% in Q1 2026", "Sawmill capacity utilization at 71%"]
+            "relevance_reason": "Contains current German sawnwood price data from February 2026"
         }}
     ],
     "rejected_indices": [2, 4],
     "rejected_reasons": {{
-        "2": "Swiss parliament article — not German market news",
-        "4": "iShares Global Timber ETF — not specific to the German market"
+        "2": "Swiss parliament article — fails geography check (filter 2)",
+        "4": "iShares Global Timber ETF — investor sentiment tool, not German market news"
     }},
-    "key_facts": [
-        "Most important concrete fact with specific data (price, date, figure)",
-        "Second most important fact — must be DIFFERENT topic from fact 1",
-        "Third fact if available — add only if genuinely distinct from above",
-        "Fourth fact if available — omit rather than repeat"
-    ],
     "overall_confidence": 0.75,
     "evidence_summary": "One paragraph summarizing what the selected evidence shows about the question"
 }}
-
-CONFIDENCE GUIDE:
-- 0.85–1.0: 4+ fresh German sources with specific prices, percentages, or named company actions that directly answer all major angles of the query
-- 0.70–0.85: 2–3 solid German sources with concrete data (figures, dates, names) but missing one identifiable angle of the query
-- 0.50–0.70: Sources are relevant but thin — only 1 strong source, or relevant sources lack specific figures
-- 0.30–0.50: Sources only partially address the query — mostly background, no current market data, or significant topic gaps
-- 0.10–0.30: Only 1 weak or tangentially relevant source; the core question is largely unanswered
-- 0.00–0.10: No useful German timber market sources found
 """
 
 # SYNTHESIS PROMPTS
@@ -515,7 +516,6 @@ SYNTHESIS_FORMAT_SIMPLE = """OUTPUT FORMAT:
 Then write 1–2 short prose paragraphs providing supporting detail and source basis. No section headers. No padding. If the answer is fully covered in 2 sentences after the headline, stop there.
 
 Rules:
-- No headers after Headline Finding.
 - Do not add context, outlook, or background the sources do not explicitly provide.
 - Do not append a summary, implication, or significance sentence at the end. End with the last relevant fact from the sources.
 - Length must match the evidence — not a template."""
@@ -526,7 +526,6 @@ SYNTHESIS_FORMAT_TEMPORAL = """OUTPUT FORMAT:
 Then write 2–4 connected prose paragraphs. No section headers. The paragraphs should build a causal narrative — not a list of parallel facts. Cover: what happened, what drove it, and what it implies — but only where sources explicitly support each link.
 
 Rules:
-- No headers after Headline Finding (no "Latest Developments", "Context", "Outlook", etc.).
 - Connect developments into cause and effect where sources explicitly support it: state what happened, what drove it, and what it means for the near term. Do not infer causation the sources do not clearly state.
 - Do not write a forward-looking paragraph based on long-range analyst forecasts (CAGR projections, 5–10 year outlooks from market research reports). These are not current market intelligence. The only forward-looking content allowed is short-term directional signals explicitly from trade press (e.g. "sawmill associations expect prices to hold through Q2").
 - Each paragraph covers a distinct development — no repetition.
@@ -539,7 +538,6 @@ SYNTHESIS_FORMAT_ANALYTICAL = """OUTPUT FORMAT:
 Then write 2–4 connected prose paragraphs. No section headers. The paragraphs should build toward the connection the query is asking for — cover key facts and figures, supporting context, and the causal link between them, but only what the retrieved sources explicitly state.
 
 Rules:
-- No headers after Headline Finding (no "Key Developments", "Market Context", "Outlook", etc.).
 - Connect facts into cause and effect where sources explicitly support it. Do not infer causation the sources do not clearly state.
 - Do not write a forward-looking paragraph unless the sources explicitly contain forecasts or predictions.
 - Each paragraph covers a distinct sub-topic — no repetition.
@@ -551,7 +549,6 @@ SYNTHESIS_FORMAT_LOW_CONFIDENCE = """OUTPUT FORMAT:
 Then write 1–2 short prose paragraphs covering exactly what the sources contain and what information is missing to fully answer the question. No section headers. Keep it brief and honest.
 
 Rules:
-- No headers after Headline Finding.
 - Do not pad with generic timber market background.
 - Length must match actual evidence — do not invent content to fill space."""
 
@@ -564,7 +561,7 @@ CORE RULES (always apply):
 - Use only facts from the provided sources. Never invent data, prices, or events.
 - Write in clear English, translating German source content naturally.
 - Always extract: specific prices, percentage changes, dates, company names, policy names, volume figures — if present in sources.
-- Extract a unique insight from every source that directly answers or supports the question — skip any source whose content does not directly relate to what was asked, even if it contains interesting data.
+- Only use a source in your answer if its content directly answers or supports the specific question asked. Do not feel obligated to include something from every source — a source that passes filters but only touches the topic tangentially should be skipped. Quality and relevance matter more than coverage.
 - Do not repeat the same point in different words — each paragraph must cover a distinct sub-topic.
 - Answer the actual question asked, not a nearby easier question.
 - CRITICAL: Only include sections that are directly supported by the retrieved evidence. If a section has no source support, omit it entirely.
@@ -637,6 +634,11 @@ Write a thorough, structured briefing based strictly on the evidence above.
   • temporal → ACTION SIGNAL or WATCH SIGNAL (based on evidence strength)
   • comparison → DELTA SIGNAL (one sentence quantifying the gap — then stop)
   • multi_hop → CONNECTION SIGNAL (or figure + causal link if a specific price figure is present)
+
+After your answer, append the following delimiter on its own line, then a JSON array of 3-5 key facts drawn directly from what you wrote above. Each fact: max 15 words, single clause, must include a figure/date/name/policy reference. No causal links across separate facts.
+
+---KEY_FACTS---
+["fact 1", "fact 2", "fact 3"]
 """
 
 # CONVERSATIONAL RESPONSE PROMPT

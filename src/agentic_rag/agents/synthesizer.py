@@ -102,6 +102,11 @@ class AnswerSynthesizer:
             logger.error(f"Synthesis error: {exc}")
             answer = "I encountered an error generating the answer. Please try again."
 
+        # Use key facts extracted from the answer itself; fall back to verifier's if absent
+        synthesized_key_facts = self.generator.last_call_key_facts
+        if synthesized_key_facts:
+            key_facts = synthesized_key_facts
+
         cost = state.get("cost_usd", 0.0) + self.generator.last_call_cost
         total_tokens = state.get("total_tokens", 0) + self.generator.last_call_tokens
 
@@ -123,6 +128,7 @@ class AnswerSynthesizer:
         return {
             **state,
             "answer": answer,
+            "key_facts": key_facts,
             "citations": verified_sources[: agentic_settings.max_sources_to_synthesize],
             "needs_refinement": needs_ref,
             "refinement_hint": ref_hint,
@@ -157,7 +163,7 @@ class AnswerSynthesizer:
             return False, "", 0.0, 0
 
         # Already got good confidence and enough sources — no need to refine
-        if confidence >= 0.55 and sources_count >= 2:
+        if confidence >= 0.45 and sources_count >= 2:
             logger.info(
                 f"Refinement eval: fast-path pass (confidence={confidence:.2f}, "
                 f"sources={sources_count}) — evidence sufficient"
