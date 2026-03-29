@@ -6,6 +6,7 @@ confidence before generating, so the LLM never has to produce sections
 that the retrieved sources don't support.
 """
 
+import json
 from datetime import datetime
 from typing import Any
 
@@ -29,6 +30,7 @@ logger = structlog.get_logger(__name__)
 
 # Confidence threshold below which we switch to the limited-evidence format
 _LOW_CONFIDENCE_THRESHOLD = 0.50
+_KEY_FACTS_DELIMITER = "---KEY_FACTS---"
 
 
 class AgenticAnswerGenerator:
@@ -42,6 +44,7 @@ class AgenticAnswerGenerator:
         )
         self.last_call_cost: float = 0.0
         self.last_call_tokens: int = 0
+        self.last_call_key_facts: list[str] = []
 
     def generate(
         self,
@@ -54,6 +57,7 @@ class AgenticAnswerGenerator:
     ) -> str:
         self.last_call_cost = 0.0
         self.last_call_tokens = 0
+        self.last_call_key_facts = []
 
         if not sources:
             return "I couldn't find relevant German timber market information for your question."
@@ -101,11 +105,14 @@ class AgenticAnswerGenerator:
             self.last_call_tokens = t_in + t_out
             self.last_call_cost = cost
 
-            answer = (response.content or "").strip()
+            raw = (response.content or "").strip()
+            answer, self.last_call_key_facts = self._split_key_facts(raw)
+
             fmt = self._format_name(query_type, confidence_score)
             logger.info(
                 f"Generator: {len(answer)} chars | format={fmt} | "
-                f"{self.last_call_tokens} tokens | ${self.last_call_cost:.6f}"
+                f"{self.last_call_tokens} tokens | ${self.last_call_cost:.6f} | "
+                f"key_facts={len(self.last_call_key_facts)}"
             )
             return answer
 
@@ -114,6 +121,32 @@ class AgenticAnswerGenerator:
             return self._fallback_answer(sources)
 
     # Private helpers
+
+    def _split_key_facts(self, raw: str) -> tuple[str, list[str]]:
+        """Split the LLM output on the key facts delimiter.
+
+        Returns (answer_text, key_facts_list). Falls back to (raw, []) if the
+        delimiter is absent or the JSON is malformed.
+        """
+        if _KEY_FACTS_DELIMITER not in raw:
+            return raw, []
+
+        parts = raw.split(_KEY_FACTS_DELIMITER, 1)
+        answer = parts[0].strip()
+        facts_raw = parts[1].strip()
+
+        # Strip optional markdown code fences
+        if facts_raw.startswith("```"):
+            facts_raw = facts_raw.split("```")[1].lstrip("json").strip()
+
+        try:
+            facts = json.loads(facts_raw)
+            if isinstance(facts, list):
+                return answer, [str(f) for f in facts if f]
+        except (json.JSONDecodeError, ValueError):
+            logger.warning("Generator: key_facts JSON parse failed — using empty list")
+
+        return answer, []
 
     def _select_format(self, query_type: str, confidence_score: float) -> str:
         """
