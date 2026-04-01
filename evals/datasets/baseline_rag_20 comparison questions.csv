@@ -1,0 +1,1501 @@
+No.,Date,Time,Query,Response,Mode,Cost ($),Tokens,LLM Calls,Confidence / Avg Similarity,Resp. Time (s),context_1,context_2,context_3,context_4,context_5,ground_truth
+1,3/28/2026,9:08:40 PM,What is the EU Deforestation Regulation and how does it affect German timber exporters?,"The EU Deforestation Regulation (EUDR) is a legislative framework aimed at preventing deforestation and forest degradation associated with the import of certain commodities into the European Union. It seeks to ensure that products sold in the EU do not contribute to deforestation, thereby promoting sustainable forestry practices.
+
+For German timber exporters, the EUDR could have significant implications. The regulation may impose stricter requirements on the sourcing and traceability of timber products, potentially increasing compliance costs and affecting market access. Additionally, there is concern that the regulation could lead to extensive interventions in the sustainable management of forests, agriculture, and grasslands in Germany, as highlighted by the campaign #LandschafftZukunft!, which warns of the massive consequences for food security and the establishment of climate-resilient forests if the regulation is not fundamentally revised.
+
+Moreover, there is ongoing pressure from the US government on Germany and the EU to allow special provisions for the USA within the EUDR, which could further complicate the regulatory landscape for German timber exporters.",Baseline,0.000183,598,1,0.022,5.6,"Lumber profits to remain a mys-tree: The Department of Environment, Food and Agriculture can't say how much income is made from exported lumber.
+
+A Freedom of Information request asked about money earned from felled trees being shipped out of Ramsey and sold abroad.
+
+In response, DEFA said it won't disclose the info because it's commercially sensitive.
+
+It adds making the figures public would weaken its negotiating position when it comes to getting best value for money in future.","„Kaffeepreis wird steigen müssen“: EU-Pläne setzen Bauern unter Druck
+Berlin/Addis Abeba. Die Entwaldungsverordnung der EU könnte große Auswirkungen auf die weltweite Kaffeeproduktion haben. Eine Reportage aus Äthiopien.Die Sträucher sehen schon recht kahl aus, ein paar Bohnen sind aber noch zu finden. Es ist typisch für Anfang Dezember, denn die Erntesaison der Kaffeebohnen im Kafa-Biosphärenreservat im Südwesten Äthiopiens beginnt jedes Jahr Ende September und endet im Dezember. „Es war eine gute Saison. Wir haben viel ernten können und sind zufrieden“, sagt Solomon Mamo gegenüber dieser Zeitung.
+
+Kaffee: Lebensgrundlage und Zukunft der Äthiopier
+Der 48-Jährige ist Waldkaffeebauer nahe dem Ort Gimbo, unweit der äthiopischen Stadt Bonga – im Herzen eines der wichtigsten Kaffeeanbaugebiete des ostafrikanischen Landes. „Kaffee war schon immer und ist die Basis von unserem Leben, das von meiner Familie und von mir“, sagt Solomon. Er selbst hat schon als Kind bei der Ernte der Kaffeebohnen mitgeholfen, was er von seinen drei Söhnen und drei Töchtern ebenfalls erwartet – „wenn sie alt genug sind, um helfen zu können.“
+
+Kaffeebauern in Bonga, Äthiopien
+Solomon Mamo steht auf einem seiner Kaffeeanbaugebiete. Auf einem seiner Felder von einem Hektar Größe arbeiten bis zu zehn Männer und Frauen parallel, um die Kaffeebohnen zu ernten.
+© Jan Weber | Jan Weber
+Er besitzt Anbauflächen mit einer Gesamtgröße von etwa dreieinhalb Hektar. Um zu veranschaulichen, wie viel Geld man bei der Ernte verdient, lädt er auf ein etwa ein Hektar großes Gebiet ein. Parallel ernten dort während der Saison jeden Tag zehn Menschen – fünf Familienmitglieder und fünf externe Tagelöhner. Der Waldkaffeebauer verkauft ein Kilo grüne, ungeröstete Kaffeebohnen für 300 Birr, umgerechnet etwa 1,64 Euro. Die Tagelöhner werden pro gesammelten Kilogramm bezahlt: 10 Birr zahlt er pro Kilo, umgerechnet etwa 5,5 Cent – ihr Gesamtverdienst hängt von der individuellen Schnelligkeit beim Sammeln ab.
+
+Das Anbaugebiet von Familie Mamo ist uneben, hügelig und zum Teil schwer zugänglich – genau wie bei den meisten anderen Kaffeebauern in der Region. Eine Begebenheit, die dem 48-Jährigen und allen, deren Lebensunterhalt vom Kaffeeanbau abhängig ist, schon sehr bald Probleme bereiten wird. Die Anforderungen der Entwaldungsverordnung der Europäischen Union (European Union Deforestation Regulation, kurz EUDR) lösen bereits jetzt viele Reaktionen in Äthiopien aus. „Wenn wir den europäischen Markt nicht mehr beliefern können, könnten wir unsere Lebensgrundlage verlieren und das löst großen Stress in uns aus“, sagt Solomon Mamo gegenüber dieser Zeitung.","Trump-Regierung drängt Berlin zu Ausnahme in EU-Waldschutzgesetz:Umgesägter Baum im Wald (Archiv), via dts Nachrichtenagentur
+.
+
+Berlin (dts Nachrichtenagentur) - Die US-Regierung erhöht den Druck auf Deutschland und die EU, eine Sonderregel für die USA in der Anti-Entwaldungsverordnung (EUDR) zuzulassen. Wie der Fachdienst ""Tagesspiegel Background"" berichtet, findet am heutigen Donnerstag ein Treffen zwischen Vertretern der Trump-Regierung und mehreren Bundesministerien statt - darunter das Bundeswirtschaftsministerium. Ziel der USA ist es demnach, für US-Unternehmen eine faktische Befreiung von Dokumentationspflichten zu erreichen.
+
+Nach übereinstimmenden Angaben aus zwei mit den Gesprächen vertrauten Quellen drohen US-Vertreter, das geplante Handelsabkommen mit der EU platzen zu lassen, sollte Washington keine bevorzugte Einstufung im Länder-Benchmarking der EUDR erhalten. Die Forderung nach einer Null-Risikokategorie war in Brüssel eigentlich bereits verworfen worden.
+
+Im Europaparlament wächst nun die Sorge vor politischer Einflussnahme und einer Aushöhlung des Gesetzes. Grünen-Abgeordnete Anna Cavazzini spricht von einer ""beispiellosen Einmischung"". Die Debatte dürfte kommende Woche auch im EU-Rat Thema werden.","
+Land- und Forstwirtschaft appelliert an die Bundesregierung: Sichere Versorgung, stabile Preise und Klimaschutz in Gefahr / Verbände starten gemeinsame Kampagne zur Wiederherstellungsverordnung. Mit der Kampagne #LandschafftZukunft! warnt die Land- und Forstwirtschaft vor den massiven Folgen der EU-Wiederherstellungsverordnung (W-VO) für die Ernährungssicherung und den Aufbau klimaresilienter Wälder in Deutschland. Sollte das in Brüssel auf den Weg gebrachte und europaweit umstrittene Regelwerk nicht grundlegend überarbeitet werden, drohen weitreichende Eingriffe und massive Folgen für die nachhaltige Bewirtschaftung von Wald, Acker und Grünland. Die Konsequenz der Verordnung sind faktische Flächenstilllegungen, praxisferne Auflagen, ein weiterer Aufwuchs an Bürokratie und steigende Preise für Verbraucher. Der Verband AGDW - Die Waldeigentümer und die Familienbetriebe Land und Forst fordern die Bundesregierung mit Blick auf den Erhalt einer zukunftsfähigen Bewirtschaftung deshalb auf, ihr Versprechen aus dem Koalitionsvertrag einzuhalten und sich entschieden für praxisnahe Lösungen einzusetzen.
+
+AGDW-Präsident Prof. Dr. Andreas Bitter erklärt: ""Die Wiederherstellungsverordnung geht von einem verfehlten Ansatz aus. Ohne den Klimawandel und die die dynamischen klimatischen Veränderungen der Standorte hinreichend zu berücksichtigen, wird ein Zurück zu historischen Lebensräumen verordnet, das Erfahrungswerte und forstwissenschaftliche Erkenntnisse ausblendet."" In der Praxis werde dadurch nachhaltige Bewirtschaftung mit unkalkulierbaren ökonomischen und ökologischen Folgen eingeschränkt und der dringend notwendige Aufbau klimaresilienter Wälder gefährdet. ""Mit unserer Kampagne #LandschafftZukunft! wollen wir deutlich machen, welch unverzichtbaren Beitrag der ländliche Raum für die Zukunft unseres Landes leistet. Damit das so bleiben kann, braucht es Gestaltungsspielraum und Vertrauen in die Praxis, kein verordnetes Land von gestern"", so Bitter.
+
+Max von Elverfeldt, Bundesvorsitzender der Familienbetriebe Land und Forst: ""Während in Brüssel und Berlin über Bürokratieabbau gesprochen wird, entsteht ein neues, unkontrollierbares Bürokratiemonster. Die Wiederherstellungsverordnung entzieht der Land- und Forstwirtschaft nicht nur Flächen, sie gefährdet dadurch auch die sichere Versorgung mit Nahrungsmitteln sowie Rohstoffen und die damit verbundene geopolitische Unabhängigkeit. Die geplanten Eingriffe wirken sich nicht nur auf die Betriebe, sondern am Ende auch auf die Preise für die Verbraucher aus. Wir teilen den Grundsatz des Green Deal für Klima- und Artenschutz, aber die W-VO ist dafür der falsche Weg. Deshalb sagen wir: No Deal!"". Seine Forderung: ""Die Bundesregierung hat versprochen, sich für praxisnahe Lösungen einzusetzen. Jetzt muss sie zeigen, ob sie Wort hält.""
+
+Deutliche Kritik an der Wiederherstellungsverordnung kam zuletzt nicht nur auf europäischer Ebene auf. Elf Bundesländer monierten auf der Agrarministerkonferenz im Herbst 2025 unter anderem die ""fehlende finanzielle Ausstattung, nicht leistbare Zeitvorgaben, die unnötige Verbesserung von Schutzgütern in bereits günstigem Zustand, Bürokratielasten"" und ""kontraproduktive Folgen für Klimaanpassungsmaßnahmen im Wald"". Die Kampagne #LandschafftZukunft! klärt über die weitreichenden Folgen sowie Regulierungsbestrebungen im Zuge der W-VO auf und sendet die klare Botschaft, dass die Verordnung in der aktuell vorliegenden Form inakzeptabel ist und grundlegend überarbeitet werden muss.
+
+Der Kampagnen-Claim #LandschafftZukunft! zeigt dafür anhand von Beispielen aus der Praxis und Video-Clips, was die Betriebe und die Menschen im ländlichen Raum tagtäglich durch ihre Expertise und ihr Engagement schaffen. Die Verbände sprechen sich dafür aus, Bewirtschaftung und den Schutz von Klima und Umwelt verantwortungsbewusst zu vereinen. Dafür braucht es Gestaltungsspielraum und Pragmatismus, keine weiteren Paragraphen und keine praxisferne, bürokratische Verordnung. In Anlehnung an den Green Deal als Ursprung der Wiederherstellungsverordnung und mit dem gesenkten Daumen als Kampagnen-Geste sagt die Land- und Forstwirtschaft: NO DEAL zur W-VO.
+
+Fotomaterial, Grafiken und Videos zur Kampagne finden Sie zu Ihrer Verwendung unter folgendem Link: www.unser-green-deal.de/landschafftzukunft/
+
+Über AGDW - Die Waldeigentümer
+
+Die Arbeitsgemeinschaft Deutscher Waldbesitzerverbände e.V. (AGDW - Die Waldeigentümer) vertritt die Interessen des Privat- und Körperschaftswaldes gegenüber Parlamenten, Bundesministerien, Wirtschaft, Wissenschaft und Öffentlichkeit. Mit ihren 13 regionalen Mitgliedsverbänden steht die AGDW für mehr als zwei Drittel der Waldfläche Deutschlands und die rund 2 Millionen Waldbesitzerinnen und Waldbesitzer in Deutschland. Eine proaktive Waldbewirtschaftung ist für uns Grundlage nachhaltigen Handelns in Wirtschaft und Gesellschaft. Wir lassen uns leiten vom generationenübergreifenden Verantwortungsbewusstsein für eine in Freiheit und Vielfalt gestaltete Umwelt.
+
+Über die Familienbetriebe Land und Forst
+
+Als Dachorganisation von elf Landesverbänden vertreten wir erfolgreich die Interessen von land- und forstwirtschaftlichen Familienbetrieben auf nationaler und europäischer Ebene. Wir setzen uns für den Schutz des privaten Eigentums und die Stärkung der Wirtschaftskraft im ländlichen Raum ein. Als Sprachrohr für unsere Mitglieder befinden wir uns im ständigen Dialog mit allen relevanten Stakeholdern. Unser Engagement gilt der unternehmerischen Freiheit und einer verantwortungsvollen, generationengerechten Politik.",,The US government is pressuring Germany and the EU to grant the United States a special exemption under the EU Deforestation Regulation (EUDR). A meeting between Trump administration representatives and several German federal ministries took place to discuss this. German farming and forestry associations launched a campaign called LandschafftZukunft warning that the EU Restoration Ordinance (WVO) poses serious risks to food security and climate-resilient forest management in Germany. No direct information on specific EUDR compliance impacts on German timber exporters is available in the retrieved sources.
+2,3/28/2026,9:09:05 PM,What are the current building permit trends in Germany in 2026?,"In January 2026, Germany saw the approval of 19,500 building permits for new apartments. This represents an increase of 8.4% or 1,500 permits compared to January 2025. Additionally, the number of permits for new construction rose by 7.4% or 1,100, totaling 16,400 permits for new buildings. This trend indicates a positive shift in the building permit landscape following previous declines.",Baseline,0.000157,776,1,0.017,4.69,"10,8 % mehr Baugenehmigungen für Wohnungen im Jahr 2025
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 08:00
+Presseportal
+
+WIESBADEN (ots) -
+
+
+- Mehr Baugenehmigungen nach drei Rückgängen in Folge: Zahl genehmigter Wohnungen steigt im Jahr 2025 gegenüber dem Vorjahr um 23 200 auf 238 500
+- Anstiege bei Ein- und Mehrfamilienhäusern, Baugenehmigungen für Zweifamilienhäuser bleiben dagegen auf niedrigem Niveau
+- Weniger Bauvorhaben bei Nichtwohngebäuden: 5,2 % weniger umbauter Raum als im Vorjahr
+
+Im Jahr 2025 wurde in Deutschland der Bau von 238 500 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) nach vorläufigen Ergebnissen mitteilt, waren das 10,8 % oder 23 200 Wohnungen mehr als im Jahr 2024, als die Zahl genehmigter Wohnungen auf den niedrigsten Stand seit 2010 gesunken war. Damit stieg die Zahl der Baugenehmigungen für Wohnungen im Jahr 2025 erstmals seit 2021 wieder an. In den Ergebnissen sind sowohl die Baugenehmigungen für Neubauwohnungen enthalten als auch die Baugenehmigungen für Wohnungen, die durch den Umbau bestehender Gebäude entstehen. Die Zahl der gemeldeten Baugenehmigungen ist ein wichtiger Frühindikator für die zukünftige Bauaktivität.
+
+Die Zahl der genehmigten Wohnungen im Neubau stieg im Jahr 2025 um 12,6 % oder 22 100 gegenüber dem Vorjahr auf 198 100. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im selben Zeitraum deutlich schwächer um 2,7 % oder 1 000 auf 40 400.
+
+Aufwärtstrend bei Ein- und Mehrfamilienhäusern im Jahr 2025
+
+In neu zu errichtenden Wohngebäuden wurden im Jahr 2025 insgesamt 194 200 Wohnungen genehmigt, das waren 13,2 % oder 22 600 mehr als im Vorjahr. Dabei entwickelten sich die einzelnen Gebäudearten unterschiedlich.
+
+So stieg die Zahl der Baugenehmigungen für neue Einfamilienhäuser im Vorjahresvergleich deutlich um 17,2 % (+6 500) auf 44 500. Dieser Anstieg gegenüber dem Vorjahresniveau erstreckte sich über das gesamte Jahr 2025. Bei den neu genehmigten Zweifamilienhäusern blieb die Zahl mit 12 600 (-1,1 % oder -100) dagegen auf dem niedrigen Niveau des Vorjahres. Zusammen machten die im Allgemeinen von Privatpersonen errichteten Ein- und Zweifamilienhäuser 28,8 % der im Jahr 2025 genehmigten Neubauwohnungen aus.
+
+In neuen Mehrfamilienhäusern, der zahlenmäßig stärksten und vorrangig von Unternehmen errichteten Gebäudeart, genehmigten die Bauaufsichtsbehörden 128 100 Wohnungen im Jahr 2025. Das waren 12,1 % (+13 900) mehr als im Vorjahr und 64,6 % aller im Jahr 2025 in Deutschland genehmigten Neubauwohnungen. Dieser Anstieg bei den Mehrfamilienhäusern zeigte sich ab der zweiten Jahreshälfte.
+
+Weiterhin stieg die Zahl der genehmigten Wohnungen in neuen Wohnheimen im Jahr 2025 im Vergleich zum Vorjahr um 34,2 % (+2 300) auf 9 100.
+
+In neuen Nichtwohngebäuden wurden im Jahr 2025 insgesamt 3 900 Wohnungen genehmigt, das waren 10,3 % (-400) weniger als im Jahr zuvor. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden 2025 insgesamt 40 400 Wohnungen genehmigt, das waren 2,7 % oder 1 000 Wohnungen mehr als im Jahr 2024.
+
+Mehr Wohnungsbauvorhaben von Unternehmen und Privatpersonen, weniger von öffentlicher Hand
+
+Rund 95 % der insgesamt 198 100 erteilten Genehmigungen für Neubauwohnungen im Jahr 2025 entfielen auf Unternehmen und Privatpersonen. Entsprechend prägen diese beiden Bauherrengruppen die Gesamtentwicklung. Unternehmen traten bei 108 800 Baugenehmigungen für Neubauwohnungen als Bauherren auf, das waren 14,6 % oder 13 900 mehr neue Wohnungen als im Vorjahr. Auf Privatpersonen entfielen 79 200 Baugenehmigungen, das waren 14,9 % oder 10 200 mehr als im Jahr zuvor. Die Zahl der Baugenehmigungen für Wohnungen im Neubau, die auf Bauanträge der öffentlichen Hand zurückgehen, sank dagegen um 23,2 % oder 2 100 auf 6 900.
+
+Weniger umbauter Raum bei Nichtwohngebäuden
+
+Im Bereich der Nichtwohngebäude waren die neuen Bauvorhaben im Jahr 2025 rückläufig. Wichtige Gebäudearten sind hier zum Beispiel Fabrikgebäude und Lagerhallen, Büro- und Verwaltungsgebäude oder landwirtschaftliche Betriebsgebäude. Der zentrale Indikator zur Messung der Bauaktivität bei Nichtwohngebäuden ist der umbaute Raum. Dieser verringerte sich bei den im Jahr 2025 genehmigten Nichtwohngebäuden gegenüber 2024 um 5,2 % auf 183,1 Millionen Kubikmeter. Das war der niedrigste Wert seit 2014 (186,8 Millionen Kubikmeter). Dabei verringerte sich der umbaute Raum bei Warenlagergebäuden im Vorjahresvergleich um 17,1 %, bei Fabrik- und Werkstattgebäuden um 13,0 % und bei Anstaltsgebäuden (z. B. Krankenhäuser oder Alten- und Pflegeheime) um 37,8 %. Demgegenüber vergrößerte sich der umbaute Raum bei Handelsgebäuden um 24,9 % und bei Landwirtschaftlichen Betriebsgebäuden um 11,8 %.
+
+Baugenehmigungen als Indikator für Baufertigstellungen
+
+Die Zahl der gemeldeten Baugenehmigungen erlaubt eine frühzeitige Einschätzung der zukünftigen Bauaktivität. Aufschluss über die tatsächliche Entwicklung der Bautätigkeit und des Bauüberhangs (genehmigte, aber noch nicht fertiggestellte Bauvorhaben) im Jahr 2025 gibt die Zahl der gemeldeten Baufertigstellungen, die das Statistische Bundesamt voraussichtlich am 22. Mai 2026 veröffentlichen wird.
+
+Methodische Hinweise:
+
+Die Angaben basieren auf den im Januar 2026 bei den Statistischen Ämtern der Länder vorliegenden Meldungen über erteilte Baugenehmigungen. Die Ergebnisse für das Berichtsjahr enthalten dabei auch Nachmeldungen über bereits in der Zeit davor erteilte Baugenehmigungen, andererseits fließen nicht rechtzeitig eingegangene Meldungen erst in die Ergebnisse des folgenden Berichtsjahrs ein. Über die Behandlung, den Umfang und die Entwicklung von Nachmeldungen informieren der Qualitätsbericht zur Statistik sowie der Artikel ""Digitalisierungspotenzial in der Bautätigkeitsstatistik"" in Ausgabe 3/2025 der Zeitschrift ""WISTA - Wirtschaft und Statistik"" des Statistischen Bundesamtes.
+
+Weitere Informationen:
+
+Detaillierte Daten und lange Zeitreihen zu den Baugenehmigungen sowie zum Bauüberhang können über die Tabellen 31111 sowie die Tabelle 31131 in der Datenbank GENESIS-Online abgerufen werden.
+
+Weitere Ergebnisse zum Thema Bauen sind auch im ""Dashboard Konjunktur"" verfügbar, das Teil des ""Dashboard Deutschland"" (www.dashboard-deutschland.de) ist. In diesem Datenportal bündelt das Statistische Bundesamt hochaktuelle Indikatoren der amtlichen Statistik und weiterer Datenanbieter zu den Themen Wirtschaft und Finanzen sowie Arbeitsmarkt, Bauen und Wohnen, Energie und Ukraine. Mit dem ""Pulsmesser Wirtschaft"" steht dort auch ein Tool zur Konjunkturbeobachtung in Echtzeit bereit.
+
+Diese Pressemitteilung ist, gegebenenfalls ergänzt mit weiteren Informationen und Verlinkungen zum Thema, veröffentlicht unter www.destatis.de/pressemitteilungen.","Erstmals seit 2021 wieder mehr Baugenehmigungen für Wohnungen
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 08:08
+dts Nachrichtenagentur
+
+WIESBADEN (dts Nachrichtenagentur) - Im Jahr 2025 ist in Deutschland der Bau von 238.500 Wohnungen genehmigt worden. Wie das Statistische Bundesamt (Destatis) am Mittwoch nach vorläufigen Ergebnissen mitteilt, waren das 10,8 Prozent oder 23.200 Wohnungen mehr als im Jahr 2024, als die Zahl genehmigter Wohnungen auf den niedrigsten Stand seit 2010 gesunken war.
+
+
+Damit stieg die Zahl der Baugenehmigungen für Wohnungen im Jahr 2025 erstmals seit 2021 wieder an. In den Ergebnissen sind sowohl die Baugenehmigungen für Neubauwohnungen enthalten als auch die Baugenehmigungen für Wohnungen, die durch den Umbau bestehender Gebäude entstehen. Die Zahl der gemeldeten Baugenehmigungen ist ein wichtiger Frühindikator für die zukünftige Bauaktivität.
+
+
+Die Zahl der genehmigten Wohnungen im Neubau stieg im Jahr 2025 um 12,6 Prozent oder 22.100 gegenüber dem Vorjahr auf 198.100. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im selben Zeitraum deutlich schwächer um 2,7 Prozent oder 1.000 auf 40.400.
+
+
+
+In neu zu errichtenden Wohngebäuden wurden im Jahr 2025 insgesamt 194.200 Wohnungen genehmigt, das waren 13,2 Prozent oder 22.600 mehr als im Vorjahr. Dabei entwickelten sich die einzelnen Gebäudearten unterschiedlich.
+
+
+So stieg die Zahl der Baugenehmigungen für neue Einfamilienhäuser im Vorjahresvergleich deutlich um 17,2 Prozent (+6.500) auf 44.500. Dieser Anstieg gegenüber dem Vorjahresniveau erstreckte sich über das gesamte Jahr 2025. Bei den neu genehmigten Zweifamilienhäusern blieb die Zahl mit 12.600 (-1,1 Prozent oder -100) dagegen auf dem niedrigen Niveau des Vorjahres. Zusammen machten die im Allgemeinen von Privatpersonen errichteten Ein- und Zweifamilienhäuser 28,8 Prozent der im Jahr 2025 genehmigten Neubauwohnungen aus.
+
+
+In neuen Mehrfamilienhäusern, der zahlenmäßig stärksten und vorrangig von Unternehmen errichteten Gebäudeart, genehmigten die Bauaufsichtsbehörden 128.100 Wohnungen im Jahr 2025. Das waren 12,1 Prozent (+13.900) mehr als im Vorjahr und 64,6 Prozent aller im Jahr 2025 in Deutschland genehmigten Neubauwohnungen. Dieser Anstieg bei den Mehrfamilienhäusern zeigte sich ab der zweiten Jahreshälfte. Weiterhin stieg die Zahl der genehmigten Wohnungen in neuen Wohnheimen im Jahr 2025 im Vergleich zum Vorjahr um 34,2 Prozent (+2.300) auf 9.100.
+
+
+In neuen Nichtwohngebäuden wurden im Jahr 2025 insgesamt 3.900 Wohnungen genehmigt, das waren 10,3 Prozent (-400) weniger als im Jahr zuvor. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden 2025 insgesamt 40.400 Wohnungen genehmigt, das waren 2,7 Prozent oder 1.000 Wohnungen mehr als im Jahr 2024.
+
+
+Rund 95 Prozent der insgesamt 198.100 erteilten Genehmigungen für Neubauwohnungen im Jahr 2025 entfielen auf Unternehmen und Privatpersonen. Entsprechend prägen diese beiden Bauherrengruppen die Gesamtentwicklung. Unternehmen traten bei 108.800 Baugenehmigungen für Neubauwohnungen als Bauherren auf, das waren 14,6 Prozent oder 13.900 mehr neue Wohnungen als im Vorjahr. Auf Privatpersonen entfielen 79.200 Baugenehmigungen, das waren 14,9 Prozent oder 10.200 mehr als im Jahr zuvor. Die Zahl der Baugenehmigungen für Wohnungen im Neubau, die auf Bauanträge der öffentlichen Hand zurückgehen, sank dagegen um 23,2 Prozent oder 2.100 auf 6.900.
+
+
+Im Bereich der Nichtwohngebäude waren die neuen Bauvorhaben im Jahr 2025 rückläufig, so das Bundesamt weiter. Wichtige Gebäudearten sind hier zum Beispiel Fabrikgebäude und Lagerhallen, Büro- und Verwaltungsgebäude oder landwirtschaftliche Betriebsgebäude. Der zentrale Indikator zur Messung der Bauaktivität bei Nichtwohngebäuden ist der umbaute Raum. Dieser verringerte sich bei den im Jahr 2025 genehmigten Nichtwohngebäuden gegenüber 2024 um 5,2 Prozent auf 183,1 Millionen Kubikmeter. Das war der niedrigste Wert seit 2014 (186,8 Millionen Kubikmeter).
+
+
+Dabei verringerte sich der umbaute Raum bei Warenlagergebäuden im Vorjahresvergleich um 17,1 Prozent, bei Fabrik- und Werkstattgebäuden um 13,0 Prozent und bei Anstaltsgebäuden (z. B. Krankenhäuser oder Alten- und Pflegeheime) um 37,8 Prozent. Demgegenüber vergrößerte sich der umbaute Raum bei Handelsgebäuden um 24,9 Prozent und bei Landwirtschaftlichen Betriebsgebäuden um 11,8 Prozent.","Baugenehmigungen 2025: Positivtrend hält an - Bedarf bleibt groß
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 09:04
+Presseportal
+
+Berlin (ots) -
+
+Die heute vom Statistischen Bundesamt veröffentlichten Zahlen zu den Baugenehmigungen 2025 kommentiert Felix Pakleppa, Hauptgeschäftsführer Zentralverband Deutsches Baugewerbe:
+
+""2025 wurden 238.500 Wohnungen genehmigt - 23.200; 10,8 Prozent mehr als im Vorjahr. Im Vorjahr genehmigten die Behörden gerade einmal 215 300 Wohnungen - der niedrigste Wert seit 2010 (187 600 Wohnungen).
+
+Im Bereich der 1- und 2-Familienhäuser wurden gut 57.000 Wohnungen genehmigt, ca. 6.400 mehr als im Vorjahr. Ein Plus von knapp 13 Prozent. 128.000 waren es bei den Mehrfamilienhäusern, knapp 14.000 mehr als im Vorjahr, ein Plus von gut 12 Prozent.
+
+Bauherren und Investoren fassen wieder etwas Vertrauen. Der Negativtrend ist gebrochen. Das ist eine gute Nachricht.
+
+Wir warnen davor, sich von diesem Plus blenden zu lassen. Im vergangenen Jahr wurden nach unserer Einschätzung nur rund 225.000 Wohnungen fertiggestellt, während wir jährlich mindestens 100.000 Wohnungen mehr bräuchten.
+
+Kurz: Noch immer bleibt der Wohnungsbau hinter dem Bedarf zurück. Wir schieben ein riesiges Defizit vor uns her, was den Wohnungsmarkt in den Städten unter enormen Druck setzt. Und 2026 wird nicht besser: Die Fertigstellungszahlen werden weiter sinken, weil eine genehmigte Wohnung erst in zwei bis drei Jahren fertig ist.
+
+Immerhin: Die neu aufgelegte EH 55-Plus-Förderung wird gut angenommen und zeigt, dass gezielte Impulse wirken. Aus unserer Sicht sollten die neuen Förderungen ab 2027 langfristig verstetigt werden, damit Bauwillige besser planen können.
+
+Zusätzlichen Schwung würde eine Anpassung der Sonder-AfA bringen, die nicht mehr an EH 40, sondern an EH-55 gekoppelt ist. Wenn EH 55 für die Eigenheimförderung ausreicht, muss der Standard erst recht für den Mietwohnungsbau und die Sonder-AfA gelten.
+
+Die Trendwende bei den Genehmigungen ist ein erster Schritt. Wir sind auf dem richtigen Weg, aber noch weit davon entfernt, die Schieflage am Markt zu lösen.""","Deutlich mehr Baugenehmigungen für Wohnungen im Januar
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.03.26 08:05
+dts Nachrichtenagentur
+
+WIESBADEN (dts Nachrichtenagentur) - Im Januar 2026 ist in Deutschland der Bau von 19.500 Wohnungen genehmigt worden. Wie das Statistische Bundesamt (Destatis) am Mittwoch mitteilte, waren das 8,4 Prozent oder 1.500 Baugenehmigungen mehr als im Januar 2025. Dabei stieg die Zahl der genehmigten Wohnungen im Neubau um 7,4 Prozent oder 1.100 auf 16.400. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg gegenüber dem Vorjahresmonat um 13,5 Prozent oder 400 auf 3.100.
+
+
+
+In neu zu errichtenden Wohngebäuden wurden im Januar 2026 insgesamt 16.000 Wohnungen genehmigt, das waren 6,0 Prozent oder 900 Neubauwohnungen mehr als im Vorjahreszeitraum. Dabei stieg die Zahl der Baugenehmigungen für Einfamilienhäuser um 12,6 Prozent (+400) auf 3.800. Bei den Zweifamilienhäusern nahm die Zahl genehmigter Wohnungen um 26,1 Prozent (+300) auf 1.200 zu. In Mehrfamilienhäusern, der zahlenmäßig stärksten Gebäudeart, genehmigten die Bauaufsichtsbehörden 10.500 Neubauwohnungen. Das war ein Anstieg um 7,1 Prozent (+700) gegenüber dem Vorjahreszeitraum. Die Zahl der genehmigten Wohnungen in Wohnheimen fiel im Vergleich zum Januar 2025 um 47,6 Prozent (-450) auf 500 Wohnungen.
+
+
+In neuen Nichtwohngebäuden wurden im Januar 2026 insgesamt 350 Wohnungen (+148,6 Prozent; +200) genehmigt. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen. Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden im Januar 2026 insgesamt 3.100 Wohnungen genehmigt, das waren 13,5 Prozent oder 400 Wohnungen mehr als im gleichen Zeitraum des Jahres 2025.","Deutschland: Baugenehmigungen für Wohnungen im Januar 2026 +8,4% zum Vorjahresmonat
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.03.26 08:35
+aktiencheck.de
+
+Wiesbaden (www.aktiencheck.de) - Im Januar 2026 wurde in Deutschland der Bau von 19.500 Wohnungen genehmigt, so das Statistische Bundesamt (Destatis) in einer aktuellen Pressemitteilung. Näheres entnehmen Sie bitte dem Wortlaut der folgenden Pressemeldung:
+
+Wie Destatis mitteilt, waren das 8,4% oder 1.500 Baugenehmigungen mehr als im Januar 2025. Dabei stieg die Zahl der genehmigten Wohnungen im Neubau um 7,4 % oder 1.100 auf 16.400. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im Januar 2026 gegenüber dem Vorjahresmonat um 13,5% oder 400 auf 3.100.
+Aufwärtstrend bei Ein- und Mehrfamilienhäusern hält an
+
+In neu zu errichtenden Wohngebäuden wurden im Januar 2026 insgesamt 16.000 Wohnungen genehmigt, das waren 6,0% oder 900 Neubauwohnungen mehr als im Vorjahreszeitraum. Dabei stieg die Zahl der Baugenehmigungen für Einfamilienhäuser um 12,6% (+400) auf 3.800. Bei den Zweifamilienhäusern nahm die Zahl genehmigter Wohnungen um 26,1% (+300) auf 1.200 zu. In Mehrfamilienhäusern, der zahlenmäßig stärksten Gebäudeart, genehmigten die Bauaufsichtsbehörden 10.500 Neubauwohnungen. Das war einen Anstieg um 7,1% (+700) gegenüber dem Vorjahreszeitraum. Die Zahl der genehmigten Wohnungen in Wohnheimen fiel im Vergleich zum Januar 2025 um 47,6% (-450) auf 500 Wohnungen.
+
+In neuen Nichtwohngebäuden wurden im Januar 2026 insgesamt 350 Wohnungen (+148,6%; +200) genehmigt. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden im Januar 2026 insgesamt 3.100 Wohnungen genehmigt, das waren 13,5% oder 400 Wohnungen mehr als im gleichen Zeitraum des Jahres 2025. (18.03.2026/ac/a/m)
+
+","Germany approved 238,500 housing units in 2025, an increase of 10.8% or 23,200 units compared to 2024. This was the first increase after three consecutive years of decline. In January 2026, Germany approved 19,500 housing units, up 8.4% or 1,500 units compared to January 2025. New build approvals rose 7.4% to 16,400 units. Single family homes rose 12.6% and two-family homes rose 26.1% in January 2026. Multi-family housing approvals reached 10,500 units in January 2026, up 7.1%. Despite the positive trend, the Zentralverband Deutsches Baugewerbe notes that demand for housing remains large and the recovery is still fragile."
+3,3/28/2026,9:09:34 PM,What role does the German Heating Act play in shaping wood pellet demand?,"The German Heating Act plays a significant role in shaping wood pellet demand as it influences the regulatory environment for heating technologies. Recent plans by the German government to relax key components of the Heating Act have dampened growth expectations for heat pumps, which could indirectly affect the demand for wood pellets. As policymakers reconsider the use of biomass, including wood pellets, due to new research suggesting they may increase carbon emissions rather than reduce them, the focus is shifting towards subsidies. This uncertainty in the regulatory framework may lead to fluctuations in the demand for wood pellets as the industry adapts to changing conditions.",Baseline,0.000124,481,1,0.02,4.66,"Are Wood Pellets Worth Billions In Subsidies? Drax Faces A Reckoning
+ByKen Silverstein,Senior Contributor. Ken Silverstein covers global energy and climate issues.
+
+
+Follow Author
+Jan 28, 2026, 08:45am ESTJan 30, 2026, 05:39pm EST
+
+
+
+
+Views Of Drax Power Station In North Yorkshire
+SELBY, ENGLAND - JANUARY 30: The winter sun sets behind the Drax Bio mass Power Station operated by Drax Group PLC on January 30, 2025 in Selby, England. Once one of the largest coal power plants in Europe, the Drax power station in North Yorkshire now generates electricity by burning wood pellets sourced from trees in North America. (Photo by Christopher Furlong/Getty Images)
+... More
+Getty Images
+The energy industry initially sold wood pellets as a way to clean up coal. And governments bought into that assumption. But now policymakers are questioning that position and even reversing course.
+
+At the center of this debate is a UK-based power company called Drax, which converted Europe’s largest coal plant into a biomass facility—one fueled by wood pellets that it imported from southern states in the United States. The debate raises a multitude of questions, namely those centered on pollution and costs. That is, if the additive creates more pollution than either wind or solar energy, why bother, especially since it comes from a power source that depends on subsidies?
+
+Merry Dickinson, lead campaigner for the Stop Burning Trees Coalition in the U.K., told me that Drax now operates entirely on woody biomass, requiring seven to eight million tons of wood pellets annually. “The amount of wood required to run at these levels is beyond what is available as waste wood,” Dickinson says. “Even when the industry refers to ‘waste wood,’ much of the supply consists of whole trees.”
+
+Biomass received special treatment under the 2010 European Renewable Energy Directive, which counted emissions from burning wood as zero at the smokestack. The underlying assumption: trees regrow and reabsorb carbon over time. Post-Brexit, the UK expanded subsidies for biomass, positioning wood pellets as a bridge fuel to reduce reliance on coal. Under these rules, a power plant can burn wood and claim carbon neutrality—a calculation not applied to fossil fuels.
+
+Drax’s business model has long relied on government incentives rather than market demand. The UK has historically provided about $1.1 billion annually in subsidies, but these payments are scheduled to be cut nearly in half after 2027. Meanwhile, Drax has shuttered facilities in Arkansas and British Columbia and scaled back investments in bioenergy with carbon capture and storage. Some operations are pivoting toward data centers, a quiet acknowledgment that the market cannot sustain the company at previous levels.
+
+MORE FOR YOU
+Yankees Legend Replaces Phillies Manager Rob Thomson After Bizarre Turn
+
+WWE Raw Results, Winners And Grades From MSG On March 30, 2026
+
+Here’s Good News For Fans Wanting A ‘Paradise’ Season 3
+
+Unlike wind and solar, which generate electricity without combustion emissions, biomass combines emissions from burning wood chips with those from processing, transport, and ongoing fuel extraction. Subsidies for wind and solar have been declining per megawatt-hour as technology costs fall, while biomass continues to benefit from unusually high public support.
+
+In a subsequent written statement, Drax said that the places from which it harvests wood are strictly regulated, with much of it coming from “tree thinning,"" which is necessary to maintain the health of the forests. Moreover, it noted that “Biomass, in the form of wood pellets, has been quietly making a big impact by helping countries reduce carbon emissions, support sustainable forestry, and transition away from fossil fuels. Scientists challenge the notion that wood pellets are worse than coal; this idea relies on unrealistic scenarios of forest management and harvesting.”
+
+Research Challenges Carbon Neutrality
+Views Of Drax Power Station In North Yorkshire
+SELBY, ENGLAND - JANUARY 30: In this aerial view the winter sun sets behind the Drax Bio mass Power Station operated by Drax Group PLC on January 30, 2025 in Selby, England. Once one of the largest coal power plants in Europe, the Drax power station in North Yorkshire now generates electricity by burning wood pellets sourced from trees in North America. (Photo by Christopher Furlong/Getty Images)
+... More
+Getty Images
+symbol
+00:01
+
+03:12
+Read More
+
+
+
+Recent lifecycle analyses, including studies by MIT and Chatham House, dispute this and suggest the carbon math behind national policies promoting the mixing of wood pellets with coal is deeply flawed. Those studies have found that replacing coal with wood pellets can increase near-term carbon emissions, particularly when whole trees—rather than waste residues—are used.
+
+The process begins with harvesting mature trees, converting them into pellets through energy-intensive drying, shredding, and pressing, and shipping them overseas. Carbon stored in standing trees is released immediately, and regrowth can take decades to offset the emissions. Compounding the problem, wood has lower energy density than coal, meaning more volume must be burned to produce the same amount of electricity.
+
+“It’s better to keep the trees on the land and keep all that carbon out of the atmosphere,” said John Sterman, professor of management at MIT Sloan School of Management, in a 2018 release. “A molecule of CO2 emitted today has the same impact on the climate whether it comes from coal or biomass. Declaring that biofuels are carbon neutral, as the EU, UK, and others have done, erroneously assumes that forest regrowth happens quickly and fully offsets the emissions from biofuel production and combustion.”
+
+In Mississippi, residents have sued Drax over alleged air pollution violations at its Gloster pellet mill—a case that highlights the local costs of an energy source often discussed only in global carbon terms. The plant uses cranes to move whole trees, suggesting a reliance on raw, virgin wood and not waste wood.
+
+Meanwhile, regulators have previously fined the plant for violations involving volatile organic compounds, methanol, and formaldehyde. The plant’s operations highlight that biomass power not only has carbon implications but also presents tangible local air quality risks.
+
+“Forest-derived biomass is the focus,” says Michél Legendre, campaign director for the Dogwood Alliance, in an interview. “Drax’s operations require immense amounts of trees, clear-cutting acres every year—not just twigs or leftovers.”
+
+Adding wood pellets to the combustion process was well-intentioned—to clean coal, which was then the leading method of electricity generation. However, since the process’s introduction, many things have changed, including the sharp drop in wind and solar prices and new studies showing that the pellets did not fulfill their promises. As a result, regulators are rightfully reviewing their policies—ones that focus on truly sustainable sources of power.","Fast die Hälfte der Feuerstätten in Bayern mit Biomasse
+Aktualisiert am 18. Februar 2026, 9:53 Uhr
+Quelle: dpa Bayern
+
+
+Hinweis
+DIE ZEIT hat diese Meldung redaktionell nicht bearbeitet. Sie wurde automatisch von der Deutschen Presse-Agentur (dpa) übernommen.
+
+Heizungen: Kaminkehrer sorgen dafür, dass Feuerstätten ohne Probleme betrieben werden können. (Archivbild)
+Kaminkehrer sorgen dafür, dass Feuerstätten ohne Probleme betrieben werden können. (Archivbild) © Felix Hörhager/?dpa
+Knapp die Hälfte der rund 6,5 Millionen Feuerstätten in Bayern wird nach Angaben des Landesamtes für Statistik mit Biomasse wie Holz oder Pellets betrieben. 26,3 Prozent werden demnach mit Gas befeuert, 21,5 Prozent mit Heizöl, zitiert die Behörde aus der Kehrbuchdatenerhebung.
+
+Aktuelles
+Schlagzeilen
+Kommunalwahlen
+:
+Münchens Oberbürgermeister legt seine Ämter beim FC Bayern nieder
+Energiewende
+:
+Dieser Krieg zeigt, welcher Irrweg Öl und Gas sind
+Bayern
+:
+CSU erzielt schlechtestes Ergebnis seit 75 Jahren bei Kommunalwahl
+Vor allem in Niederbayern sind der Statistik zufolge Holz, Hackschnitzel und Pellets beliebt (59,1 Prozent), aber auch in der Oberpfalz (55,3) und in Oberfranken (50,3). Gas macht in Niederbayern nur 13,9 Prozent aus, in der Oberpfalz 19,4 Prozent. In Mittelfranken dagegen liegt der Anteil der Feuerstätten mit Gas bei 35,2 Prozent und damit deutlich über dem bayernweiten Durchschnitt. Die klassische Wärmepumpe zählt nach Angaben des Landesamtes nicht zu den Feuerstätten.
+
+Durchschnittsalter 18 Jahre
+Im Durchschnitt sind die Feuerstätten in Bayern nach Angaben des Landesamtes 18 Jahre alt. Dazu zählen knapp 3,2 Millionen Zentralheizungen sowie rund 3,3 Millionen Einzelraumfeuerstätten wie Kamine, Räucheranlagen oder gasbetriebene Backöfen.","NIBE Aktie: Politische Kehrtwende
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+27.02.26 16:30
+Börse Global
+
+
+NIBE Aktie: Politische Kehrtwende
+NIBE Industrier steht vor einer neuen Realität in seinem wichtigsten Auslandsmarkt. Die Pläne der deutschen Bundesregierung, zentrale Bestandteile des Heizungsgesetzes zu entschärfen, haben die Wachstumserwartungen für Wärmepumpen kurzfristig gedämpft. Während die Branche auf die veränderten Rahmenbedingungen blickt, bemüht sich das schwedische Management um Stabilität und verweist auf langfristige Fördermittel.
+
+
+Unsicherheit im deutschen Markt
+
+Der Kern der Kursbewegung liegt in Berlin: Die Regierungsparteien planen, die strikten Vorgaben für neue Heizungssysteme zu lockern. Konkret soll die Verpflichtung entfallen, dass neue Anlagen zu mindestens 65 Prozent mit erneuerbaren Energien betrieben werden müssen. Für NIBE ist dies eine kritische Entwicklung, da Deutschland der bedeutendste Markt für das Segment „Climate Solutions“ ist. Die mögliche Rückkehr zu verstärkten Installationen von Öl- und Gasheizungen könnte den Absatz der Schweden bremsen.
+
+
+Doch wie stabil bleibt das Geschäftsmodell von NIBE ohne den ursprünglichen gesetzlichen Rückenwind? Die Aktie reagierte bereits Mitte der Woche empfindlich auf die Nachrichtenlage und verzeichnet auf Sieben-Tages-Sicht ein Minus von rund 8,8 Prozent. Mit einem aktuellen Kurs von 3,43 Euro notiert das Papier knapp 22 Prozent unter seinem 52-Wochen-Hoch, hält aber noch einen deutlichen Abstand zum Jahrestief vom vergangenen November.
+
+
+Management setzt auf Kontinuität
+Trotz der politischen Diskussionen sieht CEO Gerteric Lindquist keinen Grund, an den langfristigen Unternehmenszielen zu rütteln. Er betont, dass die staatlichen Subventionen für Wärmepumpen lediglich angepasst, aber nicht gestrichen werden. Die Finanzierung für den Umstieg sei bis mindestens 2029 gesichert, was Planungssicherheit für die kommenden Übergangsjahre schaffe.
+
+Anzeige
+Sollten Anleger sofort verkaufen? Oder lohnt sich doch der Einstieg bei NIBE Industrier?
+
+
+
+Ein deutliches Signal des Vertrauens kam zudem aus der Führungsebene selbst: Finanzvorstand Hans Backman nutzte das aktuelle Kursniveau am Freitag für einen Zukauf und erwarb 15.250 B-Aktien an der Nasdaq Stockholm. Solche Insiderkäufe werden am Markt oft als Indiz dafür gewertet, dass das Management die langfristigen Aussichten positiver einschätzt, als es der aktuelle Aktienkurs widerspiegelt.
+
+
+Operativ steht das Unternehmen auf einem soliden Fundament. Im vierten Quartal 2025 konnte NIBE den bereinigten Betriebsgewinn auf 1,4 Milliarden SEK steigern, während der Umsatz stabil bei 11 Milliarden SEK blieb. Als Zeichen der Stärke schlug der Vorstand zudem eine Erhöhung der Dividende auf 35 Öre pro Aktie vor. Mit der gesicherten staatlichen Förderung bis 2029 und der verbesserten Profitabilität im Kernsegment Climate Solution","Govt to ensure commercial units get 20% of LPG demand
+Tells State PCBs to allow eateries to use biomass pellets, coal, kerosene
+By Our Bureaus
+Updated - March 12, 2026 at 10:18 PM. | New Delhi/Chennai/Bengaluru
+A hotel in Bengaluru limits its menu to just coffee and tea due to the shortage of commercial LPG cylinders
+A hotel in Bengaluru limits its menu to just coffee and tea due to the shortage of commercial LPG cylinders | Photo Credit: MURALI KUMAR K
+
+
+Petroleum Minister Hardeep Singh Puri told the Lok Sabha on Thursday that commercial establishments will receive 20 per cent of their average monthly LPG requirement from Thursday, a partial restoration of supply that comes even as the war in West Asia has begun to disrupt food services at corporate campuses, restaurants and large events across the country.
+
+“In a major decision, 20 per cent of the average monthly Commercial LPG requirement will be allocated from today by OMCs, in coordination with the State Governments, so that there is no hoarding or black marketing,” Puri told Parliament.
+
+Alongside the resumption of limited supplies, the government also activated alternate fuel options to ease pressure on LPG. State pollution control boards have been advised to temporarily permit the use of biomass and RDF pellets, kerosene and coal by restaurants and hospitality establishments for one month.
+","Pressestimme: 'Nürnberger Nachrichten' zum Heizungsgesetz
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+27.02.26 05:35
+dpa-AFX
+
+NÜRNBERG (dpa-AFX) - ""Nürnberger Nachrichten"" zum Heizungsgesetz:
+
+
+
+
+""Das Ganze erinnert ans Aus vom Verbrenner-Aus. Auch da wird eine (noch wichtigere) Branche verunsichert. Deutschland bremst, fährt zweigleisig und sieht zu, wie andere Staaten uns mit modernerer, günstigerer und umweltfreundlicher Technik überholen. Nachhaltig ist das nicht, zukunftsfähig auch nicht - aber: Union und SPD glauben, ein nerviges Thema vom Tisch zu haben. Ein peinliches Kapitel populistischer Politik.""/DP/jha","Plans by the German government to relax key components of the Heating Act (Heizungsgesetz) have dampened short-term growth expectations for heat pumps. The reform removes time pressure for replacing old heating systems and restores technology openness for homeowners. In Bavaria, nearly half of all 6.5 million heating installations run on biomass such as wood or pellets. Wood and pellets are particularly dominant in Lower Bavaria at 59.1%, the Upper Palatinate at 55.3%, and Upper Franconia at 50.3%. No direct link between the Heating Act reform and specific changes in wood pellet demand volumes is stated in the retrieved sources."
+4,3/28/2026,9:10:19 PM,How do European Central Bank interest rate decisions affect the German construction market?,"The European Central Bank's (ECB) interest rate decisions significantly impact the German construction market. By maintaining the key interest rate at 2.0%, as announced in their recent meeting, the ECB aims to manage inflation risks, particularly those arising from energy costs.
+
+This decision influences borrowing costs for construction projects. For instance, the average interest rates for 10-year loans have recently risen to nearly 3.8%. Higher borrowing costs can lead to reduced investment in construction, as financing becomes more expensive for developers and builders. Additionally, the yields on 10-year German government bonds serve as a key indicator for real estate loans, further linking ECB policies to the construction market dynamics.
+
+Overall, the ECB's stance on interest rates can create volatility in the financing landscape, affecting both the availability of credit and the overall economic environment for construction activities in Germany.",Baseline,0.000186,732,1,0.017,5.26,"EZB belässt Leitzins bei 2% - Neue wirtschaftliche Realität im Angesicht des Krieges im Iran
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+19.03.26 14:56
+Aviva Investors
+
+Frankfurt (www.aktiencheck.de) - Die heutige Entscheidung der EZB, den Leitzins bei zwei Prozent zu belassen, kam nicht überraschend, so Edward Hutchings, Head of Rates bei Aviva Investors.
+
+Sie zeige aber deutlich, dass sich die wirtschaftlichen Rahmenbedingungen seit wenigen Wochen grundlegend verändert hätten. Noch vor Kurzem sei der Markt weitgehend davon ausgegangen, dass die Zinsen im Jahr 2026 unverändert bleiben würden. Inzwischen habe sich das Bild jedoch deutlich gewandelt. Angesichts der stark gestiegenen Ölpreise hätten Marktteilnehmer zu Beginn der Woche bereits fast 0,50 Prozent an weiteren Zinserhöhungen eingepreist.
+
+Der Krieg im Iran erschwere die geldpolitischen Entscheidungen der EZB spürbar. Da sich viele Wachstumsindikatoren jedoch bereits vor Ausbruch des Krieges begonnen hätten zu verbessern, könnte die Notenbank nun entschlossener handeln, um unerwünschte inflationäre Nebeneffekte frühzeitig einzudämmen. Dennoch müssten Marktteilnehmer die Lage weiterhin aufmerksam beobachten, da sie sich außergewöhnlich dynamisch entwickle.
+
+Die Wahrscheinlichkeit weiterer Zinserhöhungen im Jahr 2026 sei somit eindeutig gestiegen. Allerdings würden die jüngsten Kursänderungen an den Märkten beträchtlich erscheinen und könnten im weiteren Jahresverlauf durchaus erneut hinterfragt werden. Viele Anleger würden daher kurzfristig taktische Übergewichtungen bei europäischen Anleihen vornehmen. (19.03.2026/ac/a/m)","Zinsdynamik am Immobilienmarkt: Warum die Renditen der Bundesanleihen wichtiger sind als die EZB-Leitzinsen
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+19.03.26 14:42
+Presseportal
+
+München (ots) -
+
+
+- EZB-Entscheidung: Leitzinsen bleiben wie erwartet unverändert - Fokus der Notenbank liegt auf Inflationsrisiken durch Energiekosten
+- Zinstrend: Bauzinsen für 10-jährige Darlehen steigen in kurzer Zeit im Schnitt auf fast 3,8 Prozent
+- Marktmechanik: Die Renditen der 10-jährigen Bundesanleihe sind die wahren Taktgeber für Immobilienkredite
+- Experten-Rat: Volatilität am Zinsmarkt nutzen - Spekulation auf Zinssenkungen derzeit riskant
+
+Die Europäische Zentralbank (EZB) hat heute entschieden, die Leitzinsen auf dem aktuellen Niveau zu belassen. Für Immobilienkäuferinnen- und käufer ist der Blick auf die Renditen der 10-jährigen Bundesanleihe jedoch deutlich erkenntnisreicher.
+
+Kapitalmarkt gibt den Takt vor: Bundesanleihen im Fokus
+
+""Viele Kundinnen und Kunden warten auf ein Signal der EZB, doch für die Baufinanzierung sind die Entwicklungen am Kapitalmarkt relevanter"", erklärt Jörg Utecht, Vorstandsvorsitzender der Interhyp Gruppe. ""Während der Leitzins stagniert, sehen wir bei den Bauzinsen eine spürbare Aufwärtsbewegung auf im Schnitt fast 3,8 Prozent für 10-jährige Darlehen. Grund ist der Anstieg der Rendite der 10-jährigen Bundesanleihe, die aufgrund von Inflationssorgen zuletzt deutlich angezogen hat.""
+
+Zins-Check: Beleihungsauslauf ist entscheidend
+
+Die individuelle Zinshöhe hängt am Ende maßgeblich vom Eigenkapitaleinsatz ab. Wer derzeit eine Finanzierung mit einem hohem Beleihungsauslauf - also wenig eingebrachtem Eigenkapital - plant, muss sich bei 10-jährigen Krediten bereits wieder auf Zinssätze von über 4 Prozent einstellen.
+
+Prognose: Abwarten wird zum Kalkül mit hohen Einsätzen
+
+Trotz der heutigen EZB-Entscheidung rechnet Interhyp mittel- bis langfristig mit einem volatilen Umfeld auf erhöhtem Niveau. Jörg Utecht ordnet die Situation für Käuferinnen und Käufer ein: ""Das aktuelle Zinsumfeld wird stärker von der Geopolitik und den Inflationserwartungen geprägt als von der EZB-Geldpolitik. Mein Rat an Kaufinteressierte: Wer eine passende Immobilie gefunden hat, sollte nicht auf einen baldigen Zinsabschwung spekulieren"".
+
+Beratung und Angebotsvergleich wichtiger denn je
+
+Jörg Utecht betont: ""In einer so dynamischen Phase wie aktuell sind persönliche Beratung und der Vergleich von Angeboten wichtiger denn je. Wir beobachten aktuell, dass bei schnell ansteigenden Zinsen die Schere zwischen günstigeren und teureren Darlehen besonders weit auseinandergeht. Wer hier individuell vergleicht, findet oft Lösungen für das eigene Finanzierungsvorhaben.""
+
+Drei Empfehlungen für die aktuelle Phase:
+
+
+1. Zinssicherheit priorisieren: Lange Zinsbindungen schützen vor weiteren Sprüngen bei den Kapitalmarktrenditen.
+2. Entwicklung der Bundesanleihe im Blick behalten: Die Entwicklung der Renditen der 10-jährigen Bundesanleihe ist ein guter Indikator für den weiteren Verlauf der Bauzinsen.
+3. Gesamtkosten im Blick: Berücksichtigen Sie, dass steigende Immobilienpreise mögliche kleine Zinsvorteile in der Zukunft schnell zunichtemachen können.
+
+
+
+Über Interhyp:
+
+Die Interhyp Gruppe ist eine der führenden Adressen für private Baufinanzierungen in Deutschland. Mit den Marken Interhyp, die sich direkt an die Endkundinnen und -kunden richtet, und Prohyp, die sich an Einzelvermittlerinnen und -Vermittler und institutionelle Partner wendet, hat das Unternehmen 2025 ein Finanzierungsvolumen von 26,4 Milliarden Euro erfolgreich bei seinen über 500 Finanzierungspartnern platziert. Dabei verbindet die Interhyp Gruppe die vielfach ausgezeichnete Kompetenz ihrer Finanzierungsspezialistinnen und -spezialisten mit der Leistungsfähigkeit der eigenentwickelten Baufinanzierungsplattform HOME sowie kundenorientierten Digitalangeboten. Die Interhyp Gruppe beschäftigt rund 1.600 Mitarbeiterinnen und Mitarbeiter und ist an über 140 Standorten persönlich vor Ort für ihre Kundinnen und Kunden und Partner präsent.","
+EZB tastet Leitzins trotz Nahost-Krieg vorerst nicht an
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+19.03.26 14:20
+dts Nachrichtenagentur
+
+FRANKFURT AM MAIN (dts Nachrichtenagentur) - Die Europäische Zentralbank (EZB) hat die Zinspause erneut verlängert und ihren Leitzins bei 2,0 Prozent belassen. Das teilte die Notenbank am Donnerstag nach ihrer Ratssitzung in Frankfurt mit.
+
+
+Dementsprechend liegen der Zinssatz für die Einlagefazilität sowie die Zinssätze für die Hauptrefinanzierungsgeschäfte und für die Spitzenrefinanzierungsfazilität unverändert bei 2,00 Prozent, 2,15 Prozent beziehungsweise 2,40 Prozent.
+
+
+
+Man sei entschlossen, dafür zu sorgen, dass sich die Inflation auf mittlere Frist beim Zielwert von zwei Prozent stabilisiere, so der EZB-Rat. Der Krieg im Nahen Osten habe allerdings zu deutlich unsichereren Aussichten geführt. Er habe Aufwärtsrisiken für die Inflation und Abwärtsrisiken für das Wirtschaftswachstum zur Folge. Durch höhere Energiepreise werde sich der Krieg auf kurze Frist erheblich auf die Inflation auswirken. Die mittelfristigen Auswirkungen würden sowohl von der Intensität und der Dauer des Konflikts als auch davon abhängen, wie die Energiepreise auf die Verbraucherpreise durchschlagen und die Wirtschaft beeinträchtigen.
+
+
+Der EZB-Rat sei aber insgesamt gut gerüstet, um diese Unsicherheit zu bewältigen, hieß es weiter. Die Inflation liege in der Nähe des Zielwerts von zwei Prozent, die längerfristigen Inflationserwartungen seien fest verankert, und die Wirtschaft habe sich in den letzten Quartalen als widerstandsfähig erwiesen. Die in nächster Zeit eingehenden Daten sollen dabei unterstützen, die Auswirkungen des Krieges auf die Inflationsaussichten und die damit verbundenen Risiken zu beurteilen, so der EZB-Rat. Man beobachte die Lage genau und der datengestützte Ansatz werde dabei helfen, die Geldpolitik dementsprechend festzulegen.
+
+
+Die neuen von Fachleuten der EZB erstellten Projektionen enthalten ausnahmsweise Informationen bis zum 11. März, einem späteren Redaktionsschluss als üblich. Im Basisszenario wird eine Gesamtinflation von durchschnittlich 2,6 Prozent für 2026, 2,0 Prozent für 2027 und 2,1 Prozent für 2028 erwartet. Die Inflation wurde gegenüber den Projektionen vom Dezember, insbesondere für 2026, nach oben revidiert. Ursächlich dafür ist, dass die Energiepreise aufgrund des Krieges im Nahen Osten höher sein werden.
+
+
+Bei der Inflation ohne Energie und Nahrungsmittel gehen die Fachleute von durchschnittlich 2,3 Prozent für 2026, 2,2 Prozent für 2027 und 2,1 Prozent für 2028 aus. Dies ist ebenfalls höher als in den Projektionen vom Dezember angenommen, vor allem, weil die höheren Energiepreise auf die Inflation ohne Energie und Nahrungsmittel durchschlagen.
+
+
+Die Fachleute erwarten zudem ein Wirtschaftswachstum von durchschnittlich 0,9 Prozent für 2026, 1,3 Prozent für 2027 und 1,4 Prozent für 2028. Dies bedeutet, insbesondere für 2026, eine Abwärtsrevision, in der sich die globalen Auswirkungen des Krieges auf die Rohstoffmärkte, die Realeinkommen und das Vertrauen widerspiegeln. Zugleich dürften die niedrige Arbeitslosigkeit, solide Bilanzen im privaten Sektor und die öffentlichen Ausgaben für Verteidigung und Infrastruktur das Wachstum weiterhin stützen.","Zinsdynamik am Immobilienmarkt: Warum die Renditen der Bundesanleihen wichtiger sind als die EZB-Leitzinsen
+München (ots) -
+
+- EZB-Entscheidung: Leitzinsen bleiben wie erwartet unverändert - Fokus der Notenbank liegt auf Inflationsrisiken durch Energiekosten
+- Zinstrend: Bauzinsen für 10-jährige Darlehen steigen in kurzer Zeit im Schnitt auf fast 3,8 Prozent
+- Marktmechanik: Die Renditen der 10-jährigen Bundesanleihe sind die wahren Taktgeber für Immobilienkredite
+- Experten-Rat: Volatilität am Zinsmarkt nutzen - Spekulation auf Zinssenkungen derzeit riskant
+
+Die Europäische Zentralbank (EZB) hat heute entschieden, die Leitzinsen auf dem aktuellen Niveau zu belassen. Für Immobilienkäuferinnen- und käufer ist der Blick auf die Renditen der 10-jährigen Bundesanleihe jedoch deutlich erkenntnisreicher.
+
+Kapitalmarkt gibt den Takt vor: Bundesanleihen im Fokus
+
+""Viele Kundinnen und Kunden warten auf ein Signal der EZB, doch für die Baufinanzierung sind die Entwicklungen am Kapitalmarkt relevanter"", erklärt Jörg Utecht, Vorstandsvorsitzender der Interhyp Gruppe. ""Während der Leitzins stagniert, sehen wir bei den Bauzinsen eine spürbare Aufwärtsbewegung auf im Schnitt fast 3,8 Prozent für 10-jährige Darlehen. Grund ist der Anstieg der Rendite der 10-jährigen Bundesanleihe, die aufgrund von Inflationssorgen zuletzt deutlich angezogen hat.""","EZB hält trotz steigender Inflationsängste still
+Dublin (www.anleihencheck.de) - Die Europäische Zentralbank (EZB) hat auf ihrer jüngsten Sitzung den Leitzins bei zwei Prozent belassen, zugleich jedoch deutlich gemacht, dass sich der makroökonomische Ausblick für die Eurozone spürbar eingetrübt hat, so Violeta Todorova, Senior Research Analyst bei Leverage Shares & Income Shares. ...Energiepreisschock - Diese 3 Werte könnten langfristig abräumen!
+Die Eskalation im Iran-Konflikt hat die Energiepreise mit voller Wucht nach oben getrieben. Was zunächst nach einer kurzfristigen Reaktion aussah, entwickelt sich zunehmend zu einem strukturellen Problem: Die Straße von Hormus ist blockiert, wichtige LNG- und Ölanlagen stehen still oder werden gezielt angegriffen. Eine schnelle Entspannung ist nicht in Sicht – im Gegenteil, die Lage spitzt sich weiter zu.
+
+Für die Weltwirtschaft bedeutet dies wachsende Risiken. Steigende Energiepreise erhöhen den Inflationsdruck, gefährden Zinssenkungen und bringen die ohnehin hoch bewerteten Aktienmärkte ins Wanken. Doch wo Risiken entstehen, ergeben sich auch Chancen.
+
+Denn von einem dauerhaft höheren Energiepreisniveau profitieren nicht nur Öl- und Gasunternehmen. Auch Versorger, erneuerbare Energien sowie ausgewählte Rohstoff- und Agrarwerte rücken in den Fokus. In diesem Umfeld könnten gezielt ausgewählte Unternehmen überdurchschnittlich profitieren – unabhängig davon, ob die Krise anhält oder nicht.
+
+In unserem aktuellen Spezialreport stellen wir drei Aktien vor, die genau dieses Profil erfüllen: Krisenprofiteure mit solidem Geschäftsmodell, attraktiver Bewertung und langfristigem Potenzial.","The European Central Bank held its key interest rate at 2.0% at its March 2026 meeting, unchanged from the previous meeting. The ECB cited inflation risks particularly from energy costs as the reason for holding rates. However, construction loan interest rates for 10-year loans rose sharply in a short period to an average of nearly 3.8% in early 2026. The yields of 10-year German federal bonds are identified as the real driver of mortgage and construction lending rates, more so than the ECB base rate itself. Rising energy prices could push construction material costs higher, slowing the recovery of the German construction sector."
+5,3/28/2026,9:10:50 PM,What impact is bark beetle damage having on timber supply in German forests?,"The bark beetle damage is having a significant impact on timber supply in German forests. It has been responsible for the destruction of 16,000 hectares of forest, contributing to a broader trend of increasing forest damage due to wildfires, storms, and bark beetle outbreaks. This situation is expected to worsen in the future, with projections indicating a drastic increase in forest damage across Europe, including Germany. As a result, the timber supply may be adversely affected due to the loss of healthy trees and the overall decline in forest health.",Baseline,0.00012,484,1,0.021,4.75,"Even if warming is limited to 2°C, wildfires, storms and beetles may boost Europe forest loss.Forest damage in Europe caused by wildfires, storms and bark beetle outbreaks is projected to increase compared to recent decades under all analyzed climate scenarios, according to a new international study, published in Science, with contributions from the Potsdam Institute for Climate Impact Research (PIK).Even in a scenario with warming limited to roughly 2°C, annually disturbed forest area could rise from about 180,000 to roughly 216,000 hectares per year by the end of the century, compared to the already unprecedented levels of disturbances from 1986 to 2020.
+
+In a scenario in which fossil fuel use continues to increase, annually disturbed forest area could double, reaching nearly 370,000 hectares per year by the end of the century.
+
+""In the future, Europe's forests are likely to absorb less carbon,"" says Christopher Reyer, scientist at PIK and co-author of the study.
+
+""If forests take up less carbon, or potentially even release more than they absorb, this increases pressure on other sectors such as transport and agriculture to reduce their emissions more rapidly. At the same time, forest management needs to focus more strongly on building resilient forests.""
+
+According to the study, forests in Southern and Western Europe will be particularly affected and will undergo the strongest changes in forest disturbance. Northern Europe is expected to be less severely impacted overall, though hotspots of future forest damage are also likely to emerge there. The study was led by researchers at the Technical University of Munich (TUM).","07.03.2026
+Waldschäden in Europa könnten bis 2100 um rund 20 Prozent steigen
+Waldschäden in Europa durch Brände, Stürme und Borkenkäfer werden im Vergleich zu den vergangenen Jahrzehnten unter allen analysierten Klimaszenarien zunehmen.
+
+Das ist das Ergebnis einer neuen internationalen Studie mit Beteiligung des Potsdam-Instituts für Klimafolgenforschung (PIK), die in der Fachzeitschrift Science veröffentlicht wurde.
+
+Selbst wenn die Erderwärmung auf etwa 2°C begrenzt wird, könnte die jährlich geschädigte Waldfläche bis zum Ende des Jahrhunderts von rund 180.000 Hektar auf etwa 216.000 Hektar pro Jahr steigen – und damit höher liegen als in den ohnehin schon stark betroffenen Jahren 1986 bis 2020. In einem Szenario, in dem die Nutzung fossiler Energieträger weiter zunimmt, könnte sich die Waldschäden mehr als verdoppeln und bis zum Ende des Jahrhunderts nahezu 370.000 Hektar pro Jahr erreichen.
+
+„In Zukunft werden Europas Wälder voraussichtlich weniger Kohlenstoff aufnehmen“, sagt Christopher Reyer, Wissenschaftler am PIK und Mitautor der Studie. „Wenn Wälder weniger Kohlenstoff binden oder möglicherweise sogar mehr freisetzen als sie aufnehmen, erhöht das den Druck auf andere Sektoren wie Verkehr und Landwirtschaft, ihre Emissionen schneller zu senken. Gleichzeitig sollte die Waldbewirtschaftung stärker die Resilienz von Wäldern fördern.“
+
+Besonders stark betroffen sind der Studie zufolge Süd- und Westeuropa, wo die Veränderungen am ausgeprägtesten ausfallen dürften. Nordeuropa wird insgesamt weniger stark betroffen sein, allerdings könnten auch dort regionale Hotspots mit erhöhtem Schadensrisiko entstehen. Die Studie wurde von Forschenden der Technischen Universität München (TUM) geleitet.","Fördergelder für nachhaltige Wieder-Bewaldung
+Die Wieder-Aufforstung des Bergischen Waldes ist eine Generationen-Aufgabe. In den vergangenen Jahren haben Sturm, Dürre und vor allem der Borkenkäfer große Waldflächen bei uns völlig zerstört. Alleine der Borkenkäfer ist für 16.000 kahle Hektar verantwortlich. Damit die Wieder-Bewaldung bei uns nachhaltig funktioniert, stellt das Land NRW jetzt Fördermittel.Mit insgesamt 15 Millionen Euro will das Land Waldbesitzer dieses Jahr unterstützen. Davon gibt es bei uns im Bergischen aktuell rund 35.000, heißt es von Wald und Holz NRW.
+
+Ziel der Förderung ist es vielfältige Mischwälder zu stärken, die im Klimawandel Bestand haben. Der Wald soll Ort der Biodiversität werden, Holz liefern und aktiv das Klima schützen. Neben finanzieller Förderung für Waldbesitzer bietet das Ministerium für Landwirtschaft und Verbraucherschutz NRW auch fachliche Empfehlungen. So gibt es beispielsweise Beratungs-Angebote für Waldbau- und Wieder-Bewaldungs-Konzepte.","Deutsche Forscher sagen massive Waldschäden in Europa voraus.Eine Studie der TU München prognostiziert eine drastische Zunahme der Waldschäden in Europa. Selbst im optimistischsten Szenario sieht sie eine düstere Zukunft mit stark anwachsenden Schäden durch Brände und Stürme. In Deutschland ist ein kritischer Punkt dabei bereits überschritten.
+
+Schon heute leidet der Wald unter Stürmen, Waldbränden und Borkenkäfern. Forscher haben nun berechnet, was in der Zukunft auf Wälder in Europa zukommt, wenn sich die Klimakrise weiter zuspitzt.
+
+Dafür hat das Team um Marc Grünig und Rupert Seidl von der Technischen Universität München verschiedene mögliche Szenarien der weiteren Erderwärmung zugrunde gelegt. Doch sogar im optimistischsten Szenario sieht es düster aus für den Wald, wie die Forscher im Fachjournal ""Science"" darlegen.
+
+309904295
+32 Bilder
+Wald, Gletscher, Seen schwinden
+Wie der Klimawandel Deutschland verändert
+Mehr Schäden in allen Szenarien
+In allen betrachteten Szenarien werden den Forschern zufolge die Schäden für den Wald zunehmen. Das hat auch Einfluss auf seine Funktionen - wie etwa die Aufgabe, Kohlenstoff zu speichern und damit ein wichtiger natürlicher Klimaschützer zu sein.
+
+Die Studie betrachtet verschiedene Klimapfade - darunter rund zwei Grad Erderwärmung bis zum Ende des Jahrhunderts, aber auch ein Worst-Case-Szenario von mehr als vier Grad. Derzeit steuert die Erde den Vereinten Nationen zufolge mit der weltweiten Klimapolitik bis zum Ende des Jahrhunderts auf 2,8 Grad Erwärmung gegenüber der vorindustriellen Zeit zu. Die UN sehen die Überschreitung der international vereinbarten 1,5-Grad-Grenze genauso wie Klimaforscher als kaum noch vermeidbar an.
+
+9cac12b9f9fded3a7289ec426099626c
+59 Bilder
+Die grünen Lungen der Erde
+Wälder - idyllisch, lebenswichtig und bedroht
+Bei einer Erderwärmung von mehr als vier Grad Celsius bis zum Ende des Jahrhunderts kommt die Gruppe zu dem Schluss, dass sich die von Bränden, Stürmen und Borkenkäfern geschädigten Flächen mehr als verdoppeln könnten (plus 122 Prozent). Vergleichszeitraum ist hierbei die Phase von 1986 bis 2020 - also eine Zeit, in der auch schon viele Schäden den Wald belasteten.
+
+Auch im Szenario von etwa zwei Grad plus bis 2100 dürfte die geschädigte Fläche um rund 61 Prozent gegenüber der Vergleichsperiode anwachsen. Anders als im Worst-Case-Szenario wird hier vorhergesagt, dass die Schäden in den 2050er Jahren ihren negativen Höhepunkt erreichen und danach auf hohem Niveau wieder leicht zurückgehen werden. Auch Jahre mit extrem vielen Waldbränden würden deutlich häufiger vorkommen.","Waldschäden sollen laut Studie durch Klimawandel deutlich zunehmen
+Brände, Stürme und der Borkenkäfer werden Wäldern in Europa künftig stark zusetzen. Bereits bei 2 Grad Erderwärmung werden laut Studie 20 Prozent mehr Schäden erwartet.Waldschäden in Europa werden in Zukunft stark zunehmen. Davor warnt das Potsdam-Institut für Klimafolgenforschung (PIK) in einer neuen Studie. Im Vergleich zu den vergangenen Jahrzehnten werden unter allen analysierten Klimaszenarien die Schäden durch Brände, Stürme und den Borkenkäfer zunehmen. Selbst bei einer Begrenzung der Erderwärmung auf zwei Grad im Vergleich zur vorindustriellen Zeit könnten Waldschäden bis zum Jahr 2100 um rund 20 Prozent ansteigen.
+
+
+Die jährlich geschädigte Waldfläche könnte laut der Studie bis zum Ende des Jahrhunderts auf etwa 216.000 Hektar pro Jahr anwachsen. Damit würde der Umfang der Schäden höher liegen als in den ohnehin bereits stark betroffenen Jahren 1986 bis 2020. Falls die Nutzung fossiler Energieträger in den kommenden Jahren weiter zunimmt, könnten sich die Waldschäden mehr als verdoppeln.
+
+Mögliche Entstehung von regionalen Hotspots in Europa
+Besonders betroffen sind laut Studie Süd- und Westeuropa. Dort dürften die Veränderungen am ausgeprägtesten ausfallen. Auch in Nordeuropa könnten regionale Hotspots mit erhöhtem Schadensrisiko entstehen.
+
+Durch die zunehmenden Schäden werden Europas Wälder in Zukunft weniger Kohlenstoff aufnehmen können. Dies erhöhe laut PIK den Druck auf andere Bereiche, ihre Emissionen schneller zu senken. Das Potsdam-Institut für Klimafolgenforschung nannte etwa die Bereiche Verkehr und Landwirtschaft.","Bark beetle damage has destroyed 16,000 hectares of forest in the Bergisches Land region of Germany. The state of North Rhine-Westphalia has allocated 15 million euros in funding to support sustainable reforestation of affected areas. A study published in Science with contributions from the Potsdam Institute for Climate Impact Research projects that European forest damage from wildfires, storms, and bark beetles will increase under all climate scenarios. Even with warming limited to 2 degrees Celsius, annually disturbed forest area could increase by around 20% compared to recent decades. A TU Munich study confirms that Germany has already passed a critical threshold for forest damage."
+6,3/28/2026,9:11:09 PM,How has the German new housing construction sector performed in early 2026?,"I don't have that information. The provided context only discusses the performance of the German new housing construction sector in 2025, indicating a positive trend with an increase in new housing permits.",Baseline,0.000096,528,1,N/A,2.65,NA,NA,NA,NA,NA,No information was retrieved by the Baseline RAG system for this question. The system found no relevant sources on the performance of German new housing construction in early 2026.
+7,3/28/2026,9:11:27 PM,What are the main factors driving construction cost increases in Germany?,"The main factors driving construction cost increases in Germany include high wage agreements, the alignment of wages between East and West Germany, and rising energy prices. According to Peter HÃ¼bner, the president of the Hauptverband der Deutschen Bauindustrie (HDB), construction prices are expected to rise by 3.3% in 2026 and by 3.6% in 2027 due to these factors. Additionally, Matthias Frederichs, the managing director of the Baustoffverband BBS, noted that increasing energy prices could also put pressure on construction material prices, although many companies are currently protected by long-term supply contracts.",Baseline,0.00014,556,1,0.019,4.65,"Research and Markets: Germany Construction Industry Report 2025: Output Declined by 3% Owing to Falling Building Permits and Rising Construction Material Costs - Forecast to 2029 - ResearchAndMarkets.com
+The ""Germany Construction Market Size, Trends, and Forecasts by Sector Commercial, Industrial, Infrastructure, Energy and Utilities, Institutional and Residential Market Analysis to 2029 (Q4 2025)"" report has been added to ResearchAndMarkets.com's offering.
+
+The construction industry in Germany declined in real terms by 3% in 2025, owing to falling building permits and rising construction material costs.
+
+According to Destatis, the total number of non-residential building permits approved fell by 3.6% year-on-year (YoY) in the first nine months of 2025, following an overall annual fall of 5.8% in 2024. Similarly, the construction production index declined by 2.7% YoY in the first nine months of 2025, following an overall annual fall of 3.4% in 2024, according to the Eurostat.
+
+The German construction industry is expected to recover at an average annual growth rate of 3.1% between 2026 to 2029, supported by investments in manufacturing, and road construction projects. Earlier, in March 2025, the German Parliament approved a EUR500 billion ($544.8 billion) debt package to fund infrastructure and climate initiatives through 12-year loans.
+
+The plan allocates EUR300 billion ($327 billion) for infrastructure projects, EUR100 billion ($109 billion) for federal states, and another EUR100 billion ($109 billion) for climate-related projects. Germany's growth outlook is further strengthened by ongoing investments in renewable energy, in line with the government's target to generate 80% of electricity from renewables by 2030 and achieve carbon neutrality by 2045.
+
+Report Scope
+
+Historical (2020-2024) and forecast (2025-2029) valuations of the construction industry in Germany, featuring details of key growth drivers.
+Segmentation by sector (commercial, industrial, infrastructure, energy and utilities, institutional and residential) and by sub-sector
+Analysis of the mega-project pipeline, including breakdowns by development stage across all sectors, and projected spending on projects in the existing pipeline.
+Listings of major projects, in addition to details of leading contractors and consultants
+Reasons to Buy
+
+Identify and evaluate market opportunities using our standardized valuation and forecasting methodologies
+Assess market growth potential at a micro-level with over 600 time-series data forecasts
+Understand the latest industry and market trends
+Formulate and validate business strategies using the analyst's critical and actionable insight
+Assess business risks, including cost, regulatory and competitive pressures
+Evaluate competitive risk and success factors","Wohnungsbau zieht in Europa an – aber nicht in Deutschland
+Projektkosten und Zahlungsbereitschaft hemmen einer Ifo-Prognose zufolge den Wohnungsbau in Deutschland. In anderen Ländern in Europa zieht der Wohnungsmarkt stärker an.
+27.02.2026 - 12:46 Uhr
+
+Artikel anhören
+03:34
+
+
+
+
+
+Wohnungen: Pro 1000 Einwohner werden demnach in Deutschland 2028 etwa 2,6 Wohnungen fertiggestellt, Foto: IMAGO/Jochen Eckel
+Berlin. Die Zahl der in Deutschland fertiggestellten Wohnungen wird einer Prognose des Ifo-Instituts zufolge in diesem Jahr entgegen dem positiven Trend in Europa sinken.
+
+Nach einem Rückgang auf 205.000 Wohnungen im Jahr 2025 werde es ein weiteres Minus auf 185.000 Einheiten geben, wie die Münchner Forscher am Freitag vorhersagten. 2027 soll die Zahl auf 205.000 und 2028 dann auf 215.000 Einheiten zulegen – dann läge sie aber immer noch um 15 Prozent unter dem Wert von 2024.
+
+Pro 1000 Einwohner werden demnach in Deutschland 2028 etwa 2,6 Wohnungen fertiggestellt und damit deutlich weniger als im europäischen Mittel (3,4). „Auf dem deutschen Wohnungsmarkt liegen Projektkosten und Zahlungsbereitschaft in vielen Fällen weiter deutlich auseinander“, sagte Ifo-Bauexperte Ludwig Dorffmeister. „Die zahlreichen Initiativen zur Kostensenkung und Verfahrensbeschleunigung konnten bislang nicht die gewünschte Wirkung entfalten.“
+
+Zahl der fertiggestellten Wohnungen in Europa
+In Europa soll die Zahl der fertiggestellten Wohnungen in diesem Jahr auf 1,47 Millionen Einheiten steigen, nach 1,44 Millionen 2025. Für 2027 wird ein weiteres Wachstum auf 1,58 Millionen Einheiten erwartet. 2028 sollen es 1,66 Millionen Einheiten sein, so die Prognosen der Forschergruppe Euroconstruct, der das Ifo-Institut angehört. „Auch wenn in Europa wieder mehr Wohnungen gebaut werden, wird der Aufschwung in Deutschland dagegen erst verzögert einsetzen und nur moderat ausfallen“, sagte Dorffmeister.
+
+
+Der europäische Wohnungsbau wird vor allem durch einige größere Länder belebt:
+
+Großbritannien erhöht der Prognose zufolge seine Fertigstellungen von rund 161.000 (2025) auf 207.000 Wohnungen (2028),
+Frankreich von 272.000 auf 314.000
+Spanien von 95.000 auf 135.000 Einheiten.
+Besonders dynamisch entwickeln sich kleinere Länder wie Ungarn von rund 14.000 auf 27.000 Wohnungen,
+Irland von 34.000 auf 45.000
+und Schweden von 32.000 auf 41.000 Einheiten im gleichen Zeitraum.
+„Die vielerorts angespannten Wohnungsmärkte dürften von diesem Zubau aber oftmals kaum profitieren“, sagte Ifo-Experte Dorffmeister.","Bauindustrie rechnet mit steigenden Baukosten
+
+
+
+20.01.26 08:03
+dts Nachrichtenagentur
+
+BERLIN (dts Nachrichtenagentur) - Der Hauptverband der Deutschen Bauindustrie (HDB)erwartet, dass die Baupreise 2026 um 3,3 Prozent und 2027 um 3,6 Prozent steigen werden. Das sagte Verbandspräsident Peter Hübner der ""Frankfurter Allgemeinen Zeitung"".
+
+
+Hübner macht dafür hohe Lohnabschlüsse, die Angleichung der Löhne in Ost und West und höhere Energiepreise verantwortlich. Das Ziel, die Baukosten zu drücken, um Wohnungen erschwinglicher zu machen, dürfte die Bundesregierung damit verfehlen.
+
+
+
+Die Bauwirtschaft werde dieses Jahr wieder in allen Sparten wachsen, so Hübner. Unter dem Strich erwartet er ein Produktionsplus von 2,5 Prozent. ""Definitiv, das ist die Wende"", sagte er.
+
+
+Zudem rechnet Hübner damit, dass in diesem Jahr nur noch 200.000 Wohnungen fertiggestellt werden - gerade mal die Hälfte des von Bundesregierung genannten Ziels. Die Auftragsbücher der Unternehmen im Wohnungsbau ""geben es einfach nicht her"", so Hübner. Die Zahl der Stornierungen sei wieder gestiegen, die Zahl der Genehmigungen ziehe erst seit kurzer Zeit und allmählich wieder an.
+
+
+Eine Prognose, wieviel Aufträge aus dem 500 Milliarden Euro schweren Sondervermögen für Infrastruktur und Klimaneutralität in den Auftragsbüchern der Bauunternehmen ankommen, wagt Hübner nicht. Viele Planungen seien noch nicht ausschreibungsreif, noch immer dauere ""vieles viel zu lang."" Die Kapazitäten der deutschen Bauindustrie reichten für das Milliardenpaket aus.
+","Ölpreis: Verbände fürchten langsamere Erholung der Baukonjunktur:Berlin (dts Nachrichtenagentur) - Der Anstieg der Energiepreise könnte das Bauen in Deutschland wieder verteuern. ""Steigende Energiepreise können auch die Baustoffpreise wieder unter Druck setzen"", sagte Matthias Frederichs, Hauptgeschäftsführer des Baustoffverbands BBS, dem ""Redaktionsnetzwerk Deutschland"" (Freitagausgabe).
+
+Noch seien viele Unternehmen über langfristige Lieferverträge aber abgesichert. Entscheidend sei nun, wie lange das aktuelle Preisniveau bei Gas und Öl anhalte.
+
+""Die Baukonjunktur zeigt gerade erst eine leichte Erholung nach dem massiven Einbruch der letzten Jahre"", fügte Frederichs hinzu. ""Neue energiegetriebene Preissprünge könnten diese Stabilisierung schnell wieder gefährden."" Ob es dazu komme, hänge jetzt von der Dauer des Konfliktes und den Folgen für die Energiemärkte ab.
+
+Tim-Oliver Müller, Hauptgeschäftsführer des Bauindustrieverbands HDB, fügte hinzu, dass sich die Sperrung der Straße von Hormus ""mittelbar auch auf die Rohstoffversorgung der Bauwirtschaft auswirken"" könne. Müller nannte als Beispiel die Asphaltproduktion, für die Bitumen benötigt wird.
+
+Die Lieferketten seien seit dem Ukraine-Krieg diversifizierter, erklärte Müller zugleich. Von unmittelbaren Einschränkungen bei der Materialverfügbarkeit gehe er deshalb nicht aus. ""Nichtsdestotrotz können die derzeit zu beobachtenden, weltweiten Preissteigerungen beim Rohöl auch zu Kostensteigerungen hierzulande führen"", sagte er.","Ölpreis: Verbände fürchten langsamere Erholung der Baukonjunktur
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+13.03.26 00:00
+dts Nachrichtenagentur
+
+BERLIN (dts Nachrichtenagentur) - Der Anstieg der Energiepreise könnte das Bauen in Deutschland wieder verteuern. ""Steigende Energiepreise können auch die Baustoffpreise wieder unter Druck setzen"", sagte Matthias Frederichs, Hauptgeschäftsführer des Baustoffverbands BBS, dem ""Redaktionsnetzwerk Deutschland"" (Freitagausgabe).
+
+
+Noch seien viele Unternehmen über langfristige Lieferverträge aber abgesichert. Entscheidend sei nun, wie lange das aktuelle Preisniveau bei Gas und Öl anhalte.
+
+
+
+""Die Baukonjunktur zeigt gerade erst eine leichte Erholung nach dem massiven Einbruch der letzten Jahre"", fügte Frederichs hinzu. ""Neue energiegetriebene Preissprünge könnten diese Stabilisierung schnell wieder gefährden."" Ob es dazu komme, hänge jetzt von der Dauer des Konfliktes und den Folgen für die Energiemärkte ab.
+
+
+Tim-Oliver Müller, Hauptgeschäftsführer des Bauindustrieverbands HDB, fügte hinzu, dass sich die Sperrung der Straße von Hormus ""mittelbar auch auf die Rohstoffversorgung der Bauwirtschaft auswirken"" könne. Müller nannte als Beispiel die Asphaltproduktion, für die Bitumen benötigt wird.
+
+
+Die Lieferketten seien seit dem Ukraine-Krieg diversifizierter, erklärte Müller zugleich. Von unmittelbaren Einschränkungen bei der Materialverfügbarkeit gehe er deshalb nicht aus. ""Nichtsdestotrotz können die derzeit zu beobachtenden, weltweiten Preissteigerungen beim Rohöl auch zu Kostensteigerungen hierzulande führen"", sagte er.","The German Construction Industry Association (HDB) expects construction prices to rise 3.3% in 2026 and 3.6% in 2027. The main factors cited by HDB president Peter Hubner are high wage agreements, the alignment of wages between East and West Germany, and higher energy prices. Rising energy prices are also expected to push construction material costs higher according to the building materials association BBS. Germany construction output declined 3% in the period covered due to falling building permits and rising construction material costs. Project costs and limited willingness to pay are also cited by the ifo Institute as factors hindering residential construction."
+8,3/28/2026,9:11:58 PM,What challenges are German sawmills facing in 2026?,I don't have that information.,Baseline,0.000058,372,1,N/A,3.23,NA,NA,NA,NA,NA,No information was retrieved by the Baseline RAG system for this question. The system found no relevant sources on the challenges facing German sawmills in 2026.
+9,3/28/2026,9:12:11 PM,What is the significance of carbon certificates for the German biomass and timber industry?,"The significance of carbon certificates for the German biomass and timber industry lies in their potential to create new growth opportunities and enhance sustainability efforts. As policymakers are rethinking the role of biomass, particularly wood pellets, in carbon emissions, the focus is shifting towards subsidies and innovative uses of biomass.
+
+Research indicates that biomass can be utilized as a raw material for chemical products instead of relying solely on petroleum, which could lead to more sustainable practices in the industry. Additionally, the mention of technologies like BECCS (Bioenergy with Carbon Capture and Storage) suggests that carbon certificates could play a crucial role in incentivizing the reduction of emissions and promoting negative emissions technologies.
+
+Moreover, the example of the Fujian Yongan Forestry company highlights the potential for monetizing carbon certificates as a way to explore new growth areas in a stabilizing Chinese wood market. This indicates that carbon certificates could be a valuable asset for companies in the German biomass and timber industry as they navigate the evolving market landscape and seek to align with environmental goals.",Baseline,0.000176,574,1,0.023,5.2,"Are Wood Pellets Worth Billions In Subsidies? Drax Faces A Reckoning: The energy industry initially sold wood pellets as a way to clean up coal. And governments bought into that assumption. But now policymakers are questioning that position and even reversing course.
+
+At the center of this debate is a UK-based power company called Drax, which converted Europe’s largest coal plant into a biomass facility—one fueled by wood pellets that it imported from southern states in the United States. The debate raises a multitude of questions, namely those centered on pollution and costs. That is, if the additive creates more pollution than either wind or solar energy, why bother, especially since it comes from a power source that depends on subsidies?
+
+Merry Dickinson, lead campaigner for the Stop Burning Trees Coalition in the U.K., told me that Drax now operates entirely on woody biomass, requiring seven to eight million tons of wood pellets annually. “The amount of wood required to run at these levels is beyond what is available as waste wood,” Dickinson says. “Even when the industry refers to ‘waste wood,’ much of the supply consists of whole trees.”
+
+Biomass received special treatment under the 2010 European Renewable Energy Directive, which counted emissions from burning wood as zero at the smokestack. The underlying assumption: trees regrow and reabsorb carbon over time. Post-Brexit, the UK expanded subsidies for biomass, positioning wood pellets as a bridge fuel to reduce reliance on coal. Under these rules, a power plant can burn wood and claim carbon neutrality—a calculation not applied to fossil fuels.
+
+Drax’s business model has long relied on government incentives rather than market demand. The UK has historically provided about $1.1 billion annually in subsidies, but these payments are scheduled to be cut nearly in half after 2027. Meanwhile, Drax has shuttered facilities in Arkansas and British Columbia and scaled back investments in bioenergy with carbon capture and storage. Some operations are pivoting toward data centers, a quiet acknowledgment that the market cannot sustain the company at previous levels.","Biomass-derived furans offer sustainable alternative to petroleum in chemical production: A research project conducted by the Max-Planck-Institut für Kohlenforschung shows how biomass can be used as a raw material for chemical products instead of petroleum. The scientists have published their findings in the journal Science.The chemical industry is facing major challenges: for reasons of CO2 neutrality, circular economy, and geopolitical instability, there is a desire to move away from petroleum and other fossil materials as raw materials for the production of high-quality chemicals. But how will molecular building blocks for essential medicines, for example, be obtained in the future?
+
+New approach to using biomass
+A team from the working group of Prof. Benjamin List, Director at the Max-Planck-Institut für Kohlenforschung, is now demonstrating a new way to obtain such chemicals.
+
+""Our motto is: biomass as a chemical raw material instead of petroleum,"" explains Nils Frank, a doctoral student in Benjamin List's team. But unlike petroleum, the chemical potential of biomass is far from being exhausted. In their project, Nils Frank and the team from the List laboratory focused on so-called furans, a product of biomass.
+
+""For decades, chemists have been focusing on petroleum, which is why the possibilities offered by furans have hardly been investigated. We took a closer look at this,"" says Nils Frank.
+
+Breakthrough in furan chemistry
+Established processes oxidize or reduce furans to alcohols or carboxylic acids—a simple, redox-neutral ring opening to, for example, the dialdehyde succinaldehyde was not known. This redox-neutral reaction was achieved thanks to a process known as photohydrolysis.
+
+""Light is important because the reaction is an 'uphill' reaction,"" explains Nils Frank. This means that energy must be supplied for the reaction to take place. And, as in natural photosynthesis, this energy comes from light.
+
+""Carbon dioxide and light are the building blocks of a future chemical industry, and Nils' discovery is just the beginning of our work in this direction,"" says Ben List.","Studie: CO2-Abscheidung aus Biomasse kann erheblichen Beitrag zur Klimaneutralität leisten / Kosten der Abscheidung bereits in Nähe zukünftiger CO2 Preise
+Berlin (ots) -
+
+Bioenergieanlagen in Deutschland besitzen ein erhebliches Potenzial für sogenannte Negativemissionen. Technologien wie BECCS (Bioenergy with Carbon Capture and Storage) und BECCU (Bioenergy with Carbon Capture and Utilization) können einen wichtigen Beitrag leisten, um verbleibende Treibhausgasemissionen auszugleichen.
+
+Die Studie, die von Seeger Engineering erstellt wurde - im Auftrag des Hauptstadtbüros Bioenergie (bei dem der Bundesverband Bioenergie beteiligt ist) und des Bundesverbands der deutschen Bioethanolwirtschaft - analysiert die Kosten der CO2-Abscheidung in drei Bioenergieanwendungen: gasförmiger, flüssiger und fester Biomasse.
+
+Die geringsten Kosten entstehen bei den Anlagen mit flüssiger Biomasse (Bioethanol) mit rund 60 Euro pro Tonne CO2, da das CO2 hier bereits in hoher Konzentration anfällt und nicht verflüssigt werden muss. Bei der gasförmigen Biomasse, also Biogas- und Biomethananlagen, liegen die Kosten bei etwa 117 Euro pro Tonne, bei der festen Biomasse, den Holzenergieanlagen, bei rund 119 Euro pro Tonne CO2. Als zentrale Kostentreiber identifiziert die Studie vor allem den Energiebedarf, insbesondere für Strom, sowie die Anlagengröße, Auslastung und Wärmeintegration.
+
+Das Potenzial der CO2-Abscheidung ist beträchtlich: Bereits bestehende Bioenergieanlagen könnten laut einer Vorgängerstudie (hier (https://www.bioenergie.de/download_file/force/1820/201)) 13,1 Millionen Tonnen CO2 pro Jahr abscheiden, bei weiterem Ausbau sogar bis zu 30 Millionen Tonnen jährlich.
+
+
+Stefan Walter, Geschäftsführer des Bundesverbands der deutschen Bioethanolwirtschaft unterstreicht: ""Einige Bioethanol-Anlagen liefern bereits heute biogenes CO2 für die stoffliche Nutzung. Die weiteren erheblichen Potenziale für die Abscheidung, Speicherung und Nutzung sollten gehoben werden, um auftretende CO 2 -Restemissionen künftig auszugleichen. Entscheidend ist nun, dass die Politik den regulatorischen Rahmen schafft. Dazu gehören langfristig klare Regeln für den CO 2 -Transport und die Speicherung sowie wirtschaftliche Anreizen für Investitionen.""
+
+Sandra Rostek, Leiterin des Hauptstadtbüros Bioenergie, erklärt: ""Bioenergie mit CO2-Abscheidung bietet die Chance, erneuerbare Energie zu erzeugen und gleichzeitig CO2 dauerhaft aus der Atmosphäre zu entfernen. Gerade weil ein großer Teil der Bioenergieanlagen bereits existiert, könnten negative Emissionen vergleichsweise schnell realisiert werden. Damit dieses Potenzial gehoben werden kann, braucht es jetzt eine Anschubfinanzierung für erste Projekte - etwa aus Einnahmen des Emissionshandels bzw. dem Klima- und Transformationsfonds.""","Biomass could play a key role in Canada's transition to a carbon-neutral economy: Record forest fires, under-utilized agricultural residues like straw and husks and struggling sawmills have left Canada with an abundance of undervalued biomass. If carefully and strategically managed, this resource could become a powerful ally in the fight against climate change.Canada's biomass sectors are facing significant uncertainty because of political and natural disruptions. The forestry sector was hit last year by new American tariffs announced by the Donald Trump administration on Canadian forest products, bringing the total duties imposed on Canadian lumber to 45%.
+
+The agricultural and agri-food sector is also particularly vulnerable, since it exports more than 70% of its main crops.
+
+In addition to facing these political uncertainties, biomass sectors are increasingly experiencing the effects of climate disasters. In 2025, fires had burned 8.3 million hectares of Canadian forests by Sept. 30, making it Canada's second-worst wildfire season on record. With climate change, extreme weather events like wildfires and droughts are likely to become more frequent and intense.
+
+Change is accelerating and risks are mounting. For industries and communities that rely on biomass, this is the moment to define a long-term role in the climate transition.Biomass resources
+Canada needs to move toward a carbon-neutral economy, and the biomass sectors have a key role to play in this transition.
+
+The availability of diverse biomass resources in Canada's forests and agricultural lands, combined with new technologies to convert them into bioproducts and bioenergy, makes biomass a potential solution for reducing carbon emissions in several sectors, including industry, construction and all modes of transport (road, marine, rail and air).
+
+Biomass can be part of climate change mitigation strategies. Used properly, it can replace fossil fuels and products, and help store carbon in different ways: in sustainable materials made from wood or agricultural residues, in the form of biochar that traps carbon in the soil or through bioenergy with carbon capture and storage (BECCS), which prevents carbon released during energy production from entering the atmosphere.
+
+Several recent projects have demonstrated that interest in biomass feedstocks is high in many industries. In 2025, Canada's first industrial-scale biochar plant was inaugurated in Québec, while the Strathcona refinery in Alberta will become Canada's largest facility for renewable diesel.
+
+The potential role of biomass becomes clear in the pathways now being modeled to achieve Canada's climate goals. These analyses show that if a significant portion of available biomass were used differently, it would be possible to sequester up to 94 million tons of CO? equivalent per year through BECCS and biochar.
+
+These results underscore the need for Canada to carefully plan new project developments and judiciously allocate biomass between its traditional and emerging uses.","
+
+
+Fujian Yongan Forestry Aktie: Berichtssaison naht
+
+
+
+18.02.26 17:19
+Börse Global
+
+Fujian Yongan Forestry Joint-Stock Aktie
+Anleger blicken gespannt auf die anstehende Berichtssaison der Fujian Yongan Forestry. Während sich der chinesische Holzmarkt zu stabilisieren scheint, stellt sich die Frage: Kann das Unternehmen durch die geplante Monetarisierung von CO2-Zertifikaten neue Wachstumsfelder erschließen? Die kommenden Wochen werden zeigen, wie robust sich das Geschäftsmodell im aktuellen Marktumfeld präsentiert.
+
+
+Fokus auf Geschäftsberichte und CO2-Zertifikate
+
+
+Im Mittelpunkt des Anlegerinteresses steht die Veröffentlichung der geprüften Jahresergebnisse für 2025. Gemäß den Regularien der Börse in Shenzhen muss die Offenlegung bis spätestens Ende April erfolgen. Diese Daten sind essenziell, um die operative Effizienz der Verarbeitungssegmente sowie die Kostenstruktur der Forstverwaltung bewerten zu können.
+
+
+Ein wesentlicher Faktor für die zukünftige Bewertung bleibt der Ausbau des „China Certified Emission Reduction“-Programms (CCER). Forstunternehmen könnten erheblich von der finanziellen Verwertung von Kohlenstoffsenken profitieren. Regulatorische Updates zur Integration forstwirtschaftlicher Projekte in den nationalen Emissionshandel gelten als einer der wichtigsten Katalysatoren für die Branche.
+
+
+Stabilisierung am Holzmarkt
+
+
+Der chinesische Holzmarkt zeigt Anfang 2026 deutliche Anzeichen einer Konsolidierung. Daten aus großen Logistikzentren belegen, dass sich die Lagerbestände in den Häfen, insbesondere bei Nadelholz, auf einem ausgeglichenen Niveau stabilisiert haben. Dies deutet auf ein gefestigtes Preisumfeld für Rohholz hin, pünktlich zum Beginn der Bausaison im Frühjahr.
+
+
+Die wichtigsten Termine im Überblick:
+* Jahresbericht 2025: Erwartete Veröffentlichung zwischen Ende März und April 2026.
+* Gesetzliche Frist: Die geprüften Abschlüsse müssen bis zum 30. April 2026 vorliegen.
+* Q1-Zahlen 2026: Das Update zum ersten Quartal erfolgt voraussichtlich Anfang Mai.
+
+
+Die kommenden Wochen bringen Klarheit über die operative Verfassung des Unternehmens. Neben den finanziellen Kennzahlen bleibt die Einbindung in nationale Waldreserveprojekte ein entscheidender Faktor für die langfristige Positionierung innerhalb der ökologischen Rahmenplanung Chinas. Die Nachfrage nach Holzwerkstoffen wie Faserplatten bleibt zudem eng an die Fertigstellungsraten im Immobiliensektor gekoppelt.
+
+
+Anzeige
+Fujian Yongan Forestry Joint-Stock-Aktie: Kaufen oder verkaufen?! Neue Fujian Yongan Forestry Joint-Stock-Analyse vom 18. Februar liefert die Antwort:
+
+
+Die neusten Fujian Yongan Forestry Joint-Stock-Zahlen sprechen eine klare Sprache: Dringender Handlungsbedarf für Fujian Yongan Forestry Joint-Stock-Aktionäre. Lohnt sich ein Einstieg oder sollten Sie lieber verkaufen? In der aktuellen Gratis-Analyse vom 18. Februar erfahren Sie was jetzt zu tun ist.","A study found that bioenergy facilities in Germany have significant potential for negative emissions through BECCS (Bioenergy with Carbon Capture and Storage) and BECCU technologies, with carbon capture costs already approaching future projected CO2 prices. Policymakers in multiple countries are questioning the carbon neutrality assumptions behind wood pellet subsidies, with the Drax biomass debate in the UK illustrating this shift. Research from the Max Planck Institute shows biomass can replace petroleum as a raw material for chemical production offering CO2 neutrality benefits. No specific German timber industry data on carbon certificate revenues or policy impacts is available in the retrieved sources."
+10,3/28/2026,9:12:41 PM,What is the current state of the German real estate market and how does it affect timber demand?,"The current state of the German real estate market is characterized by a phase of reevaluation, with signs of cautious stabilization emerging. However, challenges such as high financing costs and weak office rental markets continue to hinder a dynamic recovery. This situation creates a complex environment for developers, as they navigate between the need for efficient supply chains and the sensitivity of the construction sector to interest rates.
+
+As for timber demand, the market for industrial wood products is currently undergoing consolidation. While material costs are stabilizing at a high level, the overall demand for construction services is growing, particularly in the eastern regions of Germany after years of stagnation. This indicates that while there are challenges in the real estate market, there are also areas of growth that could positively influence timber demand, especially as developers focus on existing properties in desirable urban locations.",Baseline,0.000175,683,1,0.018,7.17,"The Grounds Aktie: Termine fix
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+20.02.26 01:49
+Börse Global
+
+The Grounds Real Estate Development Aktie
+The Grounds Real Estate Development navigiert durch einen deutschen Immobilienmarkt, der sich in einer Phase der Neubewertung befindet. Während Anleger auf Signale einer nachhaltigen Erholung warten, rücken die nächsten strategischen und finanziellen Meilensteine des Unternehmens näher. Kann die Konzentration auf urbane Ballungsräume die aktuellen Herausforderungen durch Zinsen und Baukosten ausgleichen?
+
+
+Immobilienmarkt zwischen Hoffen und Bangen
+
+
+Die Rahmenbedingungen für Projektentwickler bleiben anspruchsvoll. Zwar gibt es erste Anzeichen für eine Stabilisierung, doch die Lage im Wohnungsbau gilt weiterhin als fragil. Marktteilnehmer setzen darauf, dass politische Impulse wie Deregulierungen oder Anpassungen bei der Immobilienbesteuerung als Katalysatoren wirken könnten.
+
+
+Besonders in Metropolregionen bleibt der Druck hoch, Bauprojekte schneller voranzutreiben. Hier wird entscheidend sein, wie effizient das Unternehmen seine Projekte an die aktuellen Marktgegebenheiten anpasst, um vom langfristigen Potenzial des städtischen Wohnraums zu profitieren.
+
+
+Die nächsten Termine im Überblick
+
+
+Anzeige
+Sollten Anleger sofort verkaufen? Oder lohnt sich doch der Einstieg bei The Grounds Real Estate Development?
+
+
+Für Investoren bietet das Jahr 2026 mehrere Gelegenheiten, die finanzielle Stabilität des Unternehmens zu überprüfen. Die kommenden Veröffentlichungen werden zeigen, wie erfolgreich die operativen Ziele im vergangenen Turnus umgesetzt wurden.
+
+
+Den Auftakt macht im Juni 2026 die Veröffentlichung des Geschäftsberichts für das Jahr 2025. Im August folgt die Jahreshauptversammlung in Berlin, bevor am 29. September 2026 der Halbjahresbericht Aufschluss über die aktuelle Performance im laufenden Jahr gibt.
+
+
+Der Geschäftsbericht im Juni bildet den nächsten wesentlichen Anhaltspunkt für die Bewertung der Aktie. Er wird zeigen, wie das Unternehmen das Geschäftsjahr 2025 unter den schwierigen Zinsbedingungen abgeschlossen hat und welche operativen Fortschritte in den Kernregionen erzielt wurden.
+
+
+Anzeige
+The Grounds Real Estate Development-Aktie: Kaufen oder verkaufen?! Neue The Grounds Real Estate Development-Analyse vom 20. Februar liefert die Antwort:
+
+
+Die neusten The Grounds Real Estate Development-Zahlen sprechen eine klare Sprache: Dringender Handlungsbedarf für The Grounds Real Estate Development-Aktionäre. Lohnt sich ein Einstieg oder sollten Sie lieber verkaufen? In der aktuellen Gratis-Analyse vom 20. Februar erfahren Sie was jetzt zu tun ist.","Luxor Industrialration Aktie: Nachhaltigkeitsinitiativen erläutert
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+06.02.26 18:28
+Börse Global
+
+Luxor Industrialration Aktie
+Der Markt für industrielle Holzprodukte befindet sich derzeit in einer Phase der Konsolidierung. Während die Materialkosten an Stabilität gewinnen, beobachten Anleger genau, wie die Branche den Spagat zwischen effizienten Lieferketten und einer zinssensiblen Baukonjunktur meistert. Kann der Sektor den makroökonomischen Gegenwind dauerhaft abschütteln?
+
+
+Materialkosten stabilisieren sich auf hohem Niveau.
+Zinsentwicklung bremst die Nachfrage im Baugewerbe.
+Nachhaltigkeitstrends fördern den Einsatz von technisiertem Holz.
+Indikatoren für eine Erholung
+
+
+Ein entscheidender Impuls für den Sektor könnte von einem nachhaltigen Anstieg der Baubeginne und Baugenehmigungen ausgehen. Diese Daten gelten als verlässliche Frühindikatoren für die Nachfrage nach tragenden Komponenten und spezialisierten Holzlösungen.
+
+
+Parallel dazu bleibt die Preisvolatilität bei Rohholz ein Risikofaktor für die Margen der Hersteller. Marktteilnehmer richten ihren Blick zudem auf die internationale Handelspolitik und forstwirtschaftliche Regulierungen, da diese die Wettbewerbsfähigkeit innerhalb der nordamerikanischen Lieferkette maßgeblich beeinflussen können.
+
+
+Nachhaltigkeit als Wachstumstreiber
+
+
+Anzeige
+Sollten Anleger sofort verkaufen? Oder lohnt sich doch der Einstieg bei Luxor Industrialration?
+
+
+Die Industrie erlebt derzeit einen strukturellen Wandel hin zu hocheffizienten Baumaterialien. Da staatliche Regulierungen zunehmend auf klimaneutrales Bauen abzielen, gewinnt technisiertes Holz („Engineered Wood“) als Alternative zu Stahl und Beton an Bedeutung.
+
+
+Dieser Trend verändert die Marktlandschaft für Hersteller, die auf strukturelle Holztechnologien und vorgefertigte Rahmensysteme spezialisiert sind. Die Anpassung an diese ökologischen Standards wird langfristig darüber entscheiden, welche Unternehmen ihre Marktanteile in einem sich wandelnden regulatorischen Umfeld verteidigen können.
+
+
+Transparenz im Frühjahr
+
+
+Konkrete Daten zur operativen Umsetzung dieser Strategien werden für das Ende des ersten und den Beginn des zweiten Quartals erwartet. In diesem Zeitraum veröffentlichen die meisten Branchenvertreter ihre jährlichen Geschäftsberichte. Diese Berichte werden notwendige Klarheit über die Investitionsausgaben und den Status laufender Fertigungsprojekte liefern. Anleger erhalten damit eine fundierte Basis, um die langfristige Stabilität des Sektors nach der jüngsten Schwächephase neu zu bewerten.
+
+
+Anzeige
+Luxor Industrialration-Aktie: Kaufen oder verkaufen?! Neue Luxor Industrialration-Analyse vom 6. Februar liefert die Antwort:
+
+
+Die neusten Luxor Industrialration-Zahlen sprechen eine klare Sprache: Dringender Handlungsbedarf für Luxor Industrialration-Aktionäre. Lohnt sich ein Einstieg oder sollten Sie lieber verkaufen? In der aktuellen Gratis-Analyse vom 6. Februar erfahren Sie was jetzt zu tun ist.","Bauhauptgewerbe: Baukonjunktur im Osten zieht an
+Nach Jahren der Flaute wächst die Nachfrage nach Bauleistungen im Osten. Welche Bereiche besonders zulegten - und wo es noch nicht wieder vorangeht.
+
+Stand: 25.02.2026, 15:04 Uhr
+
+In der ostdeutschen Baubranche scheint es nach etlichen schwierigen Jahren wieder aufwärtszugehen. Der Auftragseingang habe sich 2025 positiv entwickelt und die Umsätze seien in etwa stabil geblieben, teilte der Bauindustrieverband Ost mit. Er bezog sich auf Daten des Statistischen Bundesamtes.
+
+„Die Nachfrage nach Bauleistungen hat 2025 insgesamt angezogen, die Bautätigkeit wird dem zeitlich versetzt folgen, so dass die bisherige konjunkturelle Abwärtsbewegung im Grunde gestoppt werden konnte“, erklärte der Hauptgeschäftsführer Robert Momberg.
+
+Das Auftragsvolumen im ostdeutschen Bauhauptgewerbe habe sich auf rund 22,4 Milliarden Euro summiert - ein Plus von 15,9 Prozent im Vergleich zum Vorjahreswert. Die stärksten Zuwächse hätten der Wohnungsbau (plus 29,3 Prozent) und der Wirtschaftsbau (plus 26,7 Prozent) verzeichnet. Dagegen verharrten die Aufträge des öffentlichen Baus auf dem Niveau des Vorjahres.
+
+Die Umsatzerlöse von 23,6 Milliarden Euro lagen nominal 3,3 Prozent über dem Vorjahresniveau. Real - das heißt: preisbereinigt - seien die Umsätze um 0,3 Prozent zurückgegangen, teilte der Verband mit.","PANDION Aktie: Geduldsprobe am Bau
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+19.03.26 07:20
+Börse Global
+
+
+PANDION Aktie: Geduldsprobe am Bau
+Der deutsche Immobilienmarkt sendet erste Lebenszeichen, allerdings bleibt die Lage für Entwickler wie PANDION ein Drahtseilakt zwischen vorsichtiger Stabilisierung und hohen Finanzierungskosten. Während Branchenindizes eine leichte Erholung andeuten, bremsen schwache Bürovermietungen und die abwartende Haltung der EZB einen dynamischen Aufschwung vorerst aus.
+
+
+Marktumfeld zwischen Hoffnung und Härte
+
+Die aktuelle Situation ist von einem deutlichen Kontrast geprägt. Einerseits signalisieren Indikatoren wie der pbbIX der Deutschen Pfandbriefbank eine moderate Aufwärtstendenz in den jüngsten Quartalsdaten. Andererseits kämpft das Bürosegment weiterhin mit Vermietungsumsätzen, die signifikant unter dem langjährigen Mittel liegen. Für PANDION bedeutet dieses Umfeld eine Phase der Neuorientierung, in der vor allem die Zinspolitik der Europäischen Zentralbank die Marschrichtung vorgibt.
+
+
+Die Zurückhaltung der Marktteilnehmer spiegelt sich direkt im Kursverlauf wider. Mit einem Minus von rund 4,6 Prozent seit Jahresbeginn notierte das Papier gestern bei 75,36 Euro. Damit bleibt die Aktie weiterhin unter dem 50-Tage-Durchschnitt von 77,47 Euro, was den aktuell fehlenden Aufwärtsimpuls unterstreicht. Mit einem RSI von 53,1 bewegt sich der Titel jedoch in einer neutralen Zone, was weder auf eine massive Übertreibung noch auf einen unmittelbaren Ausverkauf hindeutet.
+
+
+Fokus auf Refinanzierung und Genehmigungen
+Die operative Kapazität der Entwickler hängt künftig stark von den Baugenehmigungszahlen ab. Diese zeigen zwar erste Regungen, markieren aber noch keine breite Trendwende. In diesem regulatorisch anspruchsvollen Umfeld rückt die individuelle Finanzierungsstruktur in den Mittelpunkt. Da die Branche derzeit verstärkt auf Kreditfazilitäten und Anleiheemissionen setzt, um die Liquidität zu sichern, wird die Disziplin bei der Kapitalallokation zum entscheidenden Wettbewerbsfaktor.
+
+Anzeige
+Sollten Anleger sofort verkaufen? Oder lohnt sich doch der Einstieg bei PANDION?
+
+
+
+Eine nachhaltige Erholung der Aktie dürfte erst dann eintreten, wenn die Refinanzierungskosten für Projektentwickler spürbar sinken und die Nachfrage in den Kernmärkten wieder anzieht. Anleger sollten daher die kommenden Signale der EZB genau verfolgen, da jede Zinsentscheidung die Kalkulationsgrundlage für die Projektpipeline unmittelbar beeinflusst. Ein stabiler Boden oberhalb des 52-Wochen-Tiefs von 72,22 Euro bleibt die Voraussetzung für eine charttechnische Aufhellung.","Wohnungsmarkt im Münchner Westen: Bestandsimmobilien gewinnen strategisch an Gewicht: (openPR) Der Münchner Immobilienmarkt befindet sich in einer Phase struktureller Neuordnung. Steigende Baukosten, begrenzte Neubauflächen und eine deutlich strengere Finanzierungspraxis verändern die Nachfrage nachhaltig. Während großvolumige Neubauprojekte zunehmend an Realisierbarkeit verlieren, rücken Bestandswohnungen in funktionierenden Stadtlagen verstärkt in den Fokus von Eigennutzern und Kapitalanlegern.
+
+Besonders Stadtteile im Münchner Westen entwickeln sich dabei zu stabilen Nachfragepolen. Gute Verkehrsanbindungen, gewachsene Quartiere und eine ausgewogene Infrastruktur sorgen dafür, dass Wohnraum auch jenseits der Innenstadt langfristig gefragt bleibt.
+
+Der Münchner Westen als belastbarer Wohnstandort
+
+Lagen im westlichen Stadtgebiet profitieren seit Jahren von einer konstanten Nachfrage. Die Kombination aus S Bahn Anbindung, kurzen Wegen zu Arbeitsplätzen und einer hohen Lebensqualität macht diese Stadtteile attraktiv für unterschiedliche Zielgruppen. Für den Wohnungsmarkt bedeutet das vor allem eines: Verlässlichkeit.
+
+Gerade in Zeiten wirtschaftlicher Unsicherheit gewinnen Standorte an Bedeutung, die nicht von kurzfristigen Trends, sondern von funktionierender Alltagsnutzung getragen werden. Der Münchner Westen erfüllt diese Kriterien in besonderem Maße.
+
+Bestandswohnungen als kalkulierbare Marktgröße
+
+Bestandsimmobilien bieten in einem angespannten Marktumfeld einen entscheidenden Vorteil: Transparenz. Gebäudestruktur, Lagequalität und Nutzungsperspektiven lassen sich realistisch bewerten. Das reduziert Unsicherheiten und erleichtert fundierte Kaufentscheidungen.
+
+Für Kapitalanleger spielen dabei planbare Mieteinnahmen, stabile Nachfrage und eine nachhaltige Bewirtschaftung eine zentrale Rolle. Gleichzeitig profitieren Eigennutzer von klaren Rahmenbedingungen und einer sofort nutzbaren Wohnsituation.
+
+Kapitalanlage und Eigennutzung im Gleichgewicht
+
+Wohnungen mittlerer Größe in etablierten Lagen sprechen beide Seiten des Marktes an. Sie bieten genügend Raum für Eigennutzung, bleiben gleichzeitig aber gut vermietbar. Diese doppelte Nutzungsoption erhöht die strategische Flexibilität und stärkt die Marktposition solcher Immobilien.
+
+In stabilen Wohnlagen mit geringer Leerstandsquote entsteht so ein ausgewogenes Verhältnis zwischen Nutzung und Werterhalt – ein Aspekt, der im aktuellen Marktumfeld zunehmend an Bedeutung gewinnt.
+
+Renditeorientierung mit Substanz
+
+Während kurzfristige Renditeversprechen an Attraktivität verlieren, rückt die nachhaltige Wirtschaftlichkeit wieder stärker in den Vordergrund. Bestandswohnungen mit solider Vermietung, überschaubarem Investitionsvolumen und funktionierendem Umfeld erfüllen genau diese Anforderungen.
+
+Sie stehen für eine sachliche, realistische Form der Kapitalanlage, die nicht auf Spekulation, sondern auf langfristige Stabilität setzt.
+
+Ein Markt in der Phase der Konsolidierung
+
+Der Münchner Immobilienmarkt zeigt sich weniger schwächer, sondern selektiver. Qualität, Lagefunktion und Nutzbarkeit entscheiden zunehmend über die Marktgängigkeit. Bestandswohnungen in gut angebundenen Stadtlagen spiegeln diese Entwicklung deutlich wider.
+
+Sie bleiben ein zentraler Bestandteil eines Marktes, der sich neu sortiert und stärker auf belastbare Grundlagen setzt.
+
+RE/MAX Prime als Marktpartner mit Weitblick
+
+In einem komplexer werdenden Marktumfeld ist fundierte Einordnung entscheidend. RE/MAX Prime begleitet Käufer und Eigentümer mit regionaler Marktkenntnis, datenbasierter Analyse und einem klaren Blick für nachhaltige Immobilienentscheidungen.
+
+Der Fokus liegt dabei auf realistischen Bewertungen, nachvollziehbaren Marktstrategien und einer Beratung, die sowohl Eigennutzer als auch Kapitalanleger langfristig unterstützt.","The German real estate market is in a phase of reevaluation with cautious signs of stabilization but significant challenges remaining. High financing costs and weak office rental markets are hindering a dynamic recovery. In eastern Germany the construction sector showed positive order intake development in 2025 with revenues broadly stable. The industrial wood products market is in a consolidation phase with material costs gaining stability while the sector balances efficient supply chains with interest-rate-sensitive construction. In Munich, rising construction costs and stricter financing conditions are shifting demand toward existing properties rather than new builds. No direct link between real estate market conditions and specific timber demand volumes is stated in the retrieved sources."
+11,3/28/2026,9:13:26 PM,What are the latest developments in German housing construction approvals in early 2026?,"In early 2026, Germany saw the approval for the construction of 19,500 apartments in January. This figure represents an increase of 8.4% or 1,500 approvals compared to January 2025. Additionally, the number of approved new apartments rose by 7.4% or 1,100, reaching a total of 16,400 new apartments approved.",Baseline,0.00015,766,1,0.017,3.46,"
+Erstmals seit 2021 wieder mehr Baugenehmigungen für Wohnungen
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 08:08
+dts Nachrichtenagentur
+
+WIESBADEN (dts Nachrichtenagentur) - Im Jahr 2025 ist in Deutschland der Bau von 238.500 Wohnungen genehmigt worden. Wie das Statistische Bundesamt (Destatis) am Mittwoch nach vorläufigen Ergebnissen mitteilt, waren das 10,8 Prozent oder 23.200 Wohnungen mehr als im Jahr 2024, als die Zahl genehmigter Wohnungen auf den niedrigsten Stand seit 2010 gesunken war.
+
+
+Damit stieg die Zahl der Baugenehmigungen für Wohnungen im Jahr 2025 erstmals seit 2021 wieder an. In den Ergebnissen sind sowohl die Baugenehmigungen für Neubauwohnungen enthalten als auch die Baugenehmigungen für Wohnungen, die durch den Umbau bestehender Gebäude entstehen. Die Zahl der gemeldeten Baugenehmigungen ist ein wichtiger Frühindikator für die zukünftige Bauaktivität.
+
+
+Die Zahl der genehmigten Wohnungen im Neubau stieg im Jahr 2025 um 12,6 Prozent oder 22.100 gegenüber dem Vorjahr auf 198.100. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im selben Zeitraum deutlich schwächer um 2,7 Prozent oder 1.000 auf 40.400.
+
+
+
+In neu zu errichtenden Wohngebäuden wurden im Jahr 2025 insgesamt 194.200 Wohnungen genehmigt, das waren 13,2 Prozent oder 22.600 mehr als im Vorjahr. Dabei entwickelten sich die einzelnen Gebäudearten unterschiedlich.
+
+
+So stieg die Zahl der Baugenehmigungen für neue Einfamilienhäuser im Vorjahresvergleich deutlich um 17,2 Prozent (+6.500) auf 44.500. Dieser Anstieg gegenüber dem Vorjahresniveau erstreckte sich über das gesamte Jahr 2025. Bei den neu genehmigten Zweifamilienhäusern blieb die Zahl mit 12.600 (-1,1 Prozent oder -100) dagegen auf dem niedrigen Niveau des Vorjahres. Zusammen machten die im Allgemeinen von Privatpersonen errichteten Ein- und Zweifamilienhäuser 28,8 Prozent der im Jahr 2025 genehmigten Neubauwohnungen aus.
+
+
+In neuen Mehrfamilienhäusern, der zahlenmäßig stärksten und vorrangig von Unternehmen errichteten Gebäudeart, genehmigten die Bauaufsichtsbehörden 128.100 Wohnungen im Jahr 2025. Das waren 12,1 Prozent (+13.900) mehr als im Vorjahr und 64,6 Prozent aller im Jahr 2025 in Deutschland genehmigten Neubauwohnungen. Dieser Anstieg bei den Mehrfamilienhäusern zeigte sich ab der zweiten Jahreshälfte. Weiterhin stieg die Zahl der genehmigten Wohnungen in neuen Wohnheimen im Jahr 2025 im Vergleich zum Vorjahr um 34,2 Prozent (+2.300) auf 9.100.
+
+
+In neuen Nichtwohngebäuden wurden im Jahr 2025 insgesamt 3.900 Wohnungen genehmigt, das waren 10,3 Prozent (-400) weniger als im Jahr zuvor. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden 2025 insgesamt 40.400 Wohnungen genehmigt, das waren 2,7 Prozent oder 1.000 Wohnungen mehr als im Jahr 2024.
+
+
+Rund 95 Prozent der insgesamt 198.100 erteilten Genehmigungen für Neubauwohnungen im Jahr 2025 entfielen auf Unternehmen und Privatpersonen. Entsprechend prägen diese beiden Bauherrengruppen die Gesamtentwicklung. Unternehmen traten bei 108.800 Baugenehmigungen für Neubauwohnungen als Bauherren auf, das waren 14,6 Prozent oder 13.900 mehr neue Wohnungen als im Vorjahr. Auf Privatpersonen entfielen 79.200 Baugenehmigungen, das waren 14,9 Prozent oder 10.200 mehr als im Jahr zuvor. Die Zahl der Baugenehmigungen für Wohnungen im Neubau, die auf Bauanträge der öffentlichen Hand zurückgehen, sank dagegen um 23,2 Prozent oder 2.100 auf 6.900.
+
+
+Im Bereich der Nichtwohngebäude waren die neuen Bauvorhaben im Jahr 2025 rückläufig, so das Bundesamt weiter. Wichtige Gebäudearten sind hier zum Beispiel Fabrikgebäude und Lagerhallen, Büro- und Verwaltungsgebäude oder landwirtschaftliche Betriebsgebäude. Der zentrale Indikator zur Messung der Bauaktivität bei Nichtwohngebäuden ist der umbaute Raum. Dieser verringerte sich bei den im Jahr 2025 genehmigten Nichtwohngebäuden gegenüber 2024 um 5,2 Prozent auf 183,1 Millionen Kubikmeter. Das war der niedrigste Wert seit 2014 (186,8 Millionen Kubikmeter).
+
+
+Dabei verringerte sich der umbaute Raum bei Warenlagergebäuden im Vorjahresvergleich um 17,1 Prozent, bei Fabrik- und Werkstattgebäuden um 13,0 Prozent und bei Anstaltsgebäuden (z. B. Krankenhäuser oder Alten- und Pflegeheime) um 37,8 Prozent. Demgegenüber vergrößerte sich der umbaute Raum bei Handelsgebäuden um 24,9 Prozent und bei Landwirtschaftlichen Betriebsgebäuden um 11,8 Prozent.","
+Deutschland: Baugenehmigungen für Wohnungen im Januar 2026 +8,4% zum Vorjahresmonat
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.03.26 08:35
+aktiencheck.de
+
+Wiesbaden (www.aktiencheck.de) - Im Januar 2026 wurde in Deutschland der Bau von 19.500 Wohnungen genehmigt, so das Statistische Bundesamt (Destatis) in einer aktuellen Pressemitteilung. Näheres entnehmen Sie bitte dem Wortlaut der folgenden Pressemeldung:
+
+Wie Destatis mitteilt, waren das 8,4% oder 1.500 Baugenehmigungen mehr als im Januar 2025. Dabei stieg die Zahl der genehmigten Wohnungen im Neubau um 7,4 % oder 1.100 auf 16.400. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im Januar 2026 gegenüber dem Vorjahresmonat um 13,5% oder 400 auf 3.100.
+Aufwärtstrend bei Ein- und Mehrfamilienhäusern hält an
+
+In neu zu errichtenden Wohngebäuden wurden im Januar 2026 insgesamt 16.000 Wohnungen genehmigt, das waren 6,0% oder 900 Neubauwohnungen mehr als im Vorjahreszeitraum. Dabei stieg die Zahl der Baugenehmigungen für Einfamilienhäuser um 12,6% (+400) auf 3.800. Bei den Zweifamilienhäusern nahm die Zahl genehmigter Wohnungen um 26,1% (+300) auf 1.200 zu. In Mehrfamilienhäusern, der zahlenmäßig stärksten Gebäudeart, genehmigten die Bauaufsichtsbehörden 10.500 Neubauwohnungen. Das war einen Anstieg um 7,1% (+700) gegenüber dem Vorjahreszeitraum. Die Zahl der genehmigten Wohnungen in Wohnheimen fiel im Vergleich zum Januar 2025 um 47,6% (-450) auf 500 Wohnungen.
+
+In neuen Nichtwohngebäuden wurden im Januar 2026 insgesamt 350 Wohnungen (+148,6%; +200) genehmigt. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden im Januar 2026 insgesamt 3.100 Wohnungen genehmigt, das waren 13,5% oder 400 Wohnungen mehr als im gleichen Zeitraum des Jahres 2025. (18.03.2026/ac/a/m","10,8 % mehr Baugenehmigungen für Wohnungen im Jahr 2025
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 08:00
+Presseportal
+
+WIESBADEN (ots) -
+
+
+- Mehr Baugenehmigungen nach drei Rückgängen in Folge: Zahl genehmigter Wohnungen steigt im Jahr 2025 gegenüber dem Vorjahr um 23 200 auf 238 500
+- Anstiege bei Ein- und Mehrfamilienhäusern, Baugenehmigungen für Zweifamilienhäuser bleiben dagegen auf niedrigem Niveau
+- Weniger Bauvorhaben bei Nichtwohngebäuden: 5,2 % weniger umbauter Raum als im Vorjahr
+
+Im Jahr 2025 wurde in Deutschland der Bau von 238 500 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) nach vorläufigen Ergebnissen mitteilt, waren das 10,8 % oder 23 200 Wohnungen mehr als im Jahr 2024, als die Zahl genehmigter Wohnungen auf den niedrigsten Stand seit 2010 gesunken war. Damit stieg die Zahl der Baugenehmigungen für Wohnungen im Jahr 2025 erstmals seit 2021 wieder an. In den Ergebnissen sind sowohl die Baugenehmigungen für Neubauwohnungen enthalten als auch die Baugenehmigungen für Wohnungen, die durch den Umbau bestehender Gebäude entstehen. Die Zahl der gemeldeten Baugenehmigungen ist ein wichtiger Frühindikator für die zukünftige Bauaktivität.
+
+Die Zahl der genehmigten Wohnungen im Neubau stieg im Jahr 2025 um 12,6 % oder 22 100 gegenüber dem Vorjahr auf 198 100. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im selben Zeitraum deutlich schwächer um 2,7 % oder 1 000 auf 40 400.
+
+Aufwärtstrend bei Ein- und Mehrfamilienhäusern im Jahr 2025
+
+In neu zu errichtenden Wohngebäuden wurden im Jahr 2025 insgesamt 194 200 Wohnungen genehmigt, das waren 13,2 % oder 22 600 mehr als im Vorjahr. Dabei entwickelten sich die einzelnen Gebäudearten unterschiedlich.
+
+So stieg die Zahl der Baugenehmigungen für neue Einfamilienhäuser im Vorjahresvergleich deutlich um 17,2 % (+6 500) auf 44 500. Dieser Anstieg gegenüber dem Vorjahresniveau erstreckte sich über das gesamte Jahr 2025. Bei den neu genehmigten Zweifamilienhäusern blieb die Zahl mit 12 600 (-1,1 % oder -100) dagegen auf dem niedrigen Niveau des Vorjahres. Zusammen machten die im Allgemeinen von Privatpersonen errichteten Ein- und Zweifamilienhäuser 28,8 % der im Jahr 2025 genehmigten Neubauwohnungen aus.
+
+In neuen Mehrfamilienhäusern, der zahlenmäßig stärksten und vorrangig von Unternehmen errichteten Gebäudeart, genehmigten die Bauaufsichtsbehörden 128 100 Wohnungen im Jahr 2025. Das waren 12,1 % (+13 900) mehr als im Vorjahr und 64,6 % aller im Jahr 2025 in Deutschland genehmigten Neubauwohnungen. Dieser Anstieg bei den Mehrfamilienhäusern zeigte sich ab der zweiten Jahreshälfte.
+
+Weiterhin stieg die Zahl der genehmigten Wohnungen in neuen Wohnheimen im Jahr 2025 im Vergleich zum Vorjahr um 34,2 % (+2 300) auf 9 100.
+
+In neuen Nichtwohngebäuden wurden im Jahr 2025 insgesamt 3 900 Wohnungen genehmigt, das waren 10,3 % (-400) weniger als im Jahr zuvor. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden 2025 insgesamt 40 400 Wohnungen genehmigt, das waren 2,7 % oder 1 000 Wohnungen mehr als im Jahr 2024.
+
+Mehr Wohnungsbauvorhaben von Unternehmen und Privatpersonen, weniger von öffentlicher Hand
+
+Rund 95 % der insgesamt 198 100 erteilten Genehmigungen für Neubauwohnungen im Jahr 2025 entfielen auf Unternehmen und Privatpersonen. Entsprechend prägen diese beiden Bauherrengruppen die Gesamtentwicklung. Unternehmen traten bei 108 800 Baugenehmigungen für Neubauwohnungen als Bauherren auf, das waren 14,6 % oder 13 900 mehr neue Wohnungen als im Vorjahr. Auf Privatpersonen entfielen 79 200 Baugenehmigungen, das waren 14,9 % oder 10 200 mehr als im Jahr zuvor. Die Zahl der Baugenehmigungen für Wohnungen im Neubau, die auf Bauanträge der öffentlichen Hand zurückgehen, sank dagegen um 23,2 % oder 2 100 auf 6 900.
+
+Weniger umbauter Raum bei Nichtwohngebäuden
+
+Im Bereich der Nichtwohngebäude waren die neuen Bauvorhaben im Jahr 2025 rückläufig. Wichtige Gebäudearten sind hier zum Beispiel Fabrikgebäude und Lagerhallen, Büro- und Verwaltungsgebäude oder landwirtschaftliche Betriebsgebäude. Der zentrale Indikator zur Messung der Bauaktivität bei Nichtwohngebäuden ist der umbaute Raum. Dieser verringerte sich bei den im Jahr 2025 genehmigten Nichtwohngebäuden gegenüber 2024 um 5,2 % auf 183,1 Millionen Kubikmeter. Das war der niedrigste Wert seit 2014 (186,8 Millionen Kubikmeter). Dabei verringerte sich der umbaute Raum bei Warenlagergebäuden im Vorjahresvergleich um 17,1 %, bei Fabrik- und Werkstattgebäuden um 13,0 % und bei Anstaltsgebäuden (z. B. Krankenhäuser oder Alten- und Pflegeheime) um 37,8 %. Demgegenüber vergrößerte sich der umbaute Raum bei Handelsgebäuden um 24,9 % und bei Landwirtschaftlichen Betriebsgebäuden um 11,8 %.
+
+Baugenehmigungen als Indikator für Baufertigstellungen
+
+Die Zahl der gemeldeten Baugenehmigungen erlaubt eine frühzeitige Einschätzung der zukünftigen Bauaktivität. Aufschluss über die tatsächliche Entwicklung der Bautätigkeit und des Bauüberhangs (genehmigte, aber noch nicht fertiggestellte Bauvorhaben) im Jahr 2025 gibt die Zahl der gemeldeten Baufertigstellungen, die das Statistische Bundesamt voraussichtlich am 22. Mai 2026 veröffentlichen wird.
+
+Methodische Hinweise:
+
+Die Angaben basieren auf den im Januar 2026 bei den Statistischen Ämtern der Länder vorliegenden Meldungen über erteilte Baugenehmigungen. Die Ergebnisse für das Berichtsjahr enthalten dabei auch Nachmeldungen über bereits in der Zeit davor erteilte Baugenehmigungen, andererseits fließen nicht rechtzeitig eingegangene Meldungen erst in die Ergebnisse des folgenden Berichtsjahrs ein. Über die Behandlung, den Umfang und die Entwicklung von Nachmeldungen informieren der Qualitätsbericht zur Statistik sowie der Artikel ""Digitalisierungspotenzial in der Bautätigkeitsstatistik"" in Ausgabe 3/2025 der Zeitschrift ""WISTA - Wirtschaft und Statistik"" des Statistischen Bundesamtes.
+
+Weitere Informationen:
+
+Detaillierte Daten und lange Zeitreihen zu den Baugenehmigungen sowie zum Bauüberhang können über die Tabellen 31111 sowie die Tabelle 31131 in der Datenbank GENESIS-Online abgerufen werden.
+
+Weitere Ergebnisse zum Thema Bauen sind auch im ""Dashboard Konjunktur"" verfügbar, das Teil des ""Dashboard Deutschland"" (www.dashboard-deutschland.de) ist. In diesem Datenportal bündelt das Statistische Bundesamt hochaktuelle Indikatoren der amtlichen Statistik und weiterer Datenanbieter zu den Themen Wirtschaft und Finanzen sowie Arbeitsmarkt, Bauen und Wohnen, Energie und Ukraine. Mit dem ""Pulsmesser Wirtschaft"" steht dort auch ein Tool zur Konjunkturbeobachtung in Echtzeit bereit.
+
+Diese Pressemitteilung ist, gegebenenfalls ergänzt mit weiteren Informationen und Verlinkungen zum Thema, veröffentlicht unter www.destatis.de/pressemitteilungen.","Baugenehmigungen 2025: Positivtrend hält an - Bedarf bleibt groß
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 09:04
+Presseportal
+
+Berlin (ots) -
+
+Die heute vom Statistischen Bundesamt veröffentlichten Zahlen zu den Baugenehmigungen 2025 kommentiert Felix Pakleppa, Hauptgeschäftsführer Zentralverband Deutsches Baugewerbe:
+
+""2025 wurden 238.500 Wohnungen genehmigt - 23.200; 10,8 Prozent mehr als im Vorjahr. Im Vorjahr genehmigten die Behörden gerade einmal 215 300 Wohnungen - der niedrigste Wert seit 2010 (187 600 Wohnungen).
+
+Im Bereich der 1- und 2-Familienhäuser wurden gut 57.000 Wohnungen genehmigt, ca. 6.400 mehr als im Vorjahr. Ein Plus von knapp 13 Prozent. 128.000 waren es bei den Mehrfamilienhäusern, knapp 14.000 mehr als im Vorjahr, ein Plus von gut 12 Prozent.
+
+Bauherren und Investoren fassen wieder etwas Vertrauen. Der Negativtrend ist gebrochen. Das ist eine gute Nachricht.
+
+Wir warnen davor, sich von diesem Plus blenden zu lassen. Im vergangenen Jahr wurden nach unserer Einschätzung nur rund 225.000 Wohnungen fertiggestellt, während wir jährlich mindestens 100.000 Wohnungen mehr bräuchten.
+
+Kurz: Noch immer bleibt der Wohnungsbau hinter dem Bedarf zurück. Wir schieben ein riesiges Defizit vor uns her, was den Wohnungsmarkt in den Städten unter enormen Druck setzt. Und 2026 wird nicht besser: Die Fertigstellungszahlen werden weiter sinken, weil eine genehmigte Wohnung erst in zwei bis drei Jahren fertig ist.
+
+Immerhin: Die neu aufgelegte EH 55-Plus-Förderung wird gut angenommen und zeigt, dass gezielte Impulse wirken. Aus unserer Sicht sollten die neuen Förderungen ab 2027 langfristig verstetigt werden, damit Bauwillige besser planen können.
+
+Zusätzlichen Schwung würde eine Anpassung der Sonder-AfA bringen, die nicht mehr an EH 40, sondern an EH-55 gekoppelt ist. Wenn EH 55 für die Eigenheimförderung ausreicht, muss der Standard erst recht für den Mietwohnungsbau und die Sonder-AfA gelten.
+
+Die Trendwende bei den Genehmigungen ist ein erster Schritt. Wir sind auf dem richtigen Weg, aber noch weit davon entfernt, die Schieflage am Markt zu lösen.""","Deutlich mehr Baugenehmigungen für Wohnungen im Januar
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.03.26 08:05
+dts Nachrichtenagentur
+
+WIESBADEN (dts Nachrichtenagentur) - Im Januar 2026 ist in Deutschland der Bau von 19.500 Wohnungen genehmigt worden. Wie das Statistische Bundesamt (Destatis) am Mittwoch mitteilte, waren das 8,4 Prozent oder 1.500 Baugenehmigungen mehr als im Januar 2025. Dabei stieg die Zahl der genehmigten Wohnungen im Neubau um 7,4 Prozent oder 1.100 auf 16.400. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg gegenüber dem Vorjahresmonat um 13,5 Prozent oder 400 auf 3.100.
+
+
+
+In neu zu errichtenden Wohngebäuden wurden im Januar 2026 insgesamt 16.000 Wohnungen genehmigt, das waren 6,0 Prozent oder 900 Neubauwohnungen mehr als im Vorjahreszeitraum. Dabei stieg die Zahl der Baugenehmigungen für Einfamilienhäuser um 12,6 Prozent (+400) auf 3.800. Bei den Zweifamilienhäusern nahm die Zahl genehmigter Wohnungen um 26,1 Prozent (+300) auf 1.200 zu. In Mehrfamilienhäusern, der zahlenmäßig stärksten Gebäudeart, genehmigten die Bauaufsichtsbehörden 10.500 Neubauwohnungen. Das war ein Anstieg um 7,1 Prozent (+700) gegenüber dem Vorjahreszeitraum. Die Zahl der genehmigten Wohnungen in Wohnheimen fiel im Vergleich zum Januar 2025 um 47,6 Prozent (-450) auf 500 Wohnungen.
+
+
+In neuen Nichtwohngebäuden wurden im Januar 2026 insgesamt 350 Wohnungen (+148,6 Prozent; +200) genehmigt. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen. Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden im Januar 2026 insgesamt 3.100 Wohnungen genehmigt, das waren 13,5 Prozent oder 400 Wohnungen mehr als im gleichen Zeitraum des Jahres 2025.","In 2025, Germany approved 238,500 housing units, an increase of 10.8% or 23,200 units compared to 2024, the first increase after three consecutive years of decline according to Destatis. In January 2026, Germany approved 19,500 housing units, up 8.4% or 1,500 units year-on-year. New build approvals in January 2026 rose 7.4% to 16,400 units. Single family homes rose 12.6%, two-family homes rose 26.1%, and multi-family housing approvals reached 10,500 units up 7.1% in January 2026. The Zentralverband Deutsches Baugewerbe notes the positive trend continues but the need for housing remains large and the recovery is still at an early stage."
+12,3/28/2026,9:13:42 PM,What is the most recent news about US lumber tariffs and their impact on European timber markets?,I don't have that information.,Baseline,0.000071,452,1,N/A,1.77,NA,NA,NA,NA,NA,No information was retrieved by the Baseline RAG system for this question. The system found no relevant sources on US lumber tariffs and their impact on European timber markets.
+13,3/28/2026,9:13:55 PM,How do rising European Central Bank interest rates affect German housing construction demand and in turn timber consumption?,"Rising European Central Bank (ECB) interest rates are expected to have a negative impact on housing construction demand in Germany. The current situation indicates that construction costs and the willingness to pay are hindering residential building projects. As interest rates for 10-year loans rise, currently averaging nearly 3.8 percent, borrowing costs for potential homeowners and developers increase. This can lead to a decrease in housing demand, which in turn may reduce timber consumption, as less construction activity typically results in lower demand for timber products.
+
+Additionally, the construction industry is facing pressures from rising energy prices, which could further increase building material costs and affect overall construction activity. Therefore, the combination of higher interest rates and escalating energy costs may lead to a slowdown in the housing market, subsequently impacting timber consumption in Germany.",Baseline,0.000176,697,1,0.017,2.62,"Wohnungsbau zieht in Europa an – aber nicht in Deutschland
+Projektkosten und Zahlungsbereitschaft hemmen einer Ifo-Prognose zufolge den Wohnungsbau in Deutschland. In anderen Ländern in Europa zieht der Wohnungsmarkt stärker an.
+27.02.2026 - 12:46 Uhr
+
+Artikel anhören
+03:34
+
+
+
+
+
+Wohnungen: Pro 1000 Einwohner werden demnach in Deutschland 2028 etwa 2,6 Wohnungen fertiggestellt, Foto: IMAGO/Jochen Eckel
+
+Berlin. Die Zahl der in Deutschland fertiggestellten Wohnungen wird einer Prognose des Ifo-Instituts zufolge in diesem Jahr entgegen dem positiven Trend in Europa sinken.
+
+Nach einem Rückgang auf 205.000 Wohnungen im Jahr 2025 werde es ein weiteres Minus auf 185.000 Einheiten geben, wie die Münchner Forscher am Freitag vorhersagten. 2027 soll die Zahl auf 205.000 und 2028 dann auf 215.000 Einheiten zulegen – dann läge sie aber immer noch um 15 Prozent unter dem Wert von 2024.
+
+Pro 1000 Einwohner werden demnach in Deutschland 2028 etwa 2,6 Wohnungen fertiggestellt und damit deutlich weniger als im europäischen Mittel (3,4). „Auf dem deutschen Wohnungsmarkt liegen Projektkosten und Zahlungsbereitschaft in vielen Fällen weiter deutlich auseinander“, sagte Ifo-Bauexperte Ludwig Dorffmeister. „Die zahlreichen Initiativen zur Kostensenkung und Verfahrensbeschleunigung konnten bislang nicht die gewünschte Wirkung entfalten.“
+
+Zahl der fertiggestellten Wohnungen in Europa
+In Europa soll die Zahl der fertiggestellten Wohnungen in diesem Jahr auf 1,47 Millionen Einheiten steigen, nach 1,44 Millionen 2025. Für 2027 wird ein weiteres Wachstum auf 1,58 Millionen Einheiten erwartet. 2028 sollen es 1,66 Millionen Einheiten sein, so die Prognosen der Forschergruppe Euroconstruct, der das Ifo-Institut angehört. „Auch wenn in Europa wieder mehr Wohnungen gebaut werden, wird der Aufschwung in Deutschland dagegen erst verzögert einsetzen und nur moderat ausfallen“, sagte Dorffmeister.
+
+
+Der europäische Wohnungsbau wird vor allem durch einige größere Länder belebt:
+
+Großbritannien erhöht der Prognose zufolge seine Fertigstellungen von rund 161.000 (2025) auf 207.000 Wohnungen (2028),
+Frankreich von 272.000 auf 314.000
+Spanien von 95.000 auf 135.000 Einheiten.
+Besonders dynamisch entwickeln sich kleinere Länder wie Ungarn von rund 14.000 auf 27.000 Wohnungen,
+Irland von 34.000 auf 45.000
+und Schweden von 32.000 auf 41.000 Einheiten im gleichen Zeitraum.
+„Die vielerorts angespannten Wohnungsmärkte dürften von diesem Zubau aber oftmals kaum profitieren“, sagte Ifo-Experte Dorffmeister.","Zinsdynamik am Immobilienmarkt: Warum die Renditen der Bundesanleihen wichtiger sind als die EZB-Leitzinsen
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+19.03.26 14:42
+Presseportal
+
+München (ots) -
+
+
+- EZB-Entscheidung: Leitzinsen bleiben wie erwartet unverändert - Fokus der Notenbank liegt auf Inflationsrisiken durch Energiekosten
+- Zinstrend: Bauzinsen für 10-jährige Darlehen steigen in kurzer Zeit im Schnitt auf fast 3,8 Prozent
+- Marktmechanik: Die Renditen der 10-jährigen Bundesanleihe sind die wahren Taktgeber für Immobilienkredite
+- Experten-Rat: Volatilität am Zinsmarkt nutzen - Spekulation auf Zinssenkungen derzeit riskant
+
+Die Europäische Zentralbank (EZB) hat heute entschieden, die Leitzinsen auf dem aktuellen Niveau zu belassen. Für Immobilienkäuferinnen- und käufer ist der Blick auf die Renditen der 10-jährigen Bundesanleihe jedoch deutlich erkenntnisreicher.
+
+Kapitalmarkt gibt den Takt vor: Bundesanleihen im Fokus
+
+""Viele Kundinnen und Kunden warten auf ein Signal der EZB, doch für die Baufinanzierung sind die Entwicklungen am Kapitalmarkt relevanter"", erklärt Jörg Utecht, Vorstandsvorsitzender der Interhyp Gruppe. ""Während der Leitzins stagniert, sehen wir bei den Bauzinsen eine spürbare Aufwärtsbewegung auf im Schnitt fast 3,8 Prozent für 10-jährige Darlehen. Grund ist der Anstieg der Rendite der 10-jährigen Bundesanleihe, die aufgrund von Inflationssorgen zuletzt deutlich angezogen hat.""
+
+Zins-Check: Beleihungsauslauf ist entscheidend
+
+Die individuelle Zinshöhe hängt am Ende maßgeblich vom Eigenkapitaleinsatz ab. Wer derzeit eine Finanzierung mit einem hohem Beleihungsauslauf - also wenig eingebrachtem Eigenkapital - plant, muss sich bei 10-jährigen Krediten bereits wieder auf Zinssätze von über 4 Prozent einstellen.
+
+Prognose: Abwarten wird zum Kalkül mit hohen Einsätzen
+
+Trotz der heutigen EZB-Entscheidung rechnet Interhyp mittel- bis langfristig mit einem volatilen Umfeld auf erhöhtem Niveau. Jörg Utecht ordnet die Situation für Käuferinnen und Käufer ein: ""Das aktuelle Zinsumfeld wird stärker von der Geopolitik und den Inflationserwartungen geprägt als von der EZB-Geldpolitik. Mein Rat an Kaufinteressierte: Wer eine passende Immobilie gefunden hat, sollte nicht auf einen baldigen Zinsabschwung spekulieren"".
+
+Beratung und Angebotsvergleich wichtiger denn je
+
+Jörg Utecht betont: ""In einer so dynamischen Phase wie aktuell sind persönliche Beratung und der Vergleich von Angeboten wichtiger denn je. Wir beobachten aktuell, dass bei schnell ansteigenden Zinsen die Schere zwischen günstigeren und teureren Darlehen besonders weit auseinandergeht. Wer hier individuell vergleicht, findet oft Lösungen für das eigene Finanzierungsvorhaben.""
+
+Drei Empfehlungen für die aktuelle Phase:
+
+
+1. Zinssicherheit priorisieren: Lange Zinsbindungen schützen vor weiteren Sprüngen bei den Kapitalmarktrenditen.
+2. Entwicklung der Bundesanleihe im Blick behalten: Die Entwicklung der Renditen der 10-jährigen Bundesanleihe ist ein guter Indikator für den weiteren Verlauf der Bauzinsen.
+3. Gesamtkosten im Blick: Berücksichtigen Sie, dass steigende Immobilienpreise mögliche kleine Zinsvorteile in der Zukunft schnell zunichtemachen können.
+
+
+
+Über Interhyp:
+
+Die Interhyp Gruppe ist eine der führenden Adressen für private Baufinanzierungen in Deutschland. Mit den Marken Interhyp, die sich direkt an die Endkundinnen und -kunden richtet, und Prohyp, die sich an Einzelvermittlerinnen und -Vermittler und institutionelle Partner wendet, hat das Unternehmen 2025 ein Finanzierungsvolumen von 26,4 Milliarden Euro erfolgreich bei seinen über 500 Finanzierungspartnern platziert. Dabei verbindet die Interhyp Gruppe die vielfach ausgezeichnete Kompetenz ihrer Finanzierungsspezialistinnen und -spezialisten mit der Leistungsfähigkeit der eigenentwickelten Baufinanzierungsplattform HOME sowie kundenorientierten Digitalangeboten. Die Interhyp Gruppe beschäftigt rund 1.600 Mitarbeiterinnen und Mitarbeiter und ist an über 140 Standorten persönlich vor Ort für ihre Kundinnen und Kunden und Partner präsent.","Bauindustrie rechnet mit steigenden Baukosten
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+20.01.26 08:03
+dts Nachrichtenagentur
+
+BERLIN (dts Nachrichtenagentur) - Der Hauptverband der Deutschen Bauindustrie (HDB)erwartet, dass die Baupreise 2026 um 3,3 Prozent und 2027 um 3,6 Prozent steigen werden. Das sagte Verbandspräsident Peter Hübner der ""Frankfurter Allgemeinen Zeitung"".
+
+
+Hübner macht dafür hohe Lohnabschlüsse, die Angleichung der Löhne in Ost und West und höhere Energiepreise verantwortlich. Das Ziel, die Baukosten zu drücken, um Wohnungen erschwinglicher zu machen, dürfte die Bundesregierung damit verfehlen.
+
+
+
+Die Bauwirtschaft werde dieses Jahr wieder in allen Sparten wachsen, so Hübner. Unter dem Strich erwartet er ein Produktionsplus von 2,5 Prozent. ""Definitiv, das ist die Wende"", sagte er.
+
+
+Zudem rechnet Hübner damit, dass in diesem Jahr nur noch 200.000 Wohnungen fertiggestellt werden - gerade mal die Hälfte des von Bundesregierung genannten Ziels. Die Auftragsbücher der Unternehmen im Wohnungsbau ""geben es einfach nicht her"", so Hübner. Die Zahl der Stornierungen sei wieder gestiegen, die Zahl der Genehmigungen ziehe erst seit kurzer Zeit und allmählich wieder an.
+
+
+Eine Prognose, wieviel Aufträge aus dem 500 Milliarden Euro schweren Sondervermögen für Infrastruktur und Klimaneutralität in den Auftragsbüchern der Bauunternehmen ankommen, wagt Hübner nicht. Viele Planungen seien noch nicht ausschreibungsreif, noch immer dauere ""vieles viel zu lang."" Die Kapazitäten der deutschen Bauindustrie reichten für das Milliardenpaket aus.","Zinsdynamik am Immobilienmarkt: Warum die Renditen der Bundesanleihen wichtiger sind als die EZB-Leitzinsen
+München (ots) -
+
+- EZB-Entscheidung: Leitzinsen bleiben wie erwartet unverändert - Fokus der Notenbank liegt auf Inflationsrisiken durch Energiekosten
+- Zinstrend: Bauzinsen für 10-jährige Darlehen steigen in kurzer Zeit im Schnitt auf fast 3,8 Prozent
+- Marktmechanik: Die Renditen der 10-jährigen Bundesanleihe sind die wahren Taktgeber für Immobilienkredite
+- Experten-Rat: Volatilität am Zinsmarkt nutzen - Spekulation auf Zinssenkungen derzeit riskant
+
+Die Europäische Zentralbank (EZB) hat heute entschieden, die Leitzinsen auf dem aktuellen Niveau zu belassen. Für Immobilienkäuferinnen- und käufer ist der Blick auf die Renditen der 10-jährigen Bundesanleihe jedoch deutlich erkenntnisreicher.
+
+Kapitalmarkt gibt den Takt vor: Bundesanleihen im Fokus
+
+""Viele Kundinnen und Kunden warten auf ein Signal der EZB, doch für die Baufinanzierung sind die Entwicklungen am Kapitalmarkt relevanter"", erklärt Jörg Utecht, Vorstandsvorsitzender der Interhyp Gruppe. ""Während der Leitzins stagniert, sehen wir bei den Bauzinsen eine spürbare Aufwärtsbewegung auf im Schnitt fast 3,8 Prozent für 10-jährige Darlehen. Grund ist der Anstieg der Rendite der 10-jährigen Bundesanleihe, die aufgrund von Inflationssorgen zuletzt deutlich angezogen hat.""Die individuelle Zinshöhe hängt am Ende maßgeblich vom Eigenkapitaleinsatz ab. Wer derzeit eine Finanzierung mit einem hohem Beleihungsauslauf - also wenig eingebrachtem Eigenkapital - plant, muss sich bei 10-jährigen Krediten bereits wieder auf Zinssätze von über 4 Prozent einstellen.
+
+Prognose: Abwarten wird zum Kalkül mit hohen Einsätzen
+
+Trotz der heutigen EZB-Entscheidung rechnet Interhyp mittel- bis langfristig mit einem volatilen Umfeld auf erhöhtem Niveau. Jörg Utecht ordnet die Situation für Käuferinnen und Käufer ein: ""Das aktuelle Zinsumfeld wird stärker von der Geopolitik und den Inflationserwartungen geprägt als von der EZB-Geldpolitik. Mein Rat an Kaufinteressierte: Wer eine passende Immobilie gefunden hat, sollte nicht auf einen baldigen Zinsabschwung spekulieren"".
+
+Beratung und Angebotsvergleich wichtiger denn je
+
+Jörg Utecht betont: ""In einer so dynamischen Phase wie aktuell sind persönliche Beratung und der Vergleich von Angeboten wichtiger denn je. Wir beobachten aktuell, dass bei schnell ansteigenden Zinsen die Schere zwischen günstigeren und teureren Darlehen besonders weit auseinandergeht. Wer hier individuell vergleicht, findet oft Lösungen für das eigene Finanzierungsvorhaben.""
+
+Drei Empfehlungen für die aktuelle Phase:
+
+1. Zinssicherheit priorisieren: Lange Zinsbindungen schützen vor weiteren Sprüngen bei den Kapitalmarktrenditen.
+2. Entwicklung der Bundesanleihe im Blick behalten: Die Entwicklung der Renditen der 10-jährigen Bundesanleihe ist ein guter Indikator für den weiteren Verlauf der Bauzinsen.
+3. Gesamtkosten im Blick: Berücksichtigen Sie, dass steigende Immobilienpreise mögliche kleine Zinsvorteile in der Zukunft schnell zunichtemachen können.
+
+Über Interhyp:
+
+Die Interhyp Gruppe ist eine der führenden Adressen für private Baufinanzierungen in Deutschland. Mit den Marken Interhyp, die sich direkt an die Endkundinnen und -kunden richtet, und Prohyp, die sich an Einzelvermittlerinnen und -Vermittler und institutionelle Partner wendet, hat das Unternehmen 2025 ein Finanzierungsvolumen von 26,4 Milliarden Euro erfolgreich bei seinen über 500 Finanzierungspartnern platziert. Dabei verbindet die Interhyp Gruppe die vielfach ausgezeichnete Kompetenz ihrer Finanzierungsspezialistinnen und -spezialisten mit der Leistungsfähigkeit der eigenentwickelten Baufinanzierungsplattform HOME sowie kundenorientierten Digitalangeboten. Die Interhyp Gruppe beschäftigt rund 1.600 Mitarbeiterinnen und Mitarbeiter und ist an über 140 Standorten persönlich vor Ort für ihre Kundinnen und Kunden und Partner präsent.","Ölpreis: Verbände fürchten langsamere Erholung der Baukonjunktur
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+13.03.26 00:00
+dts Nachrichtenagentur
+
+BERLIN (dts Nachrichtenagentur) - Der Anstieg der Energiepreise könnte das Bauen in Deutschland wieder verteuern. ""Steigende Energiepreise können auch die Baustoffpreise wieder unter Druck setzen"", sagte Matthias Frederichs, Hauptgeschäftsführer des Baustoffverbands BBS, dem ""Redaktionsnetzwerk Deutschland"" (Freitagausgabe).
+
+
+Noch seien viele Unternehmen über langfristige Lieferverträge aber abgesichert. Entscheidend sei nun, wie lange das aktuelle Preisniveau bei Gas und Öl anhalte.
+
+
+
+""Die Baukonjunktur zeigt gerade erst eine leichte Erholung nach dem massiven Einbruch der letzten Jahre"", fügte Frederichs hinzu. ""Neue energiegetriebene Preissprünge könnten diese Stabilisierung schnell wieder gefährden."" Ob es dazu komme, hänge jetzt von der Dauer des Konfliktes und den Folgen für die Energiemärkte ab.
+
+
+Tim-Oliver Müller, Hauptgeschäftsführer des Bauindustrieverbands HDB, fügte hinzu, dass sich die Sperrung der Straße von Hormus ""mittelbar auch auf die Rohstoffversorgung der Bauwirtschaft auswirken"" könne. Müller nannte als Beispiel die Asphaltproduktion, für die Bitumen benötigt wird.
+
+
+Die Lieferketten seien seit dem Ukraine-Krieg diversifizierter, erklärte Müller zugleich. Von unmittelbaren Einschränkungen bei der Materialverfügbarkeit gehe er deshalb nicht aus. ""Nichtsdestotrotz können die derzeit zu beobachtenden, weltweiten Preissteigerungen beim Rohöl auch zu Kostensteigerungen hierzulande führen"", sagte er.","Rising ECB interest rates have contributed to weaker German housing construction demand. According to an ifo Institute forecast, Germany will complete approximately 2.6 housing units per 1,000 inhabitants by 2028, lagging behind other European countries where housing markets are recovering more strongly. Construction loan interest rates for 10-year loans rose sharply to an average of nearly 3.8% in early 2026, driven more by German federal bond yields than the ECB base rate itself. The HDB expects construction prices to rise 3.3% in 2026 adding further pressure. Rising energy prices could push construction material costs higher slowing recovery. No direct link to timber consumption volumes is stated in the retrieved sources."
+14,3/28/2026,9:14:17 PM,How does bark beetle damage in German forests affect sawmill production and ultimately timber prices?,"The bark beetle damage in German forests has significant implications for sawmill production and timber prices. As reported, the bark beetle has already destroyed 16,000 hectares of forest in the region, leading to a substantial reduction in the availability of healthy timber. This reduction in timber supply can create a scarcity in the market, which may drive up timber prices as demand remains steady or increases.
+
+Additionally, the ongoing forest damage from bark beetles, along with other factors such as wildfires and storms, is expected to worsen in the coming years. This anticipated increase in forest damage could further exacerbate the supply issues faced by sawmills, potentially leading to higher production costs and reduced output. Consequently, these factors combined could contribute to an upward pressure on timber prices in the market.
+
+Overall, the bark beetle damage poses a challenge for the timber industry, affecting both the availability of raw materials for sawmills and the pricing dynamics in the timber market.",Baseline,0.000177,614,1,0.021,5.34,"Even if warming is limited to 2°C, wildfires, storms and beetles may boost Europe forest loss. Forest damage in Europe caused by wildfires, storms and bark beetle outbreaks is projected to increase compared to recent decades under all analyzed climate scenarios, according to a new international study, published in Science, with contributions from the Potsdam Institute for Climate Impact Research (PIK).In a scenario in which fossil fuel use continues to increase, annually disturbed forest area could double, reaching nearly 370,000 hectares per year by the end of the century.
+
+""In the future, Europe's forests are likely to absorb less carbon,"" says Christopher Reyer, scientist at PIK and co-author of the study.
+
+""If forests take up less carbon, or potentially even release more than they absorb, this increases pressure on other sectors such as transport and agriculture to reduce their emissions more rapidly. At the same time, forest management needs to focus more strongly on building resilient forests.""
+
+According to the study, forests in Southern and Western Europe will be particularly affected and will undergo the strongest changes in forest disturbance. Northern Europe is expected to be less severely impacted overall, though hotspots of future forest damage are also likely to emerge there. The study was led by researchers at the Technical University of Munich (TUM).","Waldschäden in Europa könnten bis 2100 um rund 20 Prozent steigen
+Waldschäden in Europa durch Brände, Stürme und Borkenkäfer werden im Vergleich zu den vergangenen Jahrzehnten unter allen analysierten Klimaszenarien zunehmen.
+
+Das ist das Ergebnis einer neuen internationalen Studie mit Beteiligung des Potsdam-Instituts für Klimafolgenforschung (PIK), die in der Fachzeitschrift Science veröffentlicht wurde.
+
+Selbst wenn die Erderwärmung auf etwa 2°C begrenzt wird, könnte die jährlich geschädigte Waldfläche bis zum Ende des Jahrhunderts von rund 180.000 Hektar auf etwa 216.000 Hektar pro Jahr steigen – und damit höher liegen als in den ohnehin schon stark betroffenen Jahren 1986 bis 2020. In einem Szenario, in dem die Nutzung fossiler Energieträger weiter zunimmt, könnte sich die Waldschäden mehr als verdoppeln und bis zum Ende des Jahrhunderts nahezu 370.000 Hektar pro Jahr erreichen.
+
+„In Zukunft werden Europas Wälder voraussichtlich weniger Kohlenstoff aufnehmen“, sagt Christopher Reyer, Wissenschaftler am PIK und Mitautor der Studie. „Wenn Wälder weniger Kohlenstoff binden oder möglicherweise sogar mehr freisetzen als sie aufnehmen, erhöht das den Druck auf andere Sektoren wie Verkehr und Landwirtschaft, ihre Emissionen schneller zu senken. Gleichzeitig sollte die Waldbewirtschaftung stärker die Resilienz von Wäldern fördern.“
+
+Besonders stark betroffen sind der Studie zufolge Süd- und Westeuropa, wo die Veränderungen am ausgeprägtesten ausfallen dürften. Nordeuropa wird insgesamt weniger stark betroffen sein, allerdings könnten auch dort regionale Hotspots mit erhöhtem Schadensrisiko entstehen. Die Studie wurde von Forschenden der Technischen Universität München (TUM) geleitet.","Fördergelder für nachhaltige Wieder-Bewaldung
+Die Wieder-Aufforstung des Bergischen Waldes ist eine Generationen-Aufgabe. In den vergangenen Jahren haben Sturm, Dürre und vor allem der Borkenkäfer große Waldflächen bei uns völlig zerstört. Alleine der Borkenkäfer ist für 16.000 kahle Hektar verantwortlich. Damit die Wieder-Bewaldung bei uns nachhaltig funktioniert, stellt das Land NRW jetzt Fördermittel.Mit insgesamt 15 Millionen Euro will das Land Waldbesitzer dieses Jahr unterstützen. Davon gibt es bei uns im Bergischen aktuell rund 35.000, heißt es von Wald und Holz NRW.
+
+Ziel der Förderung ist es vielfältige Mischwälder zu stärken, die im Klimawandel Bestand haben. Der Wald soll Ort der Biodiversität werden, Holz liefern und aktiv das Klima schützen. Neben finanzieller Förderung für Waldbesitzer bietet das Ministerium für Landwirtschaft und Verbraucherschutz NRW auch fachliche Empfehlungen. So gibt es beispielsweise Beratungs-Angebote für Waldbau- und Wieder-Bewaldungs-Konzepte.","
+Luxor Industrialration Aktie: Nachhaltigkeitsinitiativen erläutert
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+06.02.26 18:28
+Börse Global
+
+Luxor Industrialration Aktie
+Der Markt für industrielle Holzprodukte befindet sich derzeit in einer Phase der Konsolidierung. Während die Materialkosten an Stabilität gewinnen, beobachten Anleger genau, wie die Branche den Spagat zwischen effizienten Lieferketten und einer zinssensiblen Baukonjunktur meistert. Kann der Sektor den makroökonomischen Gegenwind dauerhaft abschütteln?
+
+
+Materialkosten stabilisieren sich auf hohem Niveau.
+Zinsentwicklung bremst die Nachfrage im Baugewerbe.
+Nachhaltigkeitstrends fördern den Einsatz von technisiertem Holz.
+Indikatoren für eine Erholung
+
+
+Ein entscheidender Impuls für den Sektor könnte von einem nachhaltigen Anstieg der Baubeginne und Baugenehmigungen ausgehen. Diese Daten gelten als verlässliche Frühindikatoren für die Nachfrage nach tragenden Komponenten und spezialisierten Holzlösungen.
+
+
+Parallel dazu bleibt die Preisvolatilität bei Rohholz ein Risikofaktor für die Margen der Hersteller. Marktteilnehmer richten ihren Blick zudem auf die internationale Handelspolitik und forstwirtschaftliche Regulierungen, da diese die Wettbewerbsfähigkeit innerhalb der nordamerikanischen Lieferkette maßgeblich beeinflussen können.
+
+
+Nachhaltigkeit als Wachstumstreiber
+
+
+Anzeige
+Sollten Anleger sofort verkaufen? Oder lohnt sich doch der Einstieg bei Luxor Industrialration?
+
+
+Die Industrie erlebt derzeit einen strukturellen Wandel hin zu hocheffizienten Baumaterialien. Da staatliche Regulierungen zunehmend auf klimaneutrales Bauen abzielen, gewinnt technisiertes Holz („Engineered Wood“) als Alternative zu Stahl und Beton an Bedeutung.
+
+
+Dieser Trend verändert die Marktlandschaft für Hersteller, die auf strukturelle Holztechnologien und vorgefertigte Rahmensysteme spezialisiert sind. Die Anpassung an diese ökologischen Standards wird langfristig darüber entscheiden, welche Unternehmen ihre Marktanteile in einem sich wandelnden regulatorischen Umfeld verteidigen können.
+
+
+Transparenz im Frühjahr
+
+
+Konkrete Daten zur operativen Umsetzung dieser Strategien werden für das Ende des ersten und den Beginn des zweiten Quartals erwartet. In diesem Zeitraum veröffentlichen die meisten Branchenvertreter ihre jährlichen Geschäftsberichte. Diese Berichte werden notwendige Klarheit über die Investitionsausgaben und den Status laufender Fertigungsprojekte liefern. Anleger erhalten damit eine fundierte Basis, um die langfristige Stabilität des Sektors nach der jüngsten Schwächephase neu zu bewerten.
+
+
+Anzeige
+Luxor Industrialration-Aktie: Kaufen oder verkaufen?! Neue Luxor Industrialration-Analyse vom 6. Februar liefert die Antwort:
+
+
+Die neusten Luxor Industrialration-Zahlen sprechen eine klare Sprache: Dringender Handlungsbedarf für Luxor Industrialration-Aktionäre. Lohnt sich ein Einstieg oder sollten Sie lieber verkaufen? In der aktuellen Gratis-Analyse vom 6. Februar erfahren Sie was jetzt zu tun ist.","Deutsche Forscher sagen massive Waldschäden in Europa voraus: Eine Studie der TU München prognostiziert eine drastische Zunahme der Waldschäden in Europa. Selbst im optimistischsten Szenario sieht sie eine düstere Zukunft mit stark anwachsenden Schäden durch Brände und Stürme. In Deutschland ist ein kritischer Punkt dabei bereits überschritten.
+
+Schon heute leidet der Wald unter Stürmen, Waldbränden und Borkenkäfern. Forscher haben nun berechnet, was in der Zukunft auf Wälder in Europa zukommt, wenn sich die Klimakrise weiter zuspitzt.
+
+Dafür hat das Team um Marc Grünig und Rupert Seidl von der Technischen Universität München verschiedene mögliche Szenarien der weiteren Erderwärmung zugrunde gelegt. Doch sogar im optimistischsten Szenario sieht es düster aus für den Wald, wie die Forscher im Fachjournal ""Science"" darlegen.
+
+309904295
+32 Bilder
+Wald, Gletscher, Seen schwinden
+Wie der Klimawandel Deutschland verändert
+Mehr Schäden in allen Szenarien
+In allen betrachteten Szenarien werden den Forschern zufolge die Schäden für den Wald zunehmen. Das hat auch Einfluss auf seine Funktionen - wie etwa die Aufgabe, Kohlenstoff zu speichern und damit ein wichtiger natürlicher Klimaschützer zu sein.
+
+Die Studie betrachtet verschiedene Klimapfade - darunter rund zwei Grad Erderwärmung bis zum Ende des Jahrhunderts, aber auch ein Worst-Case-Szenario von mehr als vier Grad. Derzeit steuert die Erde den Vereinten Nationen zufolge mit der weltweiten Klimapolitik bis zum Ende des Jahrhunderts auf 2,8 Grad Erwärmung gegenüber der vorindustriellen Zeit zu. Die UN sehen die Überschreitung der international vereinbarten 1,5-Grad-Grenze genauso wie Klimaforscher als kaum noch vermeidbar an.
+
+9cac12b9f9fded3a7289ec426099626c
+59 Bilder
+Die grünen Lungen der Erde
+Wälder - idyllisch, lebenswichtig und bedroht
+Bei einer Erderwärmung von mehr als vier Grad Celsius bis zum Ende des Jahrhunderts kommt die Gruppe zu dem Schluss, dass sich die von Bränden, Stürmen und Borkenkäfern geschädigten Flächen mehr als verdoppeln könnten (plus 122 Prozent). Vergleichszeitraum ist hierbei die Phase von 1986 bis 2020 - also eine Zeit, in der auch schon viele Schäden den Wald belasteten.
+
+Auch im Szenario von etwa zwei Grad plus bis 2100 dürfte die geschädigte Fläche um rund 61 Prozent gegenüber der Vergleichsperiode anwachsen. Anders als im Worst-Case-Szenario wird hier vorhergesagt, dass die Schäden in den 2050er Jahren ihren negativen Höhepunkt erreichen und danach auf hohem Niveau wieder leicht zurückgehen werden. Auch Jahre mit extrem vielen Waldbränden würden deutlich häufiger vorkommen.","Bark beetle damage has destroyed 16,000 hectares of forest in the Bergisches Land region of Germany requiring large-scale reforestation supported by 15 million euros in NRW state funding. Forest damage from bark beetles, storms, and wildfires is projected to increase under all climate scenarios according to a study in Science. The industrial wood products market is currently in a consolidation phase with material costs stabilizing while the sector navigates interest-rate-sensitive construction demand. No direct data on specific impacts of bark beetle damage on German sawmill production volumes or timber prices is available in the retrieved sources."
+15,3/28/2026,9:14:37 PM,How do German building permit numbers in early 2026 compare to the same period in 2025?,"In early 2026, the number of building permits for residential buildings in Germany increased by 8.4% compared to the same period in 2025. Specifically, 19,500 apartments were approved for construction in January 2026, which is 1,500 more permits than in January 2025. This increase includes a rise of 6.0% for all residential buildings, with notable increases of 12.6% for single-family homes, 26.1% for two-family homes, and 7.1% for multi-family homes.",Baseline,0.000178,841,1,0.018,3.7,"Baugenehmigungen für Wohnungen im Januar 2026: +8,4 % zum Vorjahresmonat
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.03.26 08:00
+Presseportal
+
+WIESBADEN (ots) -
+
+Baugenehmigungen im Neubau im Januar 2026 zum Vorjahresmonat:
+
++6,0 % bei Wohngebäuden insgesamt
+
++12,6 % bei Einfamilienhäusern
+
++26,1 % bei Zweifamilienhäusern
+
++7,1 % bei Mehrfamilienhäusern
+
+Im Januar 2026 wurde in Deutschland der Bau von 19 500 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) mitteilt, waren das 8,4 % oder 1 500 Baugenehmigungen mehr als im Januar 2025. Dabei stieg die Zahl der genehmigten Wohnungen im Neubau um 7,4 % oder 1 100 auf 16 400. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im Januar 2026 gegenüber dem Vorjahresmonat um 13,5 % oder 400 auf 3 100.
+
+Aufwärtstrend bei Ein- und Mehrfamilienhäusern hält an
+
+In neu zu errichtenden Wohngebäuden wurden im Januar 2026 insgesamt 16 000 Wohnungen genehmigt, das waren 6,0 % oder 900 Neubauwohnungen mehr als im Vorjahreszeitraum. Dabei stieg die Zahl der Baugenehmigungen für Einfamilienhäuser um 12,6 % (+400) auf 3 800. Bei den Zweifamilienhäusern nahm die Zahl genehmigter Wohnungen um 26,1 % (+300) auf 1 200 zu. In Mehrfamilienhäusern, der zahlenmäßig stärksten Gebäudeart, genehmigten die Bauaufsichtsbehörden 10 500 Neubauwohnungen. Das war einen Anstieg um 7,1 % (+700) gegenüber dem Vorjahreszeitraum. Die Zahl der genehmigten Wohnungen in Wohnheimen fiel im Vergleich zum Januar 2025 um 47,6 % (-450) auf 500 Wohnungen.
+
+In neuen Nichtwohngebäuden wurden im Januar 2026 insgesamt 350 Wohnungen (+148,6 %; +200) genehmigt. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden im Januar 2026 insgesamt 3 100 Wohnungen genehmigt, das waren 13,5 % oder 400 Wohnungen mehr als im gleichen Zeitraum des Jahres 2025.","Deutlich mehr Baugenehmigungen für Wohnungen im Januar
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.03.26 08:05
+dts Nachrichtenagentur
+
+WIESBADEN (dts Nachrichtenagentur) - Im Januar 2026 ist in Deutschland der Bau von 19.500 Wohnungen genehmigt worden. Wie das Statistische Bundesamt (Destatis) am Mittwoch mitteilte, waren das 8,4 Prozent oder 1.500 Baugenehmigungen mehr als im Januar 2025. Dabei stieg die Zahl der genehmigten Wohnungen im Neubau um 7,4 Prozent oder 1.100 auf 16.400. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg gegenüber dem Vorjahresmonat um 13,5 Prozent oder 400 auf 3.100.
+
+
+
+In neu zu errichtenden Wohngebäuden wurden im Januar 2026 insgesamt 16.000 Wohnungen genehmigt, das waren 6,0 Prozent oder 900 Neubauwohnungen mehr als im Vorjahreszeitraum. Dabei stieg die Zahl der Baugenehmigungen für Einfamilienhäuser um 12,6 Prozent (+400) auf 3.800. Bei den Zweifamilienhäusern nahm die Zahl genehmigter Wohnungen um 26,1 Prozent (+300) auf 1.200 zu. In Mehrfamilienhäusern, der zahlenmäßig stärksten Gebäudeart, genehmigten die Bauaufsichtsbehörden 10.500 Neubauwohnungen. Das war ein Anstieg um 7,1 Prozent (+700) gegenüber dem Vorjahreszeitraum. Die Zahl der genehmigten Wohnungen in Wohnheimen fiel im Vergleich zum Januar 2025 um 47,6 Prozent (-450) auf 500 Wohnungen.
+
+
+In neuen Nichtwohngebäuden wurden im Januar 2026 insgesamt 350 Wohnungen (+148,6 Prozent; +200) genehmigt. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen. Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden im Januar 2026 insgesamt 3.100 Wohnungen genehmigt, das waren 13,5 Prozent oder 400 Wohnungen mehr als im gleichen Zeitraum des Jahres 2025.","Baugenehmigungen 2025: Positivtrend hält an - Bedarf bleibt groß
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 09:04
+Presseportal
+
+Berlin (ots) -
+
+Die heute vom Statistischen Bundesamt veröffentlichten Zahlen zu den Baugenehmigungen 2025 kommentiert Felix Pakleppa, Hauptgeschäftsführer Zentralverband Deutsches Baugewerbe:
+
+""2025 wurden 238.500 Wohnungen genehmigt - 23.200; 10,8 Prozent mehr als im Vorjahr. Im Vorjahr genehmigten die Behörden gerade einmal 215 300 Wohnungen - der niedrigste Wert seit 2010 (187 600 Wohnungen).
+
+Im Bereich der 1- und 2-Familienhäuser wurden gut 57.000 Wohnungen genehmigt, ca. 6.400 mehr als im Vorjahr. Ein Plus von knapp 13 Prozent. 128.000 waren es bei den Mehrfamilienhäusern, knapp 14.000 mehr als im Vorjahr, ein Plus von gut 12 Prozent.
+
+Bauherren und Investoren fassen wieder etwas Vertrauen. Der Negativtrend ist gebrochen. Das ist eine gute Nachricht.
+
+Wir warnen davor, sich von diesem Plus blenden zu lassen. Im vergangenen Jahr wurden nach unserer Einschätzung nur rund 225.000 Wohnungen fertiggestellt, während wir jährlich mindestens 100.000 Wohnungen mehr bräuchten.
+
+Kurz: Noch immer bleibt der Wohnungsbau hinter dem Bedarf zurück. Wir schieben ein riesiges Defizit vor uns her, was den Wohnungsmarkt in den Städten unter enormen Druck setzt. Und 2026 wird nicht besser: Die Fertigstellungszahlen werden weiter sinken, weil eine genehmigte Wohnung erst in zwei bis drei Jahren fertig ist.
+
+Immerhin: Die neu aufgelegte EH 55-Plus-Förderung wird gut angenommen und zeigt, dass gezielte Impulse wirken. Aus unserer Sicht sollten die neuen Förderungen ab 2027 langfristig verstetigt werden, damit Bauwillige besser planen können.
+
+Zusätzlichen Schwung würde eine Anpassung der Sonder-AfA bringen, die nicht mehr an EH 40, sondern an EH-55 gekoppelt ist. Wenn EH 55 für die Eigenheimförderung ausreicht, muss der Standard erst recht für den Mietwohnungsbau und die Sonder-AfA gelten.
+
+Die Trendwende bei den Genehmigungen ist ein erster Schritt. Wir sind auf dem richtigen Weg, aber noch weit davon entfernt, die Schieflage am Markt zu lösen.","
+10,8 % mehr Baugenehmigungen für Wohnungen im Jahr 2025
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 08:00
+Presseportal
+
+WIESBADEN (ots) -
+
+
+- Mehr Baugenehmigungen nach drei Rückgängen in Folge: Zahl genehmigter Wohnungen steigt im Jahr 2025 gegenüber dem Vorjahr um 23 200 auf 238 500
+- Anstiege bei Ein- und Mehrfamilienhäusern, Baugenehmigungen für Zweifamilienhäuser bleiben dagegen auf niedrigem Niveau
+- Weniger Bauvorhaben bei Nichtwohngebäuden: 5,2 % weniger umbauter Raum als im Vorjahr
+
+Im Jahr 2025 wurde in Deutschland der Bau von 238 500 Wohnungen genehmigt. Wie das Statistische Bundesamt (Destatis) nach vorläufigen Ergebnissen mitteilt, waren das 10,8 % oder 23 200 Wohnungen mehr als im Jahr 2024, als die Zahl genehmigter Wohnungen auf den niedrigsten Stand seit 2010 gesunken war. Damit stieg die Zahl der Baugenehmigungen für Wohnungen im Jahr 2025 erstmals seit 2021 wieder an. In den Ergebnissen sind sowohl die Baugenehmigungen für Neubauwohnungen enthalten als auch die Baugenehmigungen für Wohnungen, die durch den Umbau bestehender Gebäude entstehen. Die Zahl der gemeldeten Baugenehmigungen ist ein wichtiger Frühindikator für die zukünftige Bauaktivität.
+
+Die Zahl der genehmigten Wohnungen im Neubau stieg im Jahr 2025 um 12,6 % oder 22 100 gegenüber dem Vorjahr auf 198 100. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im selben Zeitraum deutlich schwächer um 2,7 % oder 1 000 auf 40 400.
+
+Aufwärtstrend bei Ein- und Mehrfamilienhäusern im Jahr 2025
+
+In neu zu errichtenden Wohngebäuden wurden im Jahr 2025 insgesamt 194 200 Wohnungen genehmigt, das waren 13,2 % oder 22 600 mehr als im Vorjahr. Dabei entwickelten sich die einzelnen Gebäudearten unterschiedlich.
+
+So stieg die Zahl der Baugenehmigungen für neue Einfamilienhäuser im Vorjahresvergleich deutlich um 17,2 % (+6 500) auf 44 500. Dieser Anstieg gegenüber dem Vorjahresniveau erstreckte sich über das gesamte Jahr 2025. Bei den neu genehmigten Zweifamilienhäusern blieb die Zahl mit 12 600 (-1,1 % oder -100) dagegen auf dem niedrigen Niveau des Vorjahres. Zusammen machten die im Allgemeinen von Privatpersonen errichteten Ein- und Zweifamilienhäuser 28,8 % der im Jahr 2025 genehmigten Neubauwohnungen aus.
+
+In neuen Mehrfamilienhäusern, der zahlenmäßig stärksten und vorrangig von Unternehmen errichteten Gebäudeart, genehmigten die Bauaufsichtsbehörden 128 100 Wohnungen im Jahr 2025. Das waren 12,1 % (+13 900) mehr als im Vorjahr und 64,6 % aller im Jahr 2025 in Deutschland genehmigten Neubauwohnungen. Dieser Anstieg bei den Mehrfamilienhäusern zeigte sich ab der zweiten Jahreshälfte.
+
+Weiterhin stieg die Zahl der genehmigten Wohnungen in neuen Wohnheimen im Jahr 2025 im Vergleich zum Vorjahr um 34,2 % (+2 300) auf 9 100.
+
+In neuen Nichtwohngebäuden wurden im Jahr 2025 insgesamt 3 900 Wohnungen genehmigt, das waren 10,3 % (-400) weniger als im Jahr zuvor. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden 2025 insgesamt 40 400 Wohnungen genehmigt, das waren 2,7 % oder 1 000 Wohnungen mehr als im Jahr 2024.
+
+Mehr Wohnungsbauvorhaben von Unternehmen und Privatpersonen, weniger von öffentlicher Hand
+
+Rund 95 % der insgesamt 198 100 erteilten Genehmigungen für Neubauwohnungen im Jahr 2025 entfielen auf Unternehmen und Privatpersonen. Entsprechend prägen diese beiden Bauherrengruppen die Gesamtentwicklung. Unternehmen traten bei 108 800 Baugenehmigungen für Neubauwohnungen als Bauherren auf, das waren 14,6 % oder 13 900 mehr neue Wohnungen als im Vorjahr. Auf Privatpersonen entfielen 79 200 Baugenehmigungen, das waren 14,9 % oder 10 200 mehr als im Jahr zuvor. Die Zahl der Baugenehmigungen für Wohnungen im Neubau, die auf Bauanträge der öffentlichen Hand zurückgehen, sank dagegen um 23,2 % oder 2 100 auf 6 900.
+
+Weniger umbauter Raum bei Nichtwohngebäuden
+
+Im Bereich der Nichtwohngebäude waren die neuen Bauvorhaben im Jahr 2025 rückläufig. Wichtige Gebäudearten sind hier zum Beispiel Fabrikgebäude und Lagerhallen, Büro- und Verwaltungsgebäude oder landwirtschaftliche Betriebsgebäude. Der zentrale Indikator zur Messung der Bauaktivität bei Nichtwohngebäuden ist der umbaute Raum. Dieser verringerte sich bei den im Jahr 2025 genehmigten Nichtwohngebäuden gegenüber 2024 um 5,2 % auf 183,1 Millionen Kubikmeter. Das war der niedrigste Wert seit 2014 (186,8 Millionen Kubikmeter). Dabei verringerte sich der umbaute Raum bei Warenlagergebäuden im Vorjahresvergleich um 17,1 %, bei Fabrik- und Werkstattgebäuden um 13,0 % und bei Anstaltsgebäuden (z. B. Krankenhäuser oder Alten- und Pflegeheime) um 37,8 %. Demgegenüber vergrößerte sich der umbaute Raum bei Handelsgebäuden um 24,9 % und bei Landwirtschaftlichen Betriebsgebäuden um 11,8 %.
+
+Baugenehmigungen als Indikator für Baufertigstellungen
+
+Die Zahl der gemeldeten Baugenehmigungen erlaubt eine frühzeitige Einschätzung der zukünftigen Bauaktivität. Aufschluss über die tatsächliche Entwicklung der Bautätigkeit und des Bauüberhangs (genehmigte, aber noch nicht fertiggestellte Bauvorhaben) im Jahr 2025 gibt die Zahl der gemeldeten Baufertigstellungen, die das Statistische Bundesamt voraussichtlich am 22. Mai 2026 veröffentlichen wird.
+
+Methodische Hinweise:
+
+Die Angaben basieren auf den im Januar 2026 bei den Statistischen Ämtern der Länder vorliegenden Meldungen über erteilte Baugenehmigungen. Die Ergebnisse für das Berichtsjahr enthalten dabei auch Nachmeldungen über bereits in der Zeit davor erteilte Baugenehmigungen, andererseits fließen nicht rechtzeitig eingegangene Meldungen erst in die Ergebnisse des folgenden Berichtsjahrs ein. Über die Behandlung, den Umfang und die Entwicklung von Nachmeldungen informieren der Qualitätsbericht zur Statistik sowie der Artikel ""Digitalisierungspotenzial in der Bautätigkeitsstatistik"" in Ausgabe 3/2025 der Zeitschrift ""WISTA - Wirtschaft und Statistik"" des Statistischen Bundesamtes.
+
+Weitere Informationen:
+
+Detaillierte Daten und lange Zeitreihen zu den Baugenehmigungen sowie zum Bauüberhang können über die Tabellen 31111 sowie die Tabelle 31131 in der Datenbank GENESIS-Online abgerufen werden.
+
+Weitere Ergebnisse zum Thema Bauen sind auch im ""Dashboard Konjunktur"" verfügbar, das Teil des ""Dashboard Deutschland"" (www.dashboard-deutschland.de) ist. In diesem Datenportal bündelt das Statistische Bundesamt hochaktuelle Indikatoren der amtlichen Statistik und weiterer Datenanbieter zu den Themen Wirtschaft und Finanzen sowie Arbeitsmarkt, Bauen und Wohnen, Energie und Ukraine. Mit dem ""Pulsmesser Wirtschaft"" steht dort auch ein Tool zur Konjunkturbeobachtung in Echtzeit bereit.
+
+Diese Pressemitteilung ist, gegebenenfalls ergänzt mit weiteren Informationen und Verlinkungen zum Thema, veröffentlicht unter www.destatis.de/pressemitteilungen.","Erstmals seit 2021 wieder mehr Baugenehmigungen für Wohnungen
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+18.02.26 08:08
+dts Nachrichtenagentur
+
+WIESBADEN (dts Nachrichtenagentur) - Im Jahr 2025 ist in Deutschland der Bau von 238.500 Wohnungen genehmigt worden. Wie das Statistische Bundesamt (Destatis) am Mittwoch nach vorläufigen Ergebnissen mitteilt, waren das 10,8 Prozent oder 23.200 Wohnungen mehr als im Jahr 2024, als die Zahl genehmigter Wohnungen auf den niedrigsten Stand seit 2010 gesunken war.
+
+
+Damit stieg die Zahl der Baugenehmigungen für Wohnungen im Jahr 2025 erstmals seit 2021 wieder an. In den Ergebnissen sind sowohl die Baugenehmigungen für Neubauwohnungen enthalten als auch die Baugenehmigungen für Wohnungen, die durch den Umbau bestehender Gebäude entstehen. Die Zahl der gemeldeten Baugenehmigungen ist ein wichtiger Frühindikator für die zukünftige Bauaktivität.
+
+
+Die Zahl der genehmigten Wohnungen im Neubau stieg im Jahr 2025 um 12,6 Prozent oder 22.100 gegenüber dem Vorjahr auf 198.100. Die Zahl genehmigter Wohnungen, die durch den Umbau bestehender Gebäude entstehen, stieg im selben Zeitraum deutlich schwächer um 2,7 Prozent oder 1.000 auf 40.400.
+
+
+
+In neu zu errichtenden Wohngebäuden wurden im Jahr 2025 insgesamt 194.200 Wohnungen genehmigt, das waren 13,2 Prozent oder 22.600 mehr als im Vorjahr. Dabei entwickelten sich die einzelnen Gebäudearten unterschiedlich.
+
+
+So stieg die Zahl der Baugenehmigungen für neue Einfamilienhäuser im Vorjahresvergleich deutlich um 17,2 Prozent (+6.500) auf 44.500. Dieser Anstieg gegenüber dem Vorjahresniveau erstreckte sich über das gesamte Jahr 2025. Bei den neu genehmigten Zweifamilienhäusern blieb die Zahl mit 12.600 (-1,1 Prozent oder -100) dagegen auf dem niedrigen Niveau des Vorjahres. Zusammen machten die im Allgemeinen von Privatpersonen errichteten Ein- und Zweifamilienhäuser 28,8 Prozent der im Jahr 2025 genehmigten Neubauwohnungen aus.
+
+
+In neuen Mehrfamilienhäusern, der zahlenmäßig stärksten und vorrangig von Unternehmen errichteten Gebäudeart, genehmigten die Bauaufsichtsbehörden 128.100 Wohnungen im Jahr 2025. Das waren 12,1 Prozent (+13.900) mehr als im Vorjahr und 64,6 Prozent aller im Jahr 2025 in Deutschland genehmigten Neubauwohnungen. Dieser Anstieg bei den Mehrfamilienhäusern zeigte sich ab der zweiten Jahreshälfte. Weiterhin stieg die Zahl der genehmigten Wohnungen in neuen Wohnheimen im Jahr 2025 im Vergleich zum Vorjahr um 34,2 Prozent (+2.300) auf 9.100.
+
+
+In neuen Nichtwohngebäuden wurden im Jahr 2025 insgesamt 3.900 Wohnungen genehmigt, das waren 10,3 Prozent (-400) weniger als im Jahr zuvor. Hierunter fallen zum Beispiel Hausmeisterwohnungen in Schulgebäuden oder Wohnungen in Innenstadtlagen über Gewerbeflächen.
+
+
+Als Umbaumaßnahme in bestehenden Wohn- und Nichtwohngebäuden wurden 2025 insgesamt 40.400 Wohnungen genehmigt, das waren 2,7 Prozent oder 1.000 Wohnungen mehr als im Jahr 2024.
+
+
+Rund 95 Prozent der insgesamt 198.100 erteilten Genehmigungen für Neubauwohnungen im Jahr 2025 entfielen auf Unternehmen und Privatpersonen. Entsprechend prägen diese beiden Bauherrengruppen die Gesamtentwicklung. Unternehmen traten bei 108.800 Baugenehmigungen für Neubauwohnungen als Bauherren auf, das waren 14,6 Prozent oder 13.900 mehr neue Wohnungen als im Vorjahr. Auf Privatpersonen entfielen 79.200 Baugenehmigungen, das waren 14,9 Prozent oder 10.200 mehr als im Jahr zuvor. Die Zahl der Baugenehmigungen für Wohnungen im Neubau, die auf Bauanträge der öffentlichen Hand zurückgehen, sank dagegen um 23,2 Prozent oder 2.100 auf 6.900.
+
+
+Im Bereich der Nichtwohngebäude waren die neuen Bauvorhaben im Jahr 2025 rückläufig, so das Bundesamt weiter. Wichtige Gebäudearten sind hier zum Beispiel Fabrikgebäude und Lagerhallen, Büro- und Verwaltungsgebäude oder landwirtschaftliche Betriebsgebäude. Der zentrale Indikator zur Messung der Bauaktivität bei Nichtwohngebäuden ist der umbaute Raum. Dieser verringerte sich bei den im Jahr 2025 genehmigten Nichtwohngebäuden gegenüber 2024 um 5,2 Prozent auf 183,1 Millionen Kubikmeter. Das war der niedrigste Wert seit 2014 (186,8 Millionen Kubikmeter).
+
+
+Dabei verringerte sich der umbaute Raum bei Warenlagergebäuden im Vorjahresvergleich um 17,1 Prozent, bei Fabrik- und Werkstattgebäuden um 13,0 Prozent und bei Anstaltsgebäuden (z. B. Krankenhäuser oder Alten- und Pflegeheime) um 37,8 Prozent. Demgegenüber vergrößerte sich der umbaute Raum bei Handelsgebäuden um 24,9 Prozent und bei Landwirtschaftlichen Betriebsgebäuden um 11,8 Prozent.","German building permits in January 2026 totaled 19,500 units, up 8.4% or 1,500 units compared to January 2025. New build approvals rose 7.4% to 16,400 units in January 2026. Single family homes rose 12.6%, two-family homes rose 26.1%, and multi-family housing rose 7.1% to 10,500 units. For the full year 2025, Germany approved 238,500 housing units, an increase of 10.8% or 23,200 units compared to 2024. In 2024, only 215,300 units were approved, the lowest figure since 2010. The three-year consecutive decline in permits reversed in 2025 and the upward trend continued into January 2026."
+16,3/28/2026,9:14:52 PM,How does the German Heating Act impact demand for wood pellets compared to heat pumps?,"The German Heating Act is currently undergoing changes that are affecting growth expectations for heat pumps, which may dampen demand for wood pellets. Policymakers are reassessing the role of biomass, including wood pellets, as new research suggests that they may increase carbon emissions rather than reduce them. This shift in focus towards subsidies and the potential for a more technology-open approach could lead to uncertainty in the market. As a result, while nearly half of the heating systems in Bavaria operate on biomass, the evolving regulations and rising costs may influence the demand dynamics between wood pellets and heat pumps.",Baseline,0.000124,486,1,0.02,3.13,"Are Wood Pellets Worth Billions In Subsidies? Drax Faces A Reckoning: The energy industry initially sold wood pellets as a way to clean up coal. And governments bought into that assumption. But now policymakers are questioning that position and even reversing course.
+
+At the center of this debate is a UK-based power company called Drax, which converted Europe’s largest coal plant into a biomass facility—one fueled by wood pellets that it imported from southern states in the United States. The debate raises a multitude of questions, namely those centered on pollution and costs. That is, if the additive creates more pollution than either wind or solar energy, why bother, especially since it comes from a power source that depends on subsidies?
+
+Merry Dickinson, lead campaigner for the Stop Burning Trees Coalition in the U.K., told me that Drax now operates entirely on woody biomass, requiring seven to eight million tons of wood pellets annually. “The amount of wood required to run at these levels is beyond what is available as waste wood,” Dickinson says. “Even when the industry refers to ‘waste wood,’ much of the supply consists of whole trees.”
+
+Biomass received special treatment under the 2010 European Renewable Energy Directive, which counted emissions from burning wood as zero at the smokestack. The underlying assumption: trees regrow and reabsorb carbon over time. Post-Brexit, the UK expanded subsidies for biomass, positioning wood pellets as a bridge fuel to reduce reliance on coal. Under these rules, a power plant can burn wood and claim carbon neutrality—a calculation not applied to fossil fuels.
+
+Drax’s business model has long relied on government incentives rather than market demand. The UK has historically provided about $1.1 billion annually in subsidies, but these payments are scheduled to be cut nearly in half after 2027. Meanwhile, Drax has shuttered facilities in Arkansas and British Columbia and scaled back investments in bioenergy with carbon capture and storage. Some operations are pivoting toward data centers, a quiet acknowledgment that the market cannot sustain the company at previous levels.","
+NIBE Aktie: Politische Kehrtwende
+
+Facebook ""Like""-Dummy""Tweet this""-DummyEinstellungen
+
+
+27.02.26 16:30
+Börse Global
+
+
+NIBE Aktie: Politische Kehrtwende
+NIBE Industrier steht vor einer neuen Realität in seinem wichtigsten Auslandsmarkt. Die Pläne der deutschen Bundesregierung, zentrale Bestandteile des Heizungsgesetzes zu entschärfen, haben die Wachstumserwartungen für Wärmepumpen kurzfristig gedämpft. Während die Branche auf die veränderten Rahmenbedingungen blickt, bemüht sich das schwedische Management um Stabilität und verweist auf langfristige Fördermittel.
+
+
+Unsicherheit im deutschen Markt
+
+Der Kern der Kursbewegung liegt in Berlin: Die Regierungsparteien planen, die strikten Vorgaben für neue Heizungssysteme zu lockern. Konkret soll die Verpflichtung entfallen, dass neue Anlagen zu mindestens 65 Prozent mit erneuerbaren Energien betrieben werden müssen. Für NIBE ist dies eine kritische Entwicklung, da Deutschland der bedeutendste Markt für das Segment „Climate Solutions“ ist. Die mögliche Rückkehr zu verstärkten Installationen von Öl- und Gasheizungen könnte den Absatz der Schweden bremsen.
+
+
+Doch wie stabil bleibt das Geschäftsmodell von NIBE ohne den ursprünglichen gesetzlichen Rückenwind? Die Aktie reagierte bereits Mitte der Woche empfindlich auf die Nachrichtenlage und verzeichnet auf Sieben-Tages-Sicht ein Minus von rund 8,8 Prozent. Mit einem aktuellen Kurs von 3,43 Euro notiert das Papier knapp 22 Prozent unter seinem 52-Wochen-Hoch, hält aber noch einen deutlichen Abstand zum Jahrestief vom vergangenen November.
+
+
+Management setzt auf Kontinuität
+Trotz der politischen Diskussionen sieht CEO Gerteric Lindquist keinen Grund, an den langfristigen Unternehmenszielen zu rütteln. Er betont, dass die staatlichen Subventionen für Wärmepumpen lediglich angepasst, aber nicht gestrichen werden. Die Finanzierung für den Umstieg sei bis mindestens 2029 gesichert, was Planungssicherheit für die kommenden Übergangsjahre schaffe.
+
+Anzeige
+Sollten Anleger sofort verkaufen? Oder lohnt sich doch der Einstieg bei NIBE Industrier?
+
+
+
+Ein deutliches Signal des Vertrauens kam zudem aus der Führungsebene selbst: Finanzvorstand Hans Backman nutzte das aktuelle Kursniveau am Freitag für einen Zukauf und erwarb 15.250 B-Aktien an der Nasdaq Stockholm. Solche Insiderkäufe werden am Markt oft als Indiz dafür gewertet, dass das Management die langfristigen Aussichten positiver einschätzt, als es der aktuelle Aktienkurs widerspiegelt.
+
+
+Operativ steht das Unternehmen auf einem soliden Fundament. Im vierten Quartal 2025 konnte NIBE den bereinigten Betriebsgewinn auf 1,4 Milliarden SEK steigern, während der Umsatz stabil bei 11 Milliarden SEK blieb. Als Zeichen der Stärke schlug der Vorstand zudem eine Erhöhung der Dividende auf 35 Öre pro Aktie vor. Mit der gesicherten staatlichen Förderung bis 2029 und der verbesserten Profitabilität im Kernsegment Climate Solutions verfügt NIBE über Puffer, um die Phase der politischen Neuausrichtung in Deutschland zu überbrücken.","Habecks Heizungsgesetz ist reformiert und die Grünen springen im Quadrat
+Wissen | 06. März 2026 | Autor: Rüdiger Stobbe | Sprechblase Nachrichten Artikel Benutzer User Kommentar  16 Kommentare
+Der geplante Neustart des Heizungsgesetzes sorgt für Entlastung bei Hausbesitzern: Der Zeitdruck beim Austausch alter Heizungen soll wegfallen, Technologieoffenheit wieder gelten. Doch werden die Anhänger der Energiewende dagegenhalten?","""Planungstreue ist unseren aktuellen Politikern völlig unbekannt""",,"The German government plans to reform the Heating Act (Heizungsgesetz) by removing the time pressure for replacing old heating systems and restoring technology openness. This has dampened short-term growth expectations for heat pumps according to reporting on NIBE Industrier. In Bavaria, nearly half of all 6.5 million heating installations use biomass such as wood or pellets with Gas at only 26.3%. The UK debate over Drax wood pellet subsidies shows that policymakers internationally are questioning the carbon neutrality of wood pellets. No specific forecast for changes in German wood pellet demand volumes resulting from the Heating Act reform is available in the retrieved sources."
+17,3/28/2026,9:15:04 PM,What are the current softwood lumber prices in Germany?,I don't have that information.,Baseline,0.000074,473,1,N/A,1.5,NA,NA,NA,NA,NA,No information was retrieved by the Baseline RAG system for this question. The system found no relevant sources on current softwood lumber prices in Germany.
+18,3/28/2026,9:15:20 PM,What is the latest update on EU Deforestation Regulation implementation deadlines for German timber companies?,I don't have that information.,Baseline,0.000081,525,1,N/A,2.08,NA,NA,NA,NA,NA,No information was retrieved by the Baseline RAG system for this question. The system found no relevant sources on current EU Deforestation Regulation implementation deadlines for German timber companies.
+19,3/28/2026,9:15:39 PM,What is the current FIFA World Cup qualification standing for the German national team?,I don't have that information.,Baseline,0.000072,463,1,N/A,2.05,NA,NA,NA,NA,NA,"This question is outside the German timber market scope. The system covers German timber and wood prices, sawmills, forestry supply, bark beetle and forest damage, timber construction, housing demand, EU and German timber regulation, and timber trade. FIFA World Cup standings are not within scope."
+20,3/28/2026,9:15:52 PM,What are the best restaurant recommendations in Berlin for a business dinner?,I don't have that information.,Baseline,0.000069,440,1,N/A,2.12,NA,NA,NA,NA,NA,"This question is outside the German timber market scope. The system covers German timber and wood prices, sawmills, forestry supply, bark beetle and forest damage, timber construction, housing demand, EU and German timber regulation, and timber trade. Restaurant recommendations are not within scope."
