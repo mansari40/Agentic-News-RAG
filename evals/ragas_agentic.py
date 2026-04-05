@@ -1,7 +1,8 @@
 """
-RAGAS evaluation script — Agentic RAG 60-question full evaluation
+RAGAS evaluation script - Agentic RAG 55-question full evaluation
 Metrics: faithfulness, answer_relevancy, context_precision, context_recall
-Out-of-scope questions (last 6) are excluded from metrics and reported separately.
+Out-of-scope questions (6) are excluded from metrics and reported separately.
+requires_live_search questions (8) are included in RAGAS evaluation.
 """
 
 import csv
@@ -32,11 +33,11 @@ EVALS_DIR = Path(__file__).parent
 DATASETS_DIR = EVALS_DIR / "datasets"
 RESULTS_DIR = EVALS_DIR / "results"
 
-INPUT_FILE = DATASETS_DIR / "agentic_rag_60 questions.csv"
-OUTPUT_FILE = RESULTS_DIR / "ragas_results_agentic_60.csv"
+INPUT_FILE = DATASETS_DIR / "agentic_rag_55 questions.csv"
+OUTPUT_FILE = RESULTS_DIR / "ragas_results_agentic_55.csv"
 CONTEXT_COLS = [f"context_{i}" for i in range(1, 9)]
 
-_llm = LangchainLLMWrapper(ChatOpenAI(model="gpt-4o-mini", temperature=0))
+_llm = LangchainLLMWrapper(ChatOpenAI(model="gpt-4o-mini", temperature=0, request_timeout=120))
 _emb = LangchainEmbeddingsWrapper(OpenAIEmbeddings(model="text-embedding-3-small"))
 
 METRICS = [faithfulness, answer_relevancy, context_precision, context_recall]
@@ -57,12 +58,17 @@ def load_dataset() -> tuple[Dataset, int, int]:
     with open(str(INPUT_FILE), encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
             gt = row["ground_truth"].strip()
-            if _OUT_OF_SCOPE_MARKER in gt:
+            qtype = row.get("query_type", "").strip().lower()
+
+            # Exclude out-of-scope queries (by explicit query_type flag or ground-truth marker)
+            if qtype == "out_of_scope" or _OUT_OF_SCOPE_MARKER in gt:
                 skipped_oos += 1
                 continue
-            if _LIVE_SEARCH_MARKER in gt:
+
+            # Include requires_live_search queries in main metrics
+            if qtype == "requires_live_search":
                 skipped_live += 1
-                continue
+
             questions.append(row["Query"].strip())
             answers.append(row["Response"].strip())
             ctx = [row[c].strip()[:_MAX_CTX_CHARS] for c in CONTEXT_COLS if row.get(c, "").strip()]
@@ -110,13 +116,13 @@ if __name__ == "__main__":
         raise OSError("OPENAI_API_KEY not set — check your .env file")
 
     print(f"\n{'='*52}")
-    print("  Agentic RAG — 60 Question Evaluation")
+    print("  Agentic RAG — 55 Question Evaluation")
     print(f"{'='*52}")
 
     ds, skipped_oos, skipped_live = load_dataset()
     print(f"  Loaded {len(ds)} questions for RAGAS evaluation")
     print(f"  Skipped {skipped_oos} out-of-scope questions (scope detection evaluated separately)")
-    print(f"  Skipped {skipped_live} requires-live-search questions (recency evaluated separately)")
+    print(f"  Included {skipped_live} requires-live-search questions (evaluated within RAGAS)")
 
     result = evaluate(ds, metrics=METRICS)
 
