@@ -137,6 +137,15 @@ How the agentic RAG works:
 
 ![Timber Intel UI](./assets/screenshots/ui.png)
 
+Short Summary of UI:
+
+- The deployed interface supports a short analytical workflow (not just single-turn chat): users can submit and manage multiple queries, retrieve and tune answer configurations, and inspect supporting evidence from a single continuous workspace.
+- Answers present a headline finding plus detailed explanation, followed by a metadata bar (processing time, number of sources, query cost, and token usage) and a concise evidence statement.
+- Each answer view exposes a `Key facts` box, a collapsible reasoning trace with the full researcher scratchpad, and an expandable list of all sources so users can inspect provenance and selection rationale.
+- Multiple queries can run in parallel; prior interactions are stored locally in the browser and accessible from the sidebar for quick reference.
+- Enabling Research Mode turns on session-level query logging; session metadata (costs, latency, tools used, query distribution) can be exported from the Analytics tab after a session.
+- Additional UI tabs: A/B Test (compare baseline vs agentic answers), Architecture (embedded pipeline explanation), Analytics (session summaries and interactive graphs), and Overview (usage guide and operational bounds).
+
 ## Backend API
 
 The FastAPI backend exposes these routes:
@@ -195,7 +204,7 @@ python ragas_comparison.py
 ```powershell
 cd Agentic-News-RAG
 python -m venv .venv
-.\.venv\Scriptsctivate
+.\.venv\Scripts\activate
 pip install -e "[dev]"
 ```
 
